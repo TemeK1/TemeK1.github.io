@@ -6,4 +6,17 @@ When function is applied, all occurrences of the parameter are replaced by a giv
 
 <b>twiceMinusOneA x = x*x -1<br />
 -- Which is the same as<br />
-twiceMinusOneB = \x -> x*x -1<br /></b>
+twiceMinusOneB = \x -> x*x -1</b><br />
+
+myFunction = \x -> x * x - 1 <br />
+twice      = \f -> (\x -> f (f x)) <br />
+
+Evaluate twice myFunction 5<br/>
+--------------------------
+
+twice = \myFunction -> (\x -> myFunction (myFunction 5))<br />
+twice = \myFunction -> (\x -> myFunction (24))<br />
+twice = \myFunction -> (\x -> 575)<br />
+
+<b>Currying<b><br />
+<b>(\width -> (\height -> width * height)) 5 3
