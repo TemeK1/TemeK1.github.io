@@ -6,19 +6,19 @@ Literal value of a function:<br />
 <p>Value between \ and -> is the parameter of the function. It can be anything.
 When function is applied, all occurrences of the parameter are replaced by a given argument.</p>
 
-<b>twiceMinusOneA x = x*x -1<br />
--- Which is the same as<br />
-twiceMinusOneB = \x -> x*x -1</b><br />
+<p><b>twiceMinusOneA x = x*x -1
+-- Which is the same as
+twiceMinusOneB = \x -> x*x -1</b></p>
 
-myFunction = \x -> x * x - 1 <br />
-twice      = \f -> (\x -> f (f x)) <br />
+<p>myFunction = \x -> x * x - 1 <br />
+twice      = \f -> (\x -> f (f x)) </p>
 
-Evaluate twice myFunction 5<br/>
---------------------------
+Evaluate twice myFunction 5<br /><br />
+--------------------------<br /> <br />
 
-twice = \myFunction -> (\x -> myFunction (myFunction 5))<br />
+<p>twice = \myFunction -> (\x -> myFunction (myFunction 5))<br />
 twice = \myFunction -> (\x -> myFunction (24))<br />
-twice = \myFunction -> (\x -> 575)<br />
+twice = \myFunction -> (\x -> 575)<br /></p>
 
-<b>Currying<b><br />
-<b>(\width -> (\height -> width * height)) 5 3
+<p><b>Currying<b><br />
+<b>(\width -> (\height -> width * height)) 5 3</b></p>
