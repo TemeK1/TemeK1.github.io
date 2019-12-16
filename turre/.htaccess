@@ -1,6 +1,0 @@
-//Change default directory page
-DirectoryIndex index.html
-
-//404
-ErrorDocument 404 /404.html
-
