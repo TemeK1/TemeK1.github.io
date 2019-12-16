@@ -114,12 +114,11 @@ a.talks { word-spacing: 0.005em; text-decoration: underline;}
 
 @media only screen and (max-width: 720px) {
 
-
-#container #col1{color: #6C6E72; display: block; float: left; width: 98%;}
+#container #col1{color: #eeebe0; display: block; float: left; width: 98%;}
 #container #col1 figure{ font-size: smaller; font-style: italic; text-align: center;  text-indent: 0;} img{border-radius: 5%; height: auto; margin-top: 4%; max-width: 75%; }
 #container #col2{background-color:#eeebe0; color:#626262; display: block; float: left; padding-left: 2%; padding-right: 2%; width: 96%;}
 
-#index_container #col_1{color:#6C6E72; display: block; float: left; width: 100%;}
+#index_container #col_1{color:#eeebe0; display: block; float: left; width: 100%;}
 #index_container #col_1 figure{font-size: smaller; font-style: italic; height: auto; text-align: center; text-indent: 0; } img{ border-radius: 5%; margin-top: 4%; max-width: 75%; }
 #index_container #col_2{background-color:#eeebe0; color:#626262; display: block; float:left; margin-top: 2%; padding-left: 2.5%; padding-right: 2.5%; text-align: justify;  }
 #index_container #col_3{display: none;}
@@ -132,7 +131,7 @@ tr:nth-child(even) {background-color: #F2F2F2; height: 50px;}
 tr:nth-child(odd) {height: 70px;}
 tr:hover {background-color: #f7f7f7;}
 
-#footer #footer1{color:#6c6e72; padding-top: 0.5%; text-align: center;}
+#footer #footer1{color:#eeebe0; padding-top: 0.5%; text-align: center;}
 
 }
 
