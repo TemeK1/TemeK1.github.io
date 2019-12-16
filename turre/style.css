@@ -117,6 +117,7 @@ a.talks { word-spacing: 0.005em; text-decoration: underline;}
 #container #col1{color: #eeebe0; display: block; float: left; width: 98%;}
 #container #col1 figure{ font-size: smaller; font-style: italic; text-align: center;  text-indent: 0;} img{border-radius: 5%; height: auto; margin-top: 4%; max-width: 75%; }
 #container #col2{background-color:#eeebe0; color:#626262; display: block; float: left; padding-left: 2%; padding-right: 2%; width: 96%;}
+#center_container #center {background-color:#eeebe0; color:#626262; display:block; float:left; text-align: justify; width:100%; text-align: center;}
 
 #index_container #col_1{color:#eeebe0; display: block; float: left; width: 100%;}
 #index_container #col_1 figure{font-size: smaller; font-style: italic; height: auto; text-align: center; text-indent: 0; } img{ border-radius: 5%; margin-top: 4%; max-width: 75%; }
