@@ -172,14 +172,14 @@ address, article, aside, figcaption, figure, footer, header, hgroup, nav, sectio
 /*--Content--*/
 
 #container #col1 {color:#6C6E72; display:block; float:left; position: -webkit-sticky; position: sticky; top: 3rem; width:20%;}
-#container #col1 figure{font-size: smaller; font-style: italic; text-align: center; text-indent: 0;} img{border-radius: 5%; height: auto; margin-top: 8%;  max-width: 75%;}
+#container #col1 figure{font-size: smaller; font-style: italic; text-align: center; text-indent: 0;} img{border-radius: 5%; height: auto; margin-top: 8%; max-width: 75%;}
 #container #col2 {background-color:#eeebe0; color:#626262; display:block; float:left; text-align: justify; width:75%;}
 #center_container #center {background-color:#eeebe0; color:#626262; display:block; float:left; text-align: justify; width:100%; text-align: center;}
 
 /*--Content--*/
 
 #index_container #col_1 {color:#6C6E72; display:block; float:left; position: -webkit-sticky; position: sticky; top: 3rem; width:20%;}
-#index_container #col_1 figure {font-size: smaller; font-style: italic; text-align: center; text-indent: 0;} img{border-radius: 5%; height: auto; margin-top: 8; max-width: 75%;}
+#index_container #col_1 figure {font-size: smaller; font-style: italic; text-align: center; text-indent: 0;} img{border-radius: 5%; height: auto; margin-top: 8%; max-width: 75%;}
 #index_container #col_2 {background-color:#eeebe0; color:#626262; display:block; float:left; margin-right: 2%; margin-top: 2%; text-align: justify; width:58%;}
 #index_container #col_3 {background-color:#fef8d6; border: 1px solid #6C6E72; border-style: dashed; color:#626262; display:block; float:left; margin: 2% 0 2% 0; padding: 2%; position: -webkit-sticky; position: sticky; top: 4.2rem; width:15%;}
 #index_container #col_mobile_talks{display: none;}
