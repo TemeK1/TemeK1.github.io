@@ -30,3 +30,4 @@ li a:hover:not(.active) { background-color: #111; }
 #footer { font-size: 120%; padding-bottom: 1em; padding-top: 1em; text-align: center; }
 
 p.center { text-align: center; }
+figcaption.profile { text-align: center; }
