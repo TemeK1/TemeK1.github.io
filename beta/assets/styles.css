@@ -1,10 +1,7 @@
-/*@import url('https://fonts.googleapis.com/css?family=Lato:300,400,600,700');*/
-
-* {
-    font-family: Arial;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body {
+    font-family: 'Open Sans', sans-serif;
     height: 100vh;
     background: #f9f9f9;
 }
@@ -12,9 +9,9 @@ body {
 #chart, .chart-box {
     padding-top: 20px;
     padding-left: 10px;
-    background: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 22px 35px -16px rgba(0,0,0, 0.1);
+    background: #E5EBE8;
+    border: none;
+    box-shadow: 0 22px 35px -16px rgba(0,0,0, 0.0);
 }
 
 select.flat-select {
@@ -59,6 +56,6 @@ select.flat-select {
 
 #chart {
     max-width: 75%;
-    margin: 35px auto;
+    margin: 10px auto;
     z-index: 0;
 }

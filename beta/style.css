@@ -1,5 +1,5 @@
 #content { background-color: #E5EBE8; display: block; width: 100%; position: absolute; }
-body { font-size: 100%; color:#000000; font-family: Verdana, "Trebuchet MS", Tahoma, Geneva; margin: 0; overflow-x: hidden; }
+body { font-size: 100%; color:#000000; margin: 0; overflow-x: hidden; }
 
 #myTopnav { background-color: #24E28A; }
 ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; }
@@ -19,7 +19,7 @@ li a:hover:not(.active) { background-color: #111; }
 
 #thirdRow { }
 #firstColumn { display: block; float: left; margin-left: 0.5em; width: 25%; }
-#secondColumn {display: block; float: left; width: 50%; text-align: justify; }
+#secondColumn {display: block; float: left; width: 50%; text-align: left; }
 #thirdColumn { display: none; float: left; width: 20%; }
 .newsBox { background-color: #94E8C1; border: 1px solid #6C6E72; border-style: dotted; margin: 2% 2% 0 10%; padding: 0 0 0 2%; }
 
@@ -28,3 +28,5 @@ li a:hover:not(.active) { background-color: #111; }
 #fifthRow { background-color: #2AA6EE; bottom: 0; color: #D6DEE4; display: block; float: left; width: 100%; }
 
 #footer { font-size: 120%; padding-bottom: 1em; padding-top: 1em; text-align: center; }
+
+p.center { text-align: center; }
