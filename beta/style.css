@@ -31,3 +31,4 @@ li a:hover:not(.active) { background-color: #111; }
 
 p.center { text-align: center; }
 figcaption.profile { text-align: left; }
+.kartta { float: center; }
