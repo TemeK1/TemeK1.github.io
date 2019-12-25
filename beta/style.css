@@ -19,7 +19,7 @@ li a:hover:not(.active) { background-color: #111; }
 
 #thirdRow { }
 #firstColumn { display: none; float: left; margin-left: 0.5em; width: 25%; }
-#secondColumn {display: block; float: left; margin-left: 4em; padding-right: 2em; width: 70%; text-align: left; }
+#secondColumn {display: block; float: left; margin-left: 4em; padding-right: 10em; width: 70%; text-align: left; }
 #secondColumn.center { display: block; margin-left: auto; margin-right: auto; width: 50%; }
 #thirdColumn { display: block; float: left; width: 20%; }
 .newsBox { background-color: #94E8C1; border: 1px solid #6C6E72; border-style: dotted; margin: 5% 10% 0 2%; padding: 0 0 0 2%; }
