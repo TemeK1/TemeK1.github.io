@@ -1,71 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> Teemu Käpylä | Beta </title>
+<title> Teemu Käpylä | Portfolio </title>
 <meta name="keywords" content="portfolio, web-cv">
 <meta name="robots" content="index, follow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
-<base href="https://teemukapyla.fi/beta/" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<base href="C:/Web-ohjelmointi/trunk/beta/"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="StyleSheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="StyleSheet" href="style.css" type="text/css" media="all">
 <link rel="StyleSheet" href="assets/styles.css" type="text/css" media="all">
 <link rel="shortcut icon" href="favicon.ico">
+<script src="dynamic_content.js"></script>
+<script src="responsive_nav.js"></script>
 </head>
 <body>
-
-<div id="app"></div>
-
-<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/prop-types@15.6.2/prop-types.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
-<script src="https://unpkg.com/react-apexcharts@1.1.0/dist/react-apexcharts.iife.min.js"></script>
-
-<script type="text/babel">
-
-  class DonutChart extends React.Component {
-
-    constructor(props) {
-      super(props);
-
-      this.state = {
-        options: {
-      labels: ["Java", "C#", "HTML", "Haskell", "CSS"],
-          responsive: [{
-            breakpoint: 480,
-            options: {
-              chart: {
-                width: 200
-              },
-              legend: {
-                position: 'bottom'
-              }
-            }
-          }]
-        },
-        series: [35, 30, 20, 20, 10]
-      }
-    }
-
-    render() {
-      return (
-        <div>
-          <div id="chart">
-            <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
-          </div>
-          <div id="html-dist">
-          </div>
-        </div>
-      );
-    }
-  }
-
-  const domContainer = document.querySelector('#app');
-  ReactDOM.render(React.createElement(DonutChart), domContainer);
-
+<div id="content">
+<div id="myTopnav">
+myTopnav
+<div data-include="navbar.html"></div>
+</div>
+<script>navBarFunction();</script>
+<div id="secondRow">
+[Insert_Logo]
+</div>
+<div id="thirdRow">
+<div id="firstColumn">
+thirdRow, first column
+<div data-include="profile.html"></div>
+</div>
+<div id="secondColumn">
+<h2>About me</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu quam vitae arcu pulvinar vehicula nec eget dolor. Proin vitae sem laoreet, bibendum libero quis, lobortis diam. Quisque rhoncus faucibus augue at egestas. Donec sit amet neque id ante elementum pharetra id ut sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Etiam augue lacus, scelerisque id vehicula ut, lacinia quis enim. Duis in est quis velit convallis feugiat. Nam accumsan eu ipsum in efficitur. Vestibulum a dui mollis, rutrum ante a, tincidunt lacus. Mauris mattis nisi sit amet metus tristique, et pretium tortor interdum. Nulla suscipit justo ut malesuada ultricies. Cras viverra consectetur interdum.</p>
+<p>Etiam nec magna eu quam auctor tincidunt id eget libero. Maecenas viverra aliquet erat, ut ultrices sem elementum ac. Etiam tincidunt nisi sed fermentum rutrum. Quisque quam nulla, auctor vel malesuada sit amet, maximus eu dui. Curabitur at imperdiet arcu, at consectetur mauris. Fusce a sapien consequat, vehicula leo at, sodales erat. Mauris vel urna quis ex porta posuere vitae porttitor libero. Integer non justo mi. Sed venenatis purus a porttitor molestie. Nulla facilisi. Donec feugiat hendrerit urna, in aliquet sapien dignissim eget. Curabitur viverra, nisl et tempus sagittis, velit eros vestibulum sapien, eget suscipit magna elit ac sapien.</p>
+<h2>Contact</h2>
+<p><b>Teemu Käpylä</b></p>
+<p>teemu.j.a.kapyla[at]student.jyu.fi</p>
+<h4> to</h4>
+</div>
+<div id="thirdColumn">
+third column
+<div data-include="talks.html"></div>
+</div>
+</div>
+<div id="fifthRow">
+<footer id="footer" class="clear">
+&copy; Teemu Käpylä
+</footer>
+</div>
+</div>
+<script>
+IncludeHTML();
 </script>
 </body>
 </html>

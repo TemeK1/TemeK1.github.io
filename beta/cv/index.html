@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Teemu Käpylä | Portfolio </title>
+<meta name="keywords" content="portfolio, web-cv">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<base href="C:/Web-ohjelmointi/trunk/beta/"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css" type="text/css" media="all">
+<link rel="stylesheet" href="assets/styles.css" type="text/css" media="all">
+<link rel="shortcut icon" href="favicon.ico">
+<script src="dynamic_content.js"></script>
+</head>
+<body>
+<div id="content">
+	<div id="myTopnav">
+	<div data-include="navbar.html"></div>
+	</div>
+<script>navBarFunction();</script>
+	<div id="secondRow">
+	<h4>Teemu Käpylä | Web-CV</h4>
+	</div>
+	<div id="thirdRow">
+		<div id="firstColumn">
+		<p></p>
+		<div data-include="profile.html"></div>
+		</div>
+		<div id="secondColumn">
+		<p><i class="fa fa-book fa-2x"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero velit, accumsan id placerat sed, maximus et velit. Praesent eget aliquet nulla. Duis at scelerisque quam. Integer vehicula turpis a bibendum iaculis. Pellentesque posuere ullamcorper tincidunt. Duis sagittis leo sed libero tincidunt convallis. Aliquam sit amet neque ut eros porttitor molestie. Integer posuere neque vel sagittis vestibulum. Sed a nisi vel enim maximus tristique. Morbi at vehicula metus.</p>
+		<div id="app"></div>
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/prop-types@15.6.2/prop-types.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
+		<script src="https://unpkg.com/react-apexcharts@1.1.0/dist/react-apexcharts.iife.min.js"></script>
+
+		<script type="text/babel">
+
+		class DonutChart extends React.Component {
+
+			constructor(props) {
+			super(props);
+
+			this.state = {
+				options: {
+			labels: ["Java", "C#", "HTML", "Haskell", "CSS"],
+				responsive: [{
+					breakpoint: 480,
+					options: {
+					chart: {
+						width: 200
+					},
+					legend: {
+						position: 'bottom'
+					}
+					}
+				}]
+				},
+				series: [35, 30, 20, 20, 10]
+			}
+			}
+
+			render() {
+			return (
+				<div>
+				<div id="chart">
+					<ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
+				</div>
+				<div id="html-dist">
+				</div>
+				</div>
+			);
+			}
+		}
+
+		const domContainer = document.querySelector('#app');
+		ReactDOM.render(React.createElement(DonutChart), domContainer);
+		</script>
+		<p><i class="fa fa-home fa-2x"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero velit, accumsan id placerat sed, maximus et velit. Praesent eget aliquet nulla. Duis at scelerisque quam. Integer vehicula turpis a bibendum iaculis. Pellentesque posuere ullamcorper tincidunt. Duis sagittis leo sed libero tincidunt convallis. Aliquam sit amet neque ut eros porttitor molestie. Integer posuere neque vel sagittis vestibulum. Sed a nisi vel enim maximus tristique. Morbi at vehicula metus.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero velit, accumsan id placerat sed, maximus et velit. Praesent eget aliquet nulla. Duis at scelerisque quam. Integer vehicula turpis a bibendum iaculis. Pellentesque posuere ullamcorper tincidunt. Duis sagittis leo sed libero tincidunt convallis. Aliquam sit amet neque ut eros porttitor molestie. Integer posuere neque vel sagittis vestibulum. Sed a nisi vel enim maximus tristique. Morbi at vehicula metus.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero velit, accumsan id placerat sed, maximus et velit. Praesent eget aliquet nulla. Duis at scelerisque quam. Integer vehicula turpis a bibendum iaculis. Pellentesque posuere ullamcorper tincidunt. Duis sagittis leo sed libero tincidunt convallis. Aliquam sit amet neque ut eros porttitor molestie. Integer posuere neque vel sagittis vestibulum. Sed a nisi vel enim maximus tristique. Morbi at vehicula metus.</p>
+		<p><div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Jyv%C3%A4skyl%C3%A4%20kyp%C3%A4r%C3%A4m%C3%A4ki&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:300px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:600px;}</style></div></p>
+		</div>
+		<div id="thirdColumn">
+			<div class="newsBox">
+			<p>Uutiset</p>
+			<p>lorem ipsum</p>
+			<p>ipsum lorem</p>
+			</div>
+		</div>
+	</div>
+	<div id="fifthRow">
+		<footer id="footer" class="clear">
+		&copy; Teemu Käpylä
+		</footer>
+	</div>
+</div>
+<script>
+IncludeHTML();
+</script>
+</body>
+</html>
