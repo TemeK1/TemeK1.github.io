@@ -18,7 +18,7 @@ li a:hover:not(.active) { background-color: #111; }
 #secondRow img { width: 100%; height: 10em; }
 
 #thirdRow { }
-#firstColumn { display: block; float: left; margin-left: 0.5em; width: 25%; }
+#firstColumn { display: block; float: left; margin-left: 0.5em; width: 25% position: -webkit-sticky; position: sticky; top: 0; }
 #secondColumn {display: block; float: left; width: 50%; text-align: left; }
 #thirdColumn { display: none; float: left; width: 20%; }
 .newsBox { background-color: #94E8C1; border: 1px solid #6C6E72; border-style: dotted; margin: 2% 2% 0 10%; padding: 0 0 0 2%; }
@@ -30,4 +30,4 @@ li a:hover:not(.active) { background-color: #111; }
 #footer { font-size: 120%; padding-bottom: 1em; padding-top: 1em; text-align: center; }
 
 p.center { text-align: center; }
-figcaption.profile { text-align: center; }
+figcaption.profile { text-align: right; }
