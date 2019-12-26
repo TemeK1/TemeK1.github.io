@@ -31,5 +31,5 @@ li a:hover:not(.active) { background-color: #111; }
 #footer { font-size: 120%; padding-bottom: 1em; padding-top: 1em; text-align: center; }
 
 p.center { text-align: center; }
-figcaption.profile { font-size: smaller; font-style: italic; text-align: right; text-indent: 0; }
+figcaption.profile { font-size: smaller; font-style: italic; text-align: left; text-indent: 0; }
 img.profilePic { border-radius: 5%; height: max-width: 75%; }
