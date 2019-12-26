@@ -21,7 +21,7 @@ li a:hover:not(.active) { background-color: #111; }
 #firstColumn { display: none; float: left; margin-left: 0.5em; width: 25%; }
 #secondColumn {display: block; float: left; margin-left: 4em; width: 65%; text-align: left; }
 .center { margin: 10px auto; }
-#thirdColumn { display: block; float: left; width: 24%; }
+#thirdColumn { display: block; float: left; width: 25%; }
 .newsBox { background-color: #94E8C1; border: 1px solid #6C6E72; border-style: dotted; margin: 5% 10% 0 2%; padding: 0 0 0 2%; }
 .profileBox { margin: 2% 2% 0 15%; padding: 0 0 0 2%; }
 
