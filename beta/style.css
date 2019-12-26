@@ -24,6 +24,7 @@ li a:hover:not(.active) { background-color: #111; }
 #thirdColumn { display: block; float: left; width: 30%; }
 .newsBox { background-color: #94E8C1; border: 1px solid #6C6E72; border-style: dotted; margin: 5% 10% 0 2%; padding: 0 0 0 2%; }
 .profileBox { margin: 2% 2% 0 25%; padding: 0 0 0 2%; }
+figure{font-size: smaller; font-style: italic; text-align: center; text-indent: 0;} img{border-radius: 5%; height: max-width: 75%;}
 
 #fourthRow { background-color: black; display: block; float: left; }
 #fifthRow { background-color: #2AA6EE; bottom: 0; color: #D6DEE4; display: block; float: left; width: 100%; }
