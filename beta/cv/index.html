@@ -29,14 +29,11 @@
 	</div>
 	<div id="thirdRow">
 		<div id="firstColumn">
-			<div class="newsBox">
-			<p>Uutiset</p>
-			<p>lorem ipsum</p>
-			<p>ipsum lorem</p>
-			</div>
 		</div>
 		<div id="secondColumn">
-		<p><i class="fa fa-book fa-2x"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero velit, accumsan id placerat sed, maximus et velit. Praesent eget aliquet nulla. Duis at scelerisque quam. Integer vehicula turpis a bibendum iaculis. Pellentesque posuere ullamcorper tincidunt. Duis sagittis leo sed libero tincidunt convallis. Aliquam sit amet neque ut eros porttitor molestie. Integer posuere neque vel sagittis vestibulum. Sed a nisi vel enim maximus tristique. Morbi at vehicula metus.</p>
+		<p>Here you can have a overview of my skill set. Including personal skills, programming languages and various tools of my choice and liking I've been using during the studies. Relative and very subjective rating of my level is also included for each language and tool.</p>
+		<p class="center"><i class="fa fa-asterisk fa-2x"></i></p>
+		<h3 align="center">Programming languages</h3>
 		<div id="app"></div>
 		<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
@@ -54,7 +51,7 @@
 
 			this.state = {
 				options: {
-			labels: ["Java", "C#", "HTML", "CSS", "Haskell"],
+			labels: ["Java", "C#", "HTML", "CSS", "C++", "JSP", "Haskell"],
 				responsive: [{
 					breakpoint: 480,
 					options: {
@@ -67,7 +64,7 @@
 					}
 				}]
 				},
-				series: [40, 20, 20, 15, 5]
+				series: [40.1, 20, 15, 10, 5, 5, 4.9]
 			}
 			}
 
@@ -87,11 +84,108 @@
 		const domContainer = document.querySelector('#app');
 		ReactDOM.render(React.createElement(DonutChart), domContainer);
 		</script>
-		<p><i class="fa fa-home fa-2x"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero velit, accumsan id placerat sed, maximus et velit. Praesent eget aliquet nulla. Duis at scelerisque quam. Integer vehicula turpis a bibendum iaculis. Pellentesque posuere ullamcorper tincidunt. Duis sagittis leo sed libero tincidunt convallis. Aliquam sit amet neque ut eros porttitor molestie. Integer posuere neque vel sagittis vestibulum. Sed a nisi vel enim maximus tristique. Morbi at vehicula metus.</p>
-		<p class="center"><i class="fa fa-asterisk fa-2x"></i></p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero velit, accumsan id placerat sed, maximus et velit. Praesent eget aliquet nulla. Duis at scelerisque quam. Integer vehicula turpis a bibendum iaculis. Pellentesque posuere ullamcorper tincidunt. Duis sagittis leo sed libero tincidunt convallis. Aliquam sit amet neque ut eros porttitor molestie. Integer posuere neque vel sagittis vestibulum. Sed a nisi vel enim maximus tristique. Morbi at vehicula metus.</p>
-		<p class="center"><i class="fa fa-asterisk fa-2x"></i></p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin libero velit, accumsan id placerat sed, maximus et velit. Praesent eget aliquet nulla. Duis at scelerisque quam. Integer vehicula turpis a bibendum iaculis. Pellentesque posuere ullamcorper tincidunt. Duis sagittis leo sed libero tincidunt convallis. Aliquam sit amet neque ut eros porttitor molestie. Integer posuere neque vel sagittis vestibulum. Sed a nisi vel enim maximus tristique. Morbi at vehicula metus.</p>
+		<h3 align="center">Tools</h3>
+		<div id="app2"></div>
+        <div id="html">
+          &lt;div id=&quot;chart&quot;&gt;&#10;            &lt;ReactApexChart options={this.state.options} series={this.state.series} type=&quot;bar&quot; height=&quot;350&quot; /&gt;&#10;          &lt;/div&gt;
+        </div>
+        <script type="text/babel">
+
+			class BarChart extends React.Component {
+      
+				constructor(props) {
+				super(props);
+
+				this.state = {
+					options: {
+					plotOptions: {
+					bar: {
+						horizontal: true,
+					}
+					},
+					colors: ['#15d199'],
+					dataLabels: {
+					enabled: false
+					},
+					xaxis: {
+					categories: ['Eclipse', 'Drupal', 'Visual Studio', 'Atom', 'Robot Framework', 'Kali Linux', 'Debian Linux', 'VirtualBox', 'Microsoft Office' 
+					],
+					}
+				},
+				series: [{
+					data: [5, 4.5, 4.0, 3.5, 3.0, 2.5, 2.0, 2.5, 4.0]
+				}],
+				}
+			}
+
+			render() {
+				return (
+				<div>
+					<div id="chart">
+					<ReactApexChart options={this.state.options} series={this.state.series} type="bar" height="350" />
+					</div>
+					<div id="html-dist">
+					</div>
+				</div>
+				);
+			}
+			}
+
+			const domContainer = document.querySelector('#app2');
+			ReactDOM.render(React.createElement(BarChart), domContainer);
+
+		</script>
+		<h3 align="center">Languages</h3>
+				<div id="app3"></div>
+        <div id="html">
+          &lt;div id=&quot;chart&quot;&gt;&#10;            &lt;ReactApexChart options={this.state.options} series={this.state.series} type=&quot;bar&quot; height=&quot;350&quot; /&gt;&#10;          &lt;/div&gt;
+        </div>
+        <script type="text/babel">
+
+			class BarChart extends React.Component {
+      
+				constructor(props) {
+				super(props);
+
+				this.state = {
+					options: {
+					plotOptions: {
+					bar: {
+						horizontal: true,
+					}
+					},
+					colors: ['#15d199'],
+					dataLabels: {
+					enabled: false
+					},
+					xaxis: {
+					categories: ['Finnish', 'English', 'Swedish' 
+					],
+					}
+				},
+				series: [{
+					data: [5, 4.0, 1.0]
+				}],
+				}
+			}
+
+			render() {
+				return (
+				<div>
+					<div id="chart">
+					<ReactApexChart options={this.state.options} series={this.state.series} type="bar" height="350" />
+					</div>
+					<div id="html-dist">
+					</div>
+				</div>
+				);
+			}
+			}
+
+			const domContainer = document.querySelector('#app3');
+			ReactDOM.render(React.createElement(BarChart), domContainer);
+
+		</script>
 		</div>
 		<div id="thirdColumn">
 			<div class="profileBox">
