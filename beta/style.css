@@ -1,5 +1,5 @@
-#content { background-color: #E5EBE8; display: block; position: absolute; }
-body { color:#000000; font-size: 100%; margin: 0; overflow-x: hidden; width: 100%; }
+#content { background-color: #E5EBE8; display: block; height: 100%; position: absolute; width: 100%; }
+body { color:#000000; font-size: 100%; margin: 0; overflow-x: hidden; }
 
 #myTopnav { background-color: #24E28A; }
 ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; }
