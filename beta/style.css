@@ -31,6 +31,6 @@ li a:hover:not(.active) { background-color: #111; }
 #footer { font-size: 120%; padding-bottom: 1em; padding-top: 1em; text-align: center; }
 
 p.center { text-align: center; }
-p.status { background-color: #94E8C1; border: 1px solid #6C6E72; border-style: dotted; color: red; font-weight: bold; font-size: smaller; font-style: italic; padding 1% 1% 1% 1%; text-align: left; text-indent: 0; }
+p.status { background-color: #94E8C1; border: 1px solid #6C6E72; border-style: dotted; color: #8B0000; font-weight: bold; font-size: smaller; font-style: italic; padding 1% 1% 1% 1%; text-align: left; text-indent: 0; }
 figcaption.profile { font-size: smaller; font-style: italic; text-align: left; text-indent: 0; }
 img.profilePic { border-radius: 10%; height: auto; max-width: 100%; }
