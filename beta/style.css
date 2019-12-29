@@ -28,7 +28,7 @@ li a:hover:not(.active) { background-color: #111; }
 #fourthRow { background-color: black; display: block; float: left; }
 #fifthRow { background-color: #2AA6EE; bottom: 0; color: #D6DEE4; display: block; float: left; width: 100%; }
 
-#footer { font-size: 120%; padding-bottom: 2em; padding-top: 1em; text-align: center; }
+#footer { font-size: 120%; padding-bottom: 2em; padding-top: 2em; text-align: center; }
 
 p.center { text-align: center; }
 p.status { background-color: #FFFF99; border: 1px solid #6C6E72; border-style: dotted; color: #8B0000; font-weight: bold; font-size: smaller; font-style: italic; margin: 1% 25% 1% 15%; padding: 5% 2% 5% 2%; text-align: left; text-indent: 0; }
