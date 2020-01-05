@@ -1,5 +1,5 @@
-{ background-color: #2AA6EE; }
-#content { background-color: green; display: block; min-height: 100%; position: absolute; width: 100%; }
+html { background-color: #2AA6EE; }
+#content { background-color: #E5EBE8; display: block; min-height: 100%; position: absolute; width: 100%; }
 body { color:#000000; font-size: 100%; margin: 0; overflow-x: hidden; }
 
 #myTopnav { background-color: #24E28A; }
