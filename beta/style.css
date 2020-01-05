@@ -10,6 +10,19 @@ li a { display: block; color: white; text-align: center; padding: 14px 16px; tex
 li a:hover:not(.active) { background-color: #111; }
 .active { background-color: #4CAF50; }
 
+a.content:link, a.content:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.content:hover, a.content:active {
+  background-color: red;
+}
+
 h3 { margin-top: 3.0em; line-height: 0.5; }
 
 #secondRow { background-color: #2AA6EE; color: #FFFFFF; font-size: 1.5em; text-align: center; padding-bottom: 0.5em; padding-top: 0.5em; position: -webkit-sticky; position: sticky; top: 0; z-index: 1; }
@@ -29,8 +42,7 @@ h3 { margin-top: 3.0em; line-height: 0.5; }
 
 p.center { text-align: center; }
 p.status { color: #8B0000; font-weight: bold; font-style: italic; }
-p.link { a:link, a:visited { background-color: #FFFFFF; color: green;  display: inline-block; padding: 14px 25px; text-align: center; text-decoration: none; }
-a:hover, a:active { background-color: lime; } }
+
 figcaption.profile { font-size: smaller; font-style: italic; text-align: left; text-indent: 0; }
 img.profilePic { border-radius: 10%; height: auto; max-width: 100%; }
 .center { text-align: center; }
