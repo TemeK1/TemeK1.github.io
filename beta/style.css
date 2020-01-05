@@ -27,7 +27,7 @@ h2.extraspace { margin-top: 1.0em; line-height: 0.5; }
 .profileBox { margin: 2% 2% 0 15%; padding: 0 0 0 2%; }
 
 #fourthRow { background-color: black; display: block; float: left; }
-#fifthRow { background-color: #2AA6EE; bottom: 0; color: #D6DEE4; display: block; float: left; margin-top: 5%; min-height: 3em; position: fixed; width: 100%; }
+#fifthRow { background-color: #2AA6EE; bottom: 0; color: #D6DEE4; display: block; float: left; margin-top: 5%; min-height: 3em; position: absolute; width: 100%; }
 
 #footer { font-size: 120%; padding-bottom: 1em; padding-top: 1em; text-align: center; }
 
