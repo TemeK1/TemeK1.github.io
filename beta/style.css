@@ -1,6 +1,12 @@
 #content { background-color: #E5EBE8; display: block; min-height: 100%; position: absolute; width: 100%; }
 body { color:#000000; font-size: 100%; margin: 0; overflow-x: hidden; }
 
+a { outline:none; text-decoration: none;} 
+a:link { color: #000000; }
+a:visited { color: #000000; }
+a:hover { color: #5b5151; }
+a:active { color: #5b5151; }
+
 #myTopnav { background-color: #24E28A; }
 ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; }
 li { float: left; border-right:1px solid #bbb; }
