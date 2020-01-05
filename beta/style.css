@@ -12,6 +12,11 @@ li a:hover:not(.active) { background-color: #111; }
 a.content:link, a.content:visited { background-color: #E5EBE8; border: 1px solid green; border-style: dotted; color: green; padding: 0.5em 0.5em; text-align: center; text-decoration: none; display: inline-block; }
 a.content:hover, a.content:active { background-color: #24E28A; }
 
+a.repo:link { text-decoration: none; color: black; }
+a.repo:visited { text-decoration: none; color: blue; }
+a.repo:hover { text-decoration: none; background-color: #24E28A; }
+a.repo:active { text-decoration: none; background-color: #24E28A; } 
+
 h3 { margin-top: 3.0em; line-height: 0.5; }
 h2 { margin-top: 2.0em; line-height: 0.5; }
 h2.extraspace { margin-top: 1.0em; line-height: 0.5; }
