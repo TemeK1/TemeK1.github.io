@@ -28,7 +28,7 @@ select.flat-select {
     outline: 0 none;
     height: 33px;
     padding: 5px 20px 5px 10px;
-    text-align: center;
+    text-align: left;
     text-indent: 0.01px;
     text-overflow: "";
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
