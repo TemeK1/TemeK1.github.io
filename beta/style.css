@@ -9,8 +9,8 @@ li a { display: block; color: white; text-align: center; padding: 14px 16px; tex
 li a:hover:not(.active) { background-color: #111; }
 .active { background-color: #4CAF50; }
 
-a.content:link, a.content:visited { background-color: #FFFFFF; border: 1px solid green; border-style: dotted; color: green; padding: 14px 25px; text-align: center; text-decoration: none; display: inline-block; }
-a.content:hover, a.content:active { background-color: red; }
+a.content:link, a.content:visited { background-color: #E5EBE8; border: 1px solid green; border-style: dotted; color: green; padding: 14px 25px; text-align: center; text-decoration: none; display: inline-block; }
+a.content:hover, a.content:active { background-color: #24E28A; }
 
 h3 { margin-top: 3.0em; line-height: 0.5; }
 
