@@ -29,6 +29,7 @@ h3 { margin-top: 3.0em; line-height: 0.5; }
 
 p.center { text-align: center; }
 p.status { color: #8B0000; font-weight: bold; font-style: italic; }
+p.link { text-decoration: none; }
 figcaption.profile { font-size: smaller; font-style: italic; text-align: left; text-indent: 0; }
 img.profilePic { border-radius: 10%; height: auto; max-width: 100%; }
 .center { text-align: center; }
