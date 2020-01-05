@@ -1,8 +1,6 @@
 #content { background-color: #E5EBE8; display: block; min-height: 100%; position: absolute; width: 100%; }
 body { color:#000000; font-size: 100%; margin: 0; overflow-x: hidden; }
 
-a:link, a:visited { background-color: #FFFFFF; color: green;  display: inline-block; padding: 14px 25px; text-align: center; text-decoration: none; }
-a:hover, a:active { background-color: lime; }
 
 #myTopnav { background-color: #24E28A; }
 ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; }
@@ -11,6 +9,9 @@ li:last-child { border-right: none; }
 li a { display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
 li a:hover:not(.active) { background-color: #111; }
 .active { background-color: #4CAF50; }
+
+a:link, a:visited { background-color: #FFFFFF; color: green;  display: inline-block; padding: 14px 25px; text-align: center; text-decoration: none; }
+a:hover, a:active { background-color: lime; }
 
 h3 { margin-bottom: -0.5em; margin-top: 3.0em; line-height: 0.5; z-index: 1; }
 
