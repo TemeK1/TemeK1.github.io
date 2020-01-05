@@ -13,7 +13,7 @@ a.content:link, a.content:visited { background-color: #E5EBE8; border: 1px solid
 a.content:hover, a.content:active { background-color: #24E28A; }
 
 h3 { margin-top: 3.0em; line-height: 0.5; }
-h2 { margin-top: 3.0em; line-height: 0.5; }
+h2 { margin-top: 2.0em; line-height: 0.5; }
 
 #secondRow { background-color: #2AA6EE; color: #FFFFFF; font-size: 1.5em; text-align: center; padding-bottom: 0.5em; padding-top: 0.5em; position: -webkit-sticky; position: sticky; top: 0; z-index: 1; }
 
