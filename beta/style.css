@@ -9,7 +9,7 @@ li a { display: block; color: white; text-align: center; padding: 14px 16px; tex
 li a:hover:not(.active) { background-color: #111; }
 .active { background-color: #4CAF50; }
 
-#firstRow { background-color: green; color: white; font-size: 2.0em; text-align: left; }
+#firstRow { background-color: green; color: white; display: block; font-size: 1.5em; text-align: left; }
 
 #secondRow { background-color: #2AA6EE; color: #FFFFFF; font-size: 1.5em; text-align: center; padding-bottom: 0.5em; padding-top: 0.5em; position: -webkit-sticky; position: sticky; top: 0; z-index: 1; }
 #secondRow img { width: 100%; height: 10em; }
