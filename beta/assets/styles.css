@@ -55,7 +55,7 @@ select.flat-select {
 }
 
 #chart {
-    max-width: 85%;
+    max-width: 100%;
     margin: 10px auto;
     z-index: 0;
 }

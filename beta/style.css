@@ -45,6 +45,6 @@ figcaption.profile { font-size: smaller; font-style: italic; text-align: left; t
 img.profilePic { border-radius: 10%; height: auto; max-width: 100%; }
 .center_contact { text-align: center; }
 
-table { border-collapse: collapse; margin-left: auto; margin-right: auto; width: 85%; }
+table { border-collapse: collapse; margin-left: auto; margin-right: auto; width: 100%; }
 th, td { text-align: left; padding: 8px; }
 tr:nth-child(even) {background-color: #f2f2f2;}
