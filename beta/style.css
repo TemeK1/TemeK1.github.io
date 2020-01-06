@@ -43,4 +43,4 @@ p.status { color: #8B0000; font-weight: bold; font-style: italic; }
 
 figcaption.profile { font-size: smaller; font-style: italic; text-align: left; text-indent: 0; }
 img.profilePic { border-radius: 10%; height: auto; max-width: 100%; }
-.center { text-align: center; }
+.center_contact { text-align: center; }
