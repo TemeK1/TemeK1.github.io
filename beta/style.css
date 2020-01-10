@@ -49,3 +49,8 @@ table { border-collapse: collapse; margin-left: auto; margin-right: auto; width:
 th { color: blue; }
 th, td { text-align: left; padding: 8px; }
 tr:nth-child(even) {background-color: #f2f2f2;}
+
+.clear:after {clear:both; content:"."; display:block; height:0; line-height:0; visibility:hidden;}
+.clear {clear:both; display:block; width:100%;}
+html[xmlns] .clear {display:block;}
+* html .clear {height:1%;}
