@@ -1,5 +1,5 @@
 /*-----------------------Desktop------------------*/
-body { color: #000000; display:block; font-size: 100%;  margin: 0; overflow-x: hidden; width: 100%; }
+body { color: #000000; display: block; font-size: 100%;  margin: 0; overflow-x: hidden; width: 100%; }
 
 #myTopnav { background-color: #24E28A; }
 ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; }
@@ -24,10 +24,10 @@ h2.extraspace { margin-top: 1.0em; line-height: 0.5; }
 #secondRow { background-color: #2AA6EE; color: #FFFFFF; font-size: 1.5em; text-align: center; padding-bottom: 0.5em; padding-top: 0.5em; position: -webkit-sticky; position: sticky; top: 0; z-index: 1; }
 
 #thirdRow { }
-#firstColumn { background-color: #E5EBE8; display: none; float: left; margin-left: 0.5em; width: 25%; }
-#secondColumn {background-color: #E5EBE8;  display: block; float: left; margin-left: 4em; width: 65%; text-align: left; }
+#firstColumn { display: none; float: left; margin-left: 0.5em; width: 25%; }
+#secondColumn { display: block; float: left; margin-left: 4em; width: 65%; text-align: left; }
 .center { margin: 10px auto; }
-#thirdColumn { background-color: #E5EBE8; display: block; float: left; width: 27%; }
+#thirdColumn { display: block; float: left; width: 27%; }
 .newsBox { background-color: #94E8C1; border: 1px solid #6C6E72; border-style: dotted; color: red; margin: 0 0 0 2%; padding: 0 0 0 2%; }
 .profileBox { margin: 2% 2% 0 15%; padding: 0 0 0 2%; }
 
@@ -57,7 +57,7 @@ html[xmlns] .clear { display: block; }
 
 /*-----------------------Wrapper--------------------------------------------------*/
 
-.wrapper {display:block; text-align:left; width:100%; }
+.wrapper { background-color: #E5EBE8; display:block; text-align:left; width:100%; }
 
 .row1 {position: -webkit-sticky; position: sticky; top: 0;}
 .row2 {}
