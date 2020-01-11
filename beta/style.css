@@ -1,4 +1,4 @@
-/*-----------------------Desktop------------------*/
+/*-------------------General Settings-----------------------------*/
 #content { background-color: #2AA6EE; min-height: 100%; }
 html, body { color: #000000; font-size: 100%; min-height: 100%;  margin: 0; padding: 0; position: relative; overflow-x: hidden; width: 100%; }
 
@@ -16,7 +16,9 @@ a.content:hover, a.content:active { background-color: #24E28A; }
 a.repo:link { text-decoration: none; color: black; }
 a.repo:visited { text-decoration: none; color: blue; }
 a.repo:hover, a.repo:active { text-decoration: none; background-color: #24E28A; }
- 
+
+/*-----------------------------------------Desktop--------------------------------*/
+@media only screen and (min-width: 721px) {
 
 h3 { margin-top: 3.0em; line-height: 0.5; }
 h2 { margin-top: 2.0em; line-height: 0.5; }
@@ -54,3 +56,30 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 .clear { clear: both; display: block; width: 100%; }
 html[xmlns] .clear { display: block; }
 * html .clear { height: 1%; }
+}
+/*--------------------------------------Mobile------------------------------------------------*/
+@media only screen and (max-width: 720px) {
+
+#secondRow { background-color: #2AA6EE; color: #FFFFFF; font-size: 1.5em; text-align: center; padding-bottom: 0.5em; padding-top: 0.5em; }
+
+#thirdRow { background-color: #E5EBE8; }
+#firstColumn { display: none; float: left; margin-left: 0.5em; width: 100%; }
+#secondColumn { display: block; float: left; margin-bottom: 2em; margin-left: 4em; width: 100%; text-align: left; }
+.center { margin: 10px auto; }
+#thirdColumn { display: block; float: left; width: 100%; }
+.newsBox { background-color: #94E8C1; border: 1px solid #6C6E72; border-style: dotted; color: red; margin: 0 0 0 2%; padding: 0 0 0 2%; }
+.profileBox { margin: 2% 2% 0 10%; padding: 0 0 0 2%; }
+
+#fourthRow { background-color: #2AA6EE; bottom: 0; color: #D6DEE4; min-height: 100px; width: 100%; }
+
+#footer { font-size: 120%; padding-bottom: 0.2em; padding-top: 0.8em; text-align: center; }
+
+img.projectPics { height: auto; max-width: 80%; }
+figcaption.projects { font-size: smaller; text-align: left; text-indent: 0; }
+p.center { text-align: center; }
+p.status { color: #8B0000; font-weight: bold; font-style: italic; }
+
+figcaption.profile { font-size: smaller; font-style: italic; text-align: left; text-indent: 0; }
+img.profilePic { border-radius: 10%; height: auto; max-width: 100%; }
+.center_contact { text-align: center; }
+}
