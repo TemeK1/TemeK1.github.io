@@ -69,7 +69,7 @@ html[xmlns] .clear { display: block; }
 #thirdColumn { display: block; float: left; width: 100%; }
 .newsBox { background-color: #94E8C1; border: 1px solid #6C6E72; border-style: dotted; color: red; margin: 0 0 0 2%; padding: 0 0 0 2%; }
 .profileBox { display: none; }
-.profileBox_mobile { margin: 0 5% 0 5%; padding: 2% 0 0 0; }
+.profileBox_mobile { margin: 0 5% 0 2%; padding: 2% 0 0 0; }
 
 #fourthRow { background-color: #2AA6EE; bottom: 0; color: #D6DEE4; min-height: 100px; width: 100%; }
 
@@ -77,12 +77,12 @@ html[xmlns] .clear { display: block; }
 
 img.projectPics { height: auto; max-width: 80%; }
 figcaption.projects { font-size: smaller; text-align: left; text-indent: 0; }
-p.center { text-align: left; }
+p.center { text-align: center; }
 p.status { color: #8B0000; font-weight: bold; font-style: italic; }
 
 figcaption.profile { font-size: smaller; font-style: italic; text-align: center; text-indent: 0; }
 img.profilePic { border-radius: 10%; height: auto; width: 100%; }
-.center_contact { text-align: left; }
+.center_contact { text-align: center; }
 
 table { border-collapse: collapse; margin-left: auto; margin-right: auto; table-layout: fixed; width: 100%;  }
 th { color: blue; }
