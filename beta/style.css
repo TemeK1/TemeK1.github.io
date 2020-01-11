@@ -87,6 +87,7 @@ img.profilePic { border-radius: 10%; height: auto; width: 100%; }
 table { border-collapse: collapse; margin-left: auto; margin-right: auto; table-layout: fixed; width: 100%;  }
 th { color: blue; }
 th, td { text-align: left; padding: 8px; }
-tr:nth-child(even) { background-color: #f2f2f2; }
+tr:nth-child(even) { background-color: #f2f2f2; } 
+td:nth-child(2) { text-align: center; } 
 
 }
