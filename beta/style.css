@@ -34,7 +34,7 @@ h2.extraspace { margin-top: 1.0em; line-height: 0.5; }
 
 #fourthRow { background-color: #2AA6EE; bottom: 0; color: #D6DEE4; min-height: 100px; width: 100%; }
 
-#footer { font-size: 120%; padding-bottom: 1em; padding-top: 1em; text-align: center; }
+#footer { font-size: 120%; padding-bottom: 0.2em; padding-top: 0.8em; text-align: center; }
 
 img.projectPics { height: auto; max-width: 80%; }
 figcaption.projects { font-size: smaller; text-align: left; text-indent: 0; }
