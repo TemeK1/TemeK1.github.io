@@ -75,7 +75,7 @@ html[xmlns] .clear { display: block; }
 
 #footer { font-size: 120%; padding-bottom: 0.2em; padding-top: 0.8em; text-align: center; }
 
-img.projectPics { height: auto; max-width: 80%; }
+img.projectPics { height: auto; max-width: 100%; }
 figcaption.projects { font-size: smaller; text-align: left; text-indent: 0; }
 p.center { text-align: center; }
 p.status { color: #8B0000; font-weight: bold; font-style: italic; }
