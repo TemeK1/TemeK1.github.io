@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Teemu Käpylä | Portfolio </title>
+<meta name="keywords" content="portfolio, web-cv">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<base href="https://teemukapyla.fi/"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css" type="text/css" media="all">
+<link rel="stylesheet" href="assets/styles.css" type="text/css" media="all">
+<link rel="shortcut icon" href="favicon.ico">
+<script src="dynamic_content.js"></script>
+</head>
+<body>
+<div id="content">
+	<div id="myTopnav">
+	<ul>
+	<li><a href="">Home</a></li>
+	<li><a href="about">About</a></li>
+	<li><a class="active" href="cv">CV</a></li>
+	<li><a href="projects">Projects</a></li>
+	</ul>
+	</div>
+	<div id="secondRow">
+	<h4><i class="fa fa-book fa-2x"></i> CV</h4>
+	</div>
+	<div id="thirdRow" class="clear">
+		<div id="secondColumn">
+		<p>Here is an overview of my skill set. Including personal skills, programming languages and various tools of my choice and liking that I've been using during the studies. Relative and very subjective rating of my level is also included for each language and tool.</p>
+		<h3 align="center">Programming languages</h3>
+		<div id="app"></div>
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/prop-types@15.6.2/prop-types.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
+		<script src="https://unpkg.com/react-apexcharts@1.1.0/dist/react-apexcharts.iife.min.js"></script>
+
+		<script type="text/babel">
+
+		class DonutChart extends React.Component {
+
+			constructor(props) {
+			super(props);
+
+			this.state = {
+				options: {
+			labels: ["Java", "C#", "HTML", "CSS", "C++", "JSP", "Haskell"],
+				responsive: [{
+					breakpoint: 480,
+					options: {
+					chart: {
+						width: 200
+					},
+					legend: {
+						position: 'bottom'
+					}
+					}
+				}]
+				},
+				series: [40.1, 20, 15, 10, 5, 5, 4.9]
+			}
+			}
+
+			render() {
+			return (
+				<div>
+				<div id="chart">
+					<ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
+				</div>
+				<div id="html-dist">
+				</div>
+				</div>
+			);
+			}
+		}
+
+		const domContainer = document.querySelector('#app');
+		ReactDOM.render(React.createElement(DonutChart), domContainer);
+		</script>
+		<h3 align="center">Tools</h3>
+		<div id="app2"></div>
+        <div id="html">
+          &lt;div id=&quot;chart&quot;&gt;&#10;            &lt;ReactApexChart options={this.state.options} series={this.state.series} type=&quot;bar&quot; height=&quot;350&quot; /&gt;&#10;          &lt;/div&gt;
+        </div>
+        <script type="text/babel">
+
+			class BarChart extends React.Component {
+      
+				constructor(props) {
+				super(props);
+
+				this.state = {
+					options: {
+					plotOptions: {
+					bar: {
+						horizontal: true,
+					}
+					},
+					colors: ['#15d199'],
+					dataLabels: {
+					enabled: false
+					},
+					xaxis: {
+					categories: ['Eclipse', 'Drupal', 'Visual Studio', 'Atom', 'Robot Framework', 'Kali Linux', 'Debian Linux', 'VirtualBox', 'Microsoft Office' 
+					],
+					}
+				},
+				series: [{
+					data: [5, 4.5, 4.0, 3.5, 3.0, 2.5, 2.0, 2.5, 4.0]
+				}],
+				}
+			}
+
+			render() {
+				return (
+				<div>
+					<div id="chart">
+					<ReactApexChart options={this.state.options} series={this.state.series} type="bar" height="350" />
+					</div>
+					<div id="html-dist">
+					</div>
+				</div>
+				);
+			}
+			}
+
+			const domContainer = document.querySelector('#app2');
+			ReactDOM.render(React.createElement(BarChart), domContainer);
+
+		</script>
+		<h3 align="center">Languages</h3>
+				<div id="app3"></div>
+        <div id="html">
+          &lt;div id=&quot;chart&quot;&gt;&#10;            &lt;ReactApexChart options={this.state.options} series={this.state.series} type=&quot;bar&quot; height=&quot;350&quot; /&gt;&#10;          &lt;/div&gt;
+        </div>
+        <script type="text/babel">
+
+			class BarChart extends React.Component {
+      
+				constructor(props) {
+				super(props);
+
+				this.state = {
+					options: {
+					plotOptions: {
+					bar: {
+						horizontal: true,
+					}
+					},
+					colors: ['#15d199'],
+					dataLabels: {
+					enabled: false
+					},
+					xaxis: {
+					categories: ['Finnish', 'English', 'Swedish' 
+					],
+					}
+				},
+				series: [{
+					data: [5, 4.0, 1.0]
+				}],
+				}
+			}
+
+			render() {
+				return (
+				<div>
+					<div id="chart">
+					<ReactApexChart options={this.state.options} series={this.state.series} type="bar" height="350" />
+					</div>
+					<div id="html-dist">
+					</div>
+				</div>
+				);
+			}
+			}
+
+			const domContainer = document.querySelector('#app3');
+			ReactDOM.render(React.createElement(BarChart), domContainer);
+
+		</script>
+		<script>
+		function sortTable(n) {
+			var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+			table = document.getElementById("courses");
+			switching = true;
+			// Set the sorting direction to ascending:
+			dir = "asc";
+			/* Make a loop that will continue until
+			no switching has been done: */
+			while (switching) {
+			// Start by saying: no switching is done:
+			switching = false;
+			rows = table.rows;
+			/* Loop through all table rows (except the
+			first, which contains table headers): */
+			for (i = 1; i < (rows.length - 1); i++) {
+				// Start by saying there should be no switching:
+				shouldSwitch = false;
+				/* Get the two elements you want to compare,
+				one from current row and one from the next: */
+				x = rows[i].getElementsByTagName("TD")[n];
+				y = rows[i + 1].getElementsByTagName("TD")[n];
+				/* Check if the two rows should switch place,
+				based on the direction, asc or desc: */
+				if (dir == "asc") {
+					if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+						// If so, mark as a switch and break the loop:
+						shouldSwitch = true;
+						break;
+					}
+				} else if (dir == "desc") {
+					if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+						// If so, mark as a switch and break the loop:
+						shouldSwitch = true;
+						break;
+					}
+				  }
+			}
+			if (shouldSwitch) {
+				/* If a switch has been marked, make the switch
+				and mark that a switch has been done: */
+				rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+				switching = true;
+				// Each time a switch is done, increase this count by 1:
+				switchcount ++;
+			} else {
+				/* If no switching has been done AND the direction is "asc",
+				set the direction to "desc" and run the while loop again. */
+				if (switchcount == 0 && dir == "asc") {
+					dir = "desc";
+					switching = true;
+				}
+			 }
+			}
+		}
+		</script>
+		<table id="courses">
+		<tr>
+		<th onclick="sortTable(0)">Course <i class="fa fa-sort"></i></i></th>
+		<th onclick="sortTable(1)">Credits <i class="fa fa-sort"></i></th>
+		<th onclick="sortTable(2)">Tools <i class="fa fa-sort"></i></th>
+		</tr>
+		<tr>
+		<td>System Vulnerabilities</td>
+		<td>5</td>
+		<td>Kali, Debian, VirtualBox</td>
+		</tr>
+		<tr>
+		<td>Software Testing</td>
+		<td>5</td>
+		<td>Robot Framework, Eclipse</td>
+		</tr>
+		<tr>
+		<td>Object Oriented Programming (OOP)</td>
+		<td>3</td>
+		<td>Pharo</td>
+		</tr>
+		<tr>
+		<td>Functional Programming</td>
+		<td>3</td>
+		<td>Atom, Haskell</td>
+		</tr>
+		<tr>
+		<td>Programming 2</td>
+		<td>8</td>
+		<td>Eclipse, Java</td>
+		</tr>
+		<tr>
+		<td>Research Methods of Information Technology</td>
+		<td>3</td>
+		<td>-</td>
+		</tr>
+		<tr>
+		<td>Programming 2, Java and Databases</td>
+		<td>1</td>
+		<td>Eclipse, Java, SQlite</td>
+		</tr>
+		<tr>
+		<td>Programming 2, JSP</td>
+		<td>1</td>
+		<td>Eclipse, Java, JSP, Apache Tomcat</td>
+		</tr>
+		<tr>
+		<td>Programming 2, C++</td>
+		<td>1</td>
+		<td>C++</td>
+		</tr>
+		<tr>
+		<td>Data Networks</td>
+		<td>5</td>
+		<td>Visual Studio, C#, Wireshark</td>
+		</tr>
+		<tr>
+		<td>Algorithms 2</td>
+		<td>4</td>
+		<td>-</td>
+		</tr>
+		<tr>
+		<td>Operating Systems</td>
+		<td>5</td>
+		<td>Linux, SSH, C, Assembly</td>
+		</tr>
+		<tr>
+		<td>Programming 1</td>
+		<td>6</td>
+		<td>Visual Studio, C#</td>
+		</tr>
+		<tr>
+		<td>Algorithms 1</td>
+		<td>4</td>
+		<td>-</td>
+		</tr>
+		<tr>
+		<td>Computer and Network as a tool</td>
+		<td>2</td>
+		<td>-</td>
+		</tr>
+		<tr>
+		<td>Web-publishing</td>
+		<td>2</td>
+		<td>HTML, CSS</td>
+		</tr>
+		<tr>
+		<td>Orientating Studies</td>
+		<td>2</td>
+		<td>-</td>
+		</tr>
+		</table>
+		</div>
+		<div id="thirdColumn">
+			<div class="profileBox">
+            <div data-include="profile.html"></div>
+			</div>
+		</div>
+	</div>
+	<div id="fourthRow">
+		<footer id="footer" class="clear">
+		&copy; Teemu Käpylä
+		</footer>
+	</div>
+</div>
+<script>
+IncludeHTML();
+</script>
+</body>
+</html>
