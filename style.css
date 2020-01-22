@@ -13,9 +13,9 @@ li a:hover:not(.active) { background-color: #111; }
 a.content:link, a.content:visited { background-color: #E5EBE8; border: 1px solid green; border-style: dotted; color: green; padding: 0.5em 0.5em; text-align: center; text-decoration: none; display: inline-block; }
 a.content:hover, a.content:active { background-color: #24E28A; }
 
-a.repo:link { text-decoration: none; color: blue; }
-a.repo:visited { text-decoration: none; color: blue; }
-a.repo:hover, a.repo:active { text-decoration: none; background-color: #24E28A; }
+a.hyperosoite:link { text-decoration: none; color: blue; }
+a.hyperosoite:visited { text-decoration: none; color: blue; }
+a.hyperosoite:hover, a.hyperosoite:active { text-decoration: none; background-color: #24E28A; }
 
 /*-----------------------------------------Desktop--------------------------------*/
 @media only screen and (min-width: 721px) {
@@ -87,6 +87,6 @@ img.profilePic { border-radius: 10%; height: auto; width: 100%; }
 table { border-collapse: collapse; margin-left: auto; margin-right: auto; table-layout: fixed; width: 100%;  }
 th { color: blue; }
 th, td { text-align: left; padding: 8px; }
-tr:nth-child(even) { background-color: #f2f2f2; } 
-td:nth-child(2) { text-align: center; } 
+tr:nth-child(even) { background-color: #f2f2f2; }
+td:nth-child(2) { text-align: center; }
 }
