@@ -1,3 +1,5 @@
-function vaihdaTausta() {
-    document.getElementById("content").style.background.color = "red";
-}
+$('#vaihdaTausta').click(function() {
+    $('#content').css({
+        'background-color': 'red'
+    });
+  });
