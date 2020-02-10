@@ -1,3 +1,3 @@
 function vaihdaTausta() {
-    document.getElementById("tausta").style.background.color = "red";
+    document.getElementById("content").style.background.color = "red";
 }
