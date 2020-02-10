@@ -15,6 +15,9 @@
 <script src="dynamic_content.js"></script>
 <script src="background_color.js"></script>
 <style>
+#nappula1 {
+	background-color: red;
+}
 #nappula {
 	background-color: green;
 }
@@ -35,7 +38,7 @@
 	</div>
 	<div id="thirdRow" class="clear">
 		<div id="secondColumn">
-	  <button @click="vaihdaTausta" id="nappula">Vaihda taustaväri</button>
+	  <button onclick="vaihdaTausta()" id="nappula">Vaihda taustaväri</button>
 		</div>
 		<div id="thirdColumn">
 		</div>

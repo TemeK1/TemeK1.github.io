@@ -1,3 +1,3 @@
 function vaihdaTausta() {
-  document.getElementById("nappula").style.background.color= "red";
+  document.getElementById("nappula").className= "nappula1";
 }
