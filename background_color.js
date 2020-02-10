@@ -1,5 +1,5 @@
 $('#vaihdaTausta').click(function() {
-    $('#content').css({
-        'background-color': 'red'
+    $('#vaihdaTausta').css({
+        'color': 'red'
     });
 });
