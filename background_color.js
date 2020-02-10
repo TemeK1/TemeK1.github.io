@@ -1,5 +1,6 @@
 $('#vaihdaTausta').click(function() {
     $('#vaihdaTausta').css({
-        'color': 'red'
+        'color': 'red',
+        'background-color': 'red'
     });
 });
