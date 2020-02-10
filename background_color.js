@@ -1,6 +1,3 @@
-$('#vaihdaTausta').click(function() {
-    $('#vaihdaTausta').css({
-        'color': 'red',
-        'background-color': 'red'
-    });
-});
+function vaihdaTausta() {
+  document.getElementByid("nappula").style.background_color= "red";
+}
