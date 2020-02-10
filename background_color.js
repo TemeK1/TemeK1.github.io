@@ -1,3 +1,3 @@
 window.onload = function vaihdaTausta() {
-  document.getElementByid("nappula").style.background.color= "red";
+  document.getElementById("nappula").style.background.color= "red";
 }
