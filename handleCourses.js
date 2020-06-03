@@ -57,6 +57,10 @@ function sortTable(n) {
 
 function haeKurssit() {
   let table = document.getElementById('courses');
+  let points = 0,
+      credits = 0,
+      creditsTotal = 0;
+
   console.log(courses[0].name);
   for (let i = 0; i < courses.length; i++) {
     let tr1 = document.createElement('tr'),
@@ -77,6 +81,15 @@ function haeKurssit() {
     td3.appendChild(txt3);
     td4.appendChild(txt4);
     table.appendChild(tr1);
+
+    if (parseInt(courses[i].grade)) {
+      credits += parseInt(courses[i].credits);
+      points += parseInt(courses[i].credits);
+    }
+    creditsTotal += parseInt(courses[i].credits);
+
+    console.log(points/credits);
+
   }
 }
 
