@@ -23,6 +23,11 @@ a.hyperosoite:hover, a.hyperosoite:active { text-decoration: none; background-co
   width: 100%;
 }
 
+.dices img {
+  width: 10%;
+  height: 10%;
+}
+
 /*-----------------------------------------Desktop--------------------------------*/
 @media only screen and (min-width: 721px) {
 
