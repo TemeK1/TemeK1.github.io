@@ -144,7 +144,3 @@ var courses = [
   "grade": "P",
   "note": "-"
 }]
-
-
-
-]
