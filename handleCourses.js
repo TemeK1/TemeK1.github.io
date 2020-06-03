@@ -76,7 +76,7 @@ function haeKurssit() {
     td2.appendChild(txt2);
     td3.appendChild(txt3);
     td4.appendChild(txt4);
-
+    table.appendChild(tr1);
   }
 }
 
