@@ -55,7 +55,11 @@ function sortTable(n) {
   }
 }
 
-function haeKurssit() {
+/*
+* Function searches for the courses from the data structure and appends them one by one on the table of CV page.
+* Also calculates for the weighed average of grades.
+*/
+function searchCourses() {
   let table = document.getElementById('courses');
   let points = 0,
       credits = 0,
@@ -94,5 +98,5 @@ function haeKurssit() {
 }
 
 window.onload = function() {
-  haeKurssit();
+  searchCourses();
 }
