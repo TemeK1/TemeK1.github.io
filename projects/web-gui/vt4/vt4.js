@@ -377,8 +377,8 @@ window.onload = function() {
     flakes.push(document.getElementsByName('snowflake')[0]); //kaikkien hiutaleiden äiti, josta muut sitten lopulta kloonataan
     luoPupu();
     luoPalkit(); //horisontaaliset, vertikaalisesti liikkuvat gradienttipalkit
-    luoLumisade(); //kutsutaan hiutaleiden luojaa
-    tarkistaHiutaleet(); //kutsutaan hiutaleiden päällekkäisyystarkastelijaa
+    //luoLumisade(); //kutsutaan hiutaleiden luojaa
+    //tarkistaHiutaleet(); //kutsutaan hiutaleiden päällekkäisyystarkastelijaa
     asetaSkrolleri(); //gradienttiskrolleri tekstille
     asetaSiniSkrolleri(); //sinuskrollerin alustus samalle tekstille
     let polloPainike = document.getElementById('addOwl');
