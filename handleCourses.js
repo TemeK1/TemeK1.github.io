@@ -88,7 +88,8 @@ function haeKurssit() {
     creditsTotal += parseInt(courses[i].credits);
 
   }
-  console.log(points/credits);
+  let div = document.getElementById('average');
+  div.appendChild("Weighed Average: " + points/credits);
 }
 
 window.onload = function() {
