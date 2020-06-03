@@ -93,7 +93,7 @@ function searchCourses() {
 
   }
   let div = document.getElementById('average');
-  let teksti = document.createTExtNode("Weighed Average: " + points/credits);
+  let teksti = document.createTextNode("Weighed Average: " + points/credits);
   div.appendChild(teksti);
 }
 
