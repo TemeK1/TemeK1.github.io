@@ -84,13 +84,12 @@ function haeKurssit() {
 
     if (parseInt(courses[i].grade)) {
       credits += parseInt(courses[i].credits);
-      points += parseInt(courses[i].credits);
+      points += parseInt(courses[i].credits) * parseInt(courses[i].grade);
     }
     creditsTotal += parseInt(courses[i].credits);
 
-    console.log(points/credits);
-
   }
+  console.log(points/credits);
 }
 
 window.onload = function() {
