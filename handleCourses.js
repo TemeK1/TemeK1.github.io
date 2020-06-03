@@ -61,7 +61,6 @@ function haeKurssit() {
       credits = 0,
       creditsTotal = 0;
 
-  console.log(courses[0].name);
   for (let i = 0; i < courses.length; i++) {
     let tr1 = document.createElement('tr'),
         td1 = document.createElement('td'),
