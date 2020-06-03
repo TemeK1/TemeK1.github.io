@@ -89,7 +89,8 @@ function haeKurssit() {
 
   }
   let div = document.getElementById('average');
-  div.appendChild("Weighed Average: " + points/credits);
+  let teksti = document.createTExtNode("Weighed Average: " + points/credits);
+  div.appendChild(teksti);
 }
 
 window.onload = function() {
