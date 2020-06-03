@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head><!-- head-osan sisältöä ei saa muuttaa -->
+        <script src="http://appro.mit.jyu.fi/tiea2120/vt/vt1/2019/data.js"></script>
+        <script src="vt3.js"></script>
+        <link rel="StyleSheet" href="tyylit.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8"/>
+        <title>Tulospalvelu</title>
+    </head>
+    <body><!-- Tämän tiedoston sisältöä saa muuttaa vapaasti tästä kommentista eteenpäin ! -->
+       <h1>Tulospalvelu</h1>
+       <section class="container">
+         <div id="right">
+            <div id="joukkueet">
+            </div>
+         </div>
+          <div id="left">
+             <h2>Lisää joukkue</h2>
+             <p id="joukkueLisatty"></p>
+             <form id="joukkueForm" action="ei_ole.html" method="post">
+                <fieldset id="tiedot">
+                   <legend>Joukkueen tiedot</legend>
+                   <div id="jNimi"><label id="nimi"> Nimi <input type="text" name="jNimi" minlength="2" placeholder="" required="required" /></label></div>
+                   <div id="lTapa">
+                     <p>Leimaustapa</p>
+                     <div class="flex"></div>
+                   </div>
+                   <div id="sDiv">
+                     <p>Sarja</p>
+                     <div class="flex"></div>
+                   </div>
+                </fieldset>
+                <fieldset id="jasenet">
+                   <legend>Jäsenet</legend>
+                </fieldset>
+                <fieldset id="leimaukset">
+                  <legend>Rastileimaukset</legend>
+                  <div id="rLeimaukset">
+                    <table id="tLeimaukset">
+                      <tr id="otsakeRivi"><th><strong>Rasti</strong></th><th><strong>Aika</strong></th><th><strong>Poista</strong></th></tr>
+                    </table>
+                  </div>
+                </fieldset>
+                <button id="tallennus">Tallenna</button>
+            </form>
+            <h2>Lisää sarja</h2>
+            <p id ="sarjaLisatty"></p>
+            <form id="sarjaForm" action="ei_ole.html" method="post">
+               <fieldset id="sarja">
+                 <legend>Sarjan tiedot</legend>
+                 <p><label id="sarjaNimi"> Nimi <input type="text" name="sNimi" minlength="2" required="required" /></label></p>
+                 <p><label id="sarjaKesto"> Kesto <input type="number" name="sKesto" min="1" required="required" /></label></p>
+                 <p><label id="sarjaAlkuaika"> Alkuaika <input type="datetime-local" name="sAlkuaika" step="1" /></label></p>
+                 <p><label id="sarjaLoppuaika"> Loppuaika <input type="datetime-local" name="sLoppuaika" step="1" /></label></p>
+               </fieldset>
+               <button id="sarjanTallennus">Tallenna</button>
+            </form>
+         </div>
+      </section>
+<script src="http://appro.mit.jyu.fi/tools/htmlinspector/html-inspector.js"></script>
+<script>// yksinkertaisin tapa kutsua inspectoria on: HTMLInspector.inspect()
+window.addEventListener("load",  function() { HTMLInspector.inspect( {domRoot: "html",useRules: null,excludeRules: ["script-placement"],excludeElements: "svg",excludeSubTrees: ["svg","iframe"],onComplete: function(errors) { errors.forEach(function(error) {console.warn(error.message, error.context)})}} );});</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jshint/2.11.0/jshint.js"></script>
+<script src="http://appro.mit.jyu.fi/tools/jshint/jshint.user.js"></script>
+</body>
+</html>

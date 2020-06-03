@@ -1,0 +1,160 @@
+
+html, body {
+  background-color: black;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+canvas {
+  background-color: transparent;
+}
+
+
+#content {
+  background-color: black;
+  overflow: hidden;
+}
+
+#addOwl {
+  top: 0;
+  position: absolute;
+  margin-left: 90%;
+  width: 10%;
+  z-index: 5;
+}
+
+.palkki {
+  top: -20%;
+  animation: forBar 8s infinite;
+  animation-timing-function: cubic-bezier(0.50,0,0.50,1);
+  position: absolute;
+  z-index: 0;
+}
+
+.stop1 {
+  stop-color: black;
+}
+
+.stop2 {
+  stop-color: yellow;
+}
+
+.stop3 {
+  stop-color: black;
+}
+
+#pupuUp {
+  position: absolute;
+  animation: forBunnyUp 6s infinite;
+  animation-timing-function: cubic-bezier(0.50,0,0.50,1);
+  z-index: 2;
+}
+
+#pupuDown {
+  position: absolute;
+  animation: forBunnyDown 6s infinite;
+  animation-timing-function: cubic-bezier(0.50,0,0.50,1);
+  z-index: 2;
+}
+
+#skrolleri {
+  position: absolute;
+  z-index: 4;
+}
+
+#siniSkrolleri {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 80%;
+  z-index: 4;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10%;
+  animation: forSnow 18s linear;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+.owl0 {
+  position: absolute;
+  animation: forOwl 4s linear infinite;
+  z-index: 3;
+}
+
+.owl1 {
+  position: absolute;
+  animation: forOwl 4s ease-in infinite;
+  z-index: 3;
+}
+
+.owl2 {
+  position: absolute;
+  animation: forOwl 4s ease-out infinite;
+  z-index: 3;
+}
+
+.owl3 {
+  position: absolute;
+  animation: forOwl 4s ease-in-out infinite;
+  z-index: 3;
+}
+
+.owl4 {
+  position: absolute;
+  animation: forOwl 4s steps(5, end) infinite;
+  z-index: 3;
+}
+
+@keyframes forOwl {
+  0%   { left: 0; top: 0; }
+  25%  { left: calc(100% - 95px); top: 0; }
+  50%  { left: calc(100% - 95px); top: calc(100% - 93px); }
+  75%  { left: 0; top: calc(100% - 93px); }
+  100% { left: 0; top: 0; }
+}
+
+@keyframes forBar {
+  0%   { left: 0; top: 100%; }
+  50%  { left: 0; top: 0; }
+  100% { left: 0; top: 100%; }
+}
+
+
+@keyframes forBunnyUp {
+  0%   { left: calc(50% - 192px); top: calc(50% - 300px); }
+  50%  { left: calc(50% - 192px); top: 0; }
+  100% { left: calc(50% - 192px); top: calc(50% - 300px); }
+}
+
+@keyframes forBunnyDown {
+  0%   { left: calc(50% - 192px); top: 50%; }
+  50%  { left: calc(50% - 192px); top: calc(100% - 300px); }
+  100% { left: calc(50% - 192px); top: 50%; }
+}
+
+@keyframes forSnow {
+  0%   { top: -10%; }
+  100% { top: calc(100% - 30px); }
+}
+
+
+@media all and (max-width: 600px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #addOwl {
+    margin-left: 80%;
+    width: 20%;
+  }
+
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+   <title>VT4</title>
+   <script src="vt4.js"></script>
+   <link rel="stylesheet" href="tyylit.css" type="text/css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta charset="utf-8"/>
+</head>
+<body>
+  <div id="content">
+     <canvas id="siniSkrolleri" width="20" height="20"></canvas>
+     <canvas id="pupuUp" width="20" height="20"></canvas>
+     <canvas id="pupuDown" width="20" height="20"></canvas>
+     <canvas id="skrolleri" width="20" height="20"></canvas>
+     <object type="image/svg+xml" data="owl.svg" class="owl0" name="owl"></object>
+     <object type="image/svg+xml" data="snowflake2.svg" class="snowflake" name="snowflake"></object>
+     <button id="addOwl">Lisää pöllö</button>
+  </div>
+  <svg width="120" height="240" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="liukuvari" x1="0" x2="0" y1="0" y2="1">
+          <stop class="stop1" offset="0"/>
+          <stop class="stop2" offset="50%"/>
+          <stop class="stop3" offset="100%"/>
+        </linearGradient>
+    </defs>
+  </svg>
+</body>
+</html>

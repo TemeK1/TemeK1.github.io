@@ -1,0 +1,86 @@
+body {
+  overflow-x: hidden;
+  font-size: 100%;
+}
+
+#map {
+ margin: 0 0 0 0;
+}
+
+.container {
+  margin: 0 5% 2% 5%;
+  display: flex;
+  position: relative;
+}
+
+.container #left {
+  flex-grow: 1.5;
+  order: 0;
+  float: left;
+  position: relative;
+}
+
+.container #right {
+  flex-grow: 2.5;
+  order: 1;
+  float: left;
+  position: relative;
+}
+
+.tooltip {
+  background-color: green !important;
+  border: none !important;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+#right {
+  min-height: 40%;
+  margin-left: 2.5%;
+  max-width: 35%;
+  margin-bottom: 5%;
+}
+
+#left {
+  min-height: 40%;
+  margin-left: 15%;
+  margin-right: 2.5%;
+  max-width: 35%;
+  margin-bottom: 5%;
+}
+
+#right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+
+#left ul ul {
+  border: 1px solid black;
+  padding-left: 1%;
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  border: 1px solid black;
+  list-style-type: none;
+}
+
+#joukkueet {
+  width: 100%;
+  height: 100%;
+}
+
+#vJoukkueet {
+  width: 100%;
+  height: 100%;
+}
+
+summary {
+  background-color: white;
+  color: blue;
+}

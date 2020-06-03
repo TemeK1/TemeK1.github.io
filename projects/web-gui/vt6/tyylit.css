@@ -1,0 +1,205 @@
+.container .right ul li ul {
+  list-style-type: square;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+.koodiInput {
+  display: none;
+}
+
+
+@media all and (min-width: 601px) {
+
+  body {
+    overflow-x: hidden;
+    font-size: 100%;
+  }
+
+  h1 {
+    margin-left: 0.5em;
+  }
+  .container {
+    margin-left: 1em;
+    display: flex;
+  }
+
+  .container .left {
+    flex-grow: 3.0;
+    order: 0;
+    float: none;
+  }
+
+
+  .container .right {
+    flex-grow: 0.5;
+    order: 1;
+  }
+
+  .container .right2 {
+    flex-grow: 0.4;
+    order: 2;
+  }
+
+  #tiedot .nimi input {
+    float: right;
+    margin-bottom: 3em;
+  }
+
+  .jNimi {
+    margin-bottom: 1.5em;
+    margin-right: 3.5em;
+  }
+
+  .lTapa {
+    margin-bottom: 2.0em;
+    margin-right: 3.5em;
+  }
+
+  .sDiv {
+    margin-right: 3.5em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+  }
+
+  .jasenet input {
+    float: right;
+  }
+
+  button {
+    margin-top: 0.1em;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .flex label {
+    align-self: flex-end;
+    flex-direction: row;
+  }
+
+}
+
+
+@media all and (max-width: 600px) {
+
+   body {
+     overflow-x: hidden;
+     font-size: 100%;
+   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  h1 {
+    margin-bottom: 0.1em;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .flex input {
+    align-self: flex-start;
+    float: right;
+  }
+
+  .left {
+    order: 0;
+    width: auto;
+  }
+
+  .right {
+    order: 1;
+    width: auto;
+  }
+
+  .right2 {
+    order: 2;
+    width: auto;
+  }
+
+  .koodiInput {
+    display: none;
+  }
+
+  .jNimi {
+    margin-bottom: 1.5em;
+  }
+
+  #leimaus {
+    margin-bottom: 1.5em;
+  }
+
+  button {
+    margin-top: 0.1em;
+  }
+
+}
+
+/*
+En ehtinyt saada tätä vitostason viimeistä vaatimusta (flex-wrap) toimimaan niin kauniisti kuin olisi tarvinnut,
+joten katsoin parhaimmaksi pistää kommentiksi.
+*/
+/*@media all and (min-width: 1200px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container #left {
+    flex-grow: 0.5;
+    order: 2;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .container #right {
+    flex-grow: 3.5;
+    height: 100%;
+    order: 1;
+  }
+
+  #right {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #right #joukkueet #joukkueLista li {
+    flex-grow: 1;
+    display: inline-block;
+    margin: 0.2em;
+    width: 20%;
+
+  }
+
+  #left {
+    display: flex;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  #left #joukkueForm {
+    order: 1;
+  }
+
+  #left #sarjaForm {
+    order: 0;
+  }
+}
+*/
