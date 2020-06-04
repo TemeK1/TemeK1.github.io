@@ -4,7 +4,7 @@ function rollDice(size) {
   let luku = 1;
   let dResult = document.getElementById('result');
   if (dResult.firstChild) {
-    dResult.removeChild(dResult.firstChild);  
+    dResult.removeChild(dResult.firstChild);
   }
   luku += Math.floor(Math.random() * size);
 
@@ -16,6 +16,7 @@ function rollDice(size) {
 
 function diceListeners() {
   let divDice = document.getElementById('dices');
+  let toggle = document.getElementById('toggleDice');
 
   let dices = divDice.getElementsByTagName('img');
 
@@ -26,6 +27,13 @@ function diceListeners() {
       rollDice(sides);
     });
   }
+
+  toggle.addEventListener("click", function(e) {
+    e.preventDefault();
+    divDice.setAttribute('class', 'hidden');
+    rollDice(sides);
+  });
+
 
 }
 

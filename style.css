@@ -30,6 +30,10 @@ a.hyperosoite:hover, a.hyperosoite:active { text-decoration: none; background-co
   height: 10%;
 }
 
+.hidden {
+  display: none;
+}
+
 /*-----------------------------------------Desktop--------------------------------*/
 @media only screen and (min-width: 721px) {
 
