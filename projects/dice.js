@@ -14,7 +14,8 @@ function diceListeners() {
   for (let i = 0; i < dices.length; i++) {
     dices[i].addEventListener("click", function(e) {
       e.preventDefault();
-      let sides = parseInt(dices[i].getAttribute('alt'));
+      console.log(dices[i].alt);
+      let sides = parseInt(dices[i].alt);
       rollDice(sides);
     });
   }
