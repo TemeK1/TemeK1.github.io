@@ -2,8 +2,13 @@
 
 function rollDice(size) {
   let luku = 1;
+  let dResult = document.getElementById('result');
   luku += Math.floor(Math.random() * size);
-  console.log(luku);
+
+  let teksti = document.createTextNode("R: " + luku);
+  let p = document.createElement('p');
+  p.appendChild(teksti);
+  dResult.appendChild(p);  
 }
 
 function diceListeners() {
