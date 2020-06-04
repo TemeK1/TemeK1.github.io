@@ -40,9 +40,16 @@ a.hyperosoite:hover, a.hyperosoite:active { text-decoration: none; background-co
 
 .hidden { display: none; }
 
-p.centerDice { color: white; text-align: center; }
+p.centerDice { animation-name: dice; animation-duration: 2s; color: white; text-align: center; }
 
 p.center { text-align: center; }
+
+/* The animation code */
+@keyframes dice {
+  from {background-color: white;}
+  to {background-color: blue;}
+}
+
 
 /*-----------------------------------------Desktop--------------------------------*/
 @media only screen and (min-width: 721px) {
