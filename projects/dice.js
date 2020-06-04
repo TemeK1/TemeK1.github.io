@@ -3,11 +3,8 @@
 function rollDice(size) {
   let luku = 1;
   let dResult = document.getElementById('result');
+  dResult.removeChild(dResult.firstChild);
   luku += Math.floor(Math.random() * size);
-
-  if (dResult.getElementsByTagName('p').length >= 5) {
-    dResult.removeChild(dResult.getElementsByTagName('p')[0]);
-  }
 
   let teksti = document.createTextNode("1d" + size + ": " + luku);
   let p = document.createElement('p');
