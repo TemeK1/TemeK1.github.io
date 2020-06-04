@@ -5,10 +5,14 @@ function rollDice(size) {
   let dResult = document.getElementById('result');
   luku += Math.floor(Math.random() * size);
 
-  let teksti = document.createTextNode("R: " + luku);
+  if (dResult.getElementsByTagName('p') >= 5) {
+    dResult.removeChild(dResult.getElementsByTagName('p')[0]);
+  }
+
+  let teksti = document.createTextNode("1d" + size + ": " + luku);
   let p = document.createElement('p');
   p.appendChild(teksti);
-  dResult.appendChild(p);  
+  dResult.appendChild(p);
 }
 
 function diceListeners() {
