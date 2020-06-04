@@ -40,7 +40,7 @@ a.hyperosoite:hover, a.hyperosoite:active { text-decoration: none; background-co
 
 .hidden { display: none; }
 
-p.centerDice { animation: dice 1s infinite; color: white; text-align: center; }
+p.centerDice { animation: dice 3s infinite; color: white; text-align: center; }
 
 p.center { text-align: center; }
 
