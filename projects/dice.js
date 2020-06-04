@@ -30,8 +30,11 @@ function diceListeners() {
 
   toggle.addEventListener("click", function(e) {
     e.preventDefault();
+    if (document.getElementsByClassName('hidden')) {
+      divDice.classList.remove('hidden');
+      return;
+    }
     divDice.setAttribute('class', 'hidden');
-    rollDice(sides);
   });
 
 
