@@ -30,7 +30,7 @@ function diceListeners() {
 
   toggle.addEventListener("click", function(e) {
     e.preventDefault();
-    if (document.getElementsByClassName('hidden')) {
+    if (document.getElementsByClassName('hidden').length > 0) {
       divDice.classList.remove('hidden');
       return;
     }
