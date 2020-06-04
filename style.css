@@ -40,14 +40,15 @@ a.hyperosoite:hover, a.hyperosoite:active { text-decoration: none; background-co
 
 .hidden { display: none; }
 
-p.centerDice { animation: dice 1.66s infinite; color: white; text-align: center; }
+p.centerDice { animation: dice 1.66s infinite; animation-timing-function: cubic-bezier(0.50,0,0.50,1); color: white; text-align: center; }
 
 p.center { text-align: center; }
 
 /* The animation code */
 @keyframes dice {
-  from {color: black;}
-  to {color: blue;}
+  0% {color: black;}
+  50% {color: blue;}
+  100%   { Color: black; }
 }
 
 
