@@ -46,7 +46,7 @@ p.center { text-align: center; }
 
 /* The animation code */
 @keyframes dice {
-  from {color: white;}
+  from {color: black;}
   to {color: blue;}
 }
 
