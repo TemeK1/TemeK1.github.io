@@ -30,6 +30,13 @@ a.hyperosoite:hover, a.hyperosoite:active { text-decoration: none; background-co
   height: 10%;
 }
 
+#result {
+  border-style: dashed;
+  border-size: 0.5em;
+  background-color: #03FC6B;
+  padding: 0.5em;
+}
+
 .hidden {
   display: none;
 }
