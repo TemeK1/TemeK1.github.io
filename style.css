@@ -38,9 +38,11 @@ a.hyperosoite:hover, a.hyperosoite:active { text-decoration: none; background-co
   width: 20%;
 }
 
-.hidden {
-  display: none;
-}
+.hidden { display: none; }
+
+p.centerDice { color: white; }
+
+p.center { text-align: center; }
 
 /*-----------------------------------------Desktop--------------------------------*/
 @media only screen and (min-width: 721px) {
@@ -66,7 +68,6 @@ h2.extraspace { margin-top: 1.0em; line-height: 0.5; }
 
 img.projectPics { height: auto; max-width: 80%; }
 figcaption.projects { font-size: smaller; text-align: left; text-indent: 0; }
-p.center { text-align: center; }
 p.status { color: #8B0000; font-weight: bold; font-style: italic; }
 
 figcaption.profile { font-size: smaller; font-style: italic; text-align: left; text-indent: 0; }
@@ -102,7 +103,6 @@ html[xmlns] .clear { display: block; }
 
 img.projectPics { height: auto; max-width: 100%; }
 figcaption.projects { font-size: smaller; text-align: left; text-indent: 0; }
-p.center { text-align: center; }
 p.status { color: #8B0000; font-weight: bold; font-style: italic; }
 
 figcaption.profile { font-size: smaller; font-style: italic; text-align: center; text-indent: 0; }
