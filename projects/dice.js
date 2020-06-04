@@ -5,7 +5,7 @@ function rollDice(size) {
   let dResult = document.getElementById('result');
   luku += Math.floor(Math.random() * size);
 
-  if (dResult.getElementsByTagName('p') >= 5) {
+  if (dResult.getElementsByTagName('p').length >= 5) {
     dResult.removeChild(dResult.getElementsByTagName('p')[0]);
   }
 
