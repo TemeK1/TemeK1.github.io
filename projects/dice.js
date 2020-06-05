@@ -26,6 +26,7 @@ class Dice extends React.Component {
   }
 
   changeStatus() {
+    console.log("asd");
     if (this.state.status == 'hidden') {
       this.setState({
         "status": ''
