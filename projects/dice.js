@@ -30,10 +30,12 @@ class Dice extends React.Component {
     if (this.state.status == 'hidden') {
       this.setState({
         "status": ''
-      })
+      }, function () {
+        this.updateItem(this.state);
+      }.bind(this));
     } else {
       this.setState({
-          status: hidden
+          status: "hidden"
       }, function () {
         this.updateItem(this.state);
       }.bind(this));
