@@ -80,13 +80,12 @@ class Dice extends React.Component {
 
     return (
       <div>
-
-        <img src={require('projects/img/d4.png')}  alt="4" />
-        <img src={require('projects/img/d6.png')}  alt="6" />
-        <img src={require('projects/img/d8.png')}  alt="8" />
-        <img src={require('projects/img/d10.png')} alt="10" />
-        <img src={require('projects/img/d12.png')} alt="12" />
-        <img src={require('projects/img/d20.png')} alt="20" />
+        <p onClick={this.changeStatus}>4</p>
+        <p>6</p>
+        <p>8</p>
+        <p>10</p>
+        <p>12</p>
+        <p>20</p>
       </div>
     );
   }
