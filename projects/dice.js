@@ -1,17 +1,5 @@
 "use strict";
 
-class App extends React.Component {
-    constructor(props) {
-      super(props);
-    }
-
-    render() {
-      return (
-        <Dice />
-      );
-    }
-}
-
 class Dice extends React.Component {
   constructor(props) {
     super(props);
@@ -65,10 +53,6 @@ class Dice extends React.Component {
 
    rollDice(size) {
       let luku = 1;
-      let dResult = document.getElementById('result');
-      if (dResult.firstChild) {
-        dResult.removeChild(dResult.firstChild);
-      }
       luku += Math.floor(Math.random() * size);
 
       console.log(luku);
@@ -101,7 +85,7 @@ class Dice extends React.Component {
 
 ReactDOM.render(
     <div>
-    <App />
+    <Dice />
     </div>,
   document.getElementById('mainDice')
 );
