@@ -7,18 +7,42 @@ class App extends React.Component {
 
     render() {
       return (
-        <div>joo11</div>
+        <Dice />
       );
     }
 }
+
+import dice4 from 'projects/img/d4.png';
+import dice6 from 'projects/img/d6.png';
+import dice8 from 'projects/img/d8.png';
+import dice10 from 'projects/img/d10.png';
+import dice12 from 'projects/img/d12.png';
+import dice20 from 'projects/img/d20.png';
 
 class Dice extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      "size": 0,
+      "status": "hidden"
+    }
+
     this.rollDice = this.rollDice.bind(this);
+    this.changeStatus = this.changeStatus.bind(this);
   }
 
+  changeStatus() {
+    if (this.state.status == 'hidden') {
+      this.setState({
+        "status": ''
+      })
+    } else {
+      this.setState({
+        "status": "hidden"
+      })
+    }
+  }
 
     rollDice(size) {
       let luku = 1;
@@ -60,8 +84,16 @@ class Dice extends React.Component {
     }
 
   render() {
+
     return (
-      <div>joo</div>
+      <div>
+        <img src={dice4} alt="4" />
+        <img src={dice6} alt="6" />
+        <img src={dice8} alt="8" />
+        <img src={dice10} alt="10" />
+        <img src={dice12} alt="12" />
+        <img src={dice20} alt="20" />
+      </div>
     );
   }
 }
@@ -83,7 +115,7 @@ class Pie extends React.Component {
       legend: {
         position: 'bottom'
       }
-      }
+    }
     }]
     },
     series: [1, 1, 1, 1, 1, 1]
@@ -108,7 +140,7 @@ ReactDOM.render(
     <div>
     <App />
     </div>,
-  document.getElementById('result')
+  document.getElementById('dices')
 );
 
 const domContainer1 = document.querySelector('#pieGraph');
