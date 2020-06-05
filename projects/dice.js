@@ -60,9 +60,14 @@ class Dice extends React.Component {
      let tulos = '1d' + e.target.value + ': ' + luku;
 
      let tulokset = [];
+     let nopat = [4, 6, 8, 10, 12, 20];
 
      for (let i = 0; i < this.state.results.length; i++) {
-      tulokset.push(parseInt(this.state.results[i]) + 1);
+       if (nopat[i] == size) {
+        tulokset.push(parseInt(this.state.results[i]) + 1);
+      } else {
+        tulokset.push(parseInt(this.state.results[i]));
+      }
      }
 
      console.log(tulokset);
