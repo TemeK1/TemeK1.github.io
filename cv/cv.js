@@ -81,8 +81,7 @@ render() {
 const domContainer2 = document.querySelector('#app2');
 ReactDOM.render(React.createElement(BarChart), domContainer2);
 
-
-class BarChart extends React.Component {
+class BarChartSecond extends React.Component {
 
   constructor(props) {
   super(props);
