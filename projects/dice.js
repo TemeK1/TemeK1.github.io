@@ -22,7 +22,8 @@ class Dice extends React.Component {
       series: [0, 0, 0, 0, 0, 1],
       size: 0,
       status: "hidden",
-      results: [0, 0, 0, 0, 0, 0]
+      results: [0, 0, 0, 0, 0, 0],
+      result: "1d6: 0"
     }
 
     this.rollDice = this.rollDice.bind(this);
@@ -56,14 +57,20 @@ class Dice extends React.Component {
      size = parseInt(e.target.value);
      let luku = 1;
      luku += Math.floor(Math.random() * size);
-     console.log(luku);
-    }
+     let tulos = '1d' + e.target.value + ': ' + luku;
 
-  render() {
-    let luokka = '';
-    if (this.state.status == 'hidden') {
+     this.setState({
+       result: tulos
+     }, function() {
+       this.updateItem(this.state);
+     }.bind(this));
+   }
+
+   render() {
+     let luokka = '';
+     if (this.state.status == 'hidden') {
       luokka = 'hidden';
-    }
+     }
 
     return (
       <div>
@@ -75,6 +82,7 @@ class Dice extends React.Component {
           <button onClick={this.rollDice} value="10">10</button>
           <button onClick={this.rollDice} value="12">12</button>
           <button onClick={this.rollDice} value="20">20</button>
+          <div id="result">{this.state.result}</div>
           <div id="chart1">
             <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
           </div>
