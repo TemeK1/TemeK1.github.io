@@ -52,13 +52,11 @@ class Dice extends React.Component {
    }
 
    rollDice(e) {
-     let size = 6 ;
-      let obj = e.target;
-      console.log(obj.value);
-      let luku = 1;
-      luku += Math.floor(Math.random() * size);
-
-      console.log(luku);
+     let size = 6;
+     size = parseInt(e.target.value);
+     let luku = 1;
+     luku += Math.floor(Math.random() * size);
+     console.log(luku);
     }
 
   render() {
