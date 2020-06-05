@@ -77,8 +77,8 @@ class Dice extends React.Component {
           <p>10</p>
           <p>12</p>
           <p>20</p>
+          <Pie />
         </div>
-        <Pie />
       </div>
     );
   }
