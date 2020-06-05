@@ -33,10 +33,19 @@ class Dice extends React.Component {
       })
     } else {
       this.setState({
-        "status": "hidden"
-      })
+          status: hidden
+      }, function () {
+        this.updateItem(this.state);
+      }.bind(this));
     }
   }
+
+
+   //varmuuden vuoksi tämä, halutaan varmistua siitä, etteivät
+   //tilamuutokset laahaa yhtä askelta perässä.
+   updateItem() {
+    this.setState(this.state);
+   }
 
     rollDice(size) {
       let luku = 1;
