@@ -12,13 +12,6 @@ class App extends React.Component {
     }
 }
 
-import dice4 from 'projects/img/d4.png';
-import dice6 from 'projects/img/d6.png';
-import dice8 from 'projects/img/d8.png';
-import dice10 from 'projects/img/d10.png';
-import dice12 from 'projects/img/d12.png';
-import dice20 from 'projects/img/d20.png';
-
 class Dice extends React.Component {
   constructor(props) {
     super(props);
@@ -87,12 +80,13 @@ class Dice extends React.Component {
 
     return (
       <div>
-        <img src={dice4} alt="4" />
-        <img src={dice6} alt="6" />
-        <img src={dice8} alt="8" />
-        <img src={dice10} alt="10" />
-        <img src={dice12} alt="12" />
-        <img src={dice20} alt="20" />
+
+        <img src={require('projects/img/d4.png')}  alt="4" />
+        <img src={require('projects/img/d6.png')}  alt="6" />
+        <img src={require('projects/img/d8.png')}  alt="8" />
+        <img src={require('projects/img/d10.png')} alt="10" />
+        <img src={require('projects/img/d12.png')} alt="12" />
+        <img src={require('projects/img/d20.png')} alt="20" />
       </div>
     );
   }
