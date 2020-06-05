@@ -80,7 +80,7 @@ class Dice extends React.Component {
 
     return (
       <div>
-        <p onClick={this.changeStatus}>4</p>
+        <a href="#" onClick={this.changeStatus}>4</a>
         <p>6</p>
         <p>8</p>
         <p>10</p>
