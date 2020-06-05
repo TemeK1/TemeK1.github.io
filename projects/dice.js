@@ -31,9 +31,10 @@ class Dice extends React.Component {
         }
         }]
       },
-      series: [0, 0, 0, 0, 0, 0],
+      series: [0, 0, 0, 0, 0, 1],
       size: 0,
-      status: "hidden"
+      status: "hidden",
+      results: [0, 0, 0, 0, 0, 0]
     }
 
     this.rollDice = this.rollDice.bind(this);
@@ -62,7 +63,7 @@ class Dice extends React.Component {
     this.setState(this.state);
    }
 
-    rollDice(size) {
+   rollDice(size) {
       let luku = 1;
       let dResult = document.getElementById('result');
       if (dResult.firstChild) {
@@ -70,10 +71,7 @@ class Dice extends React.Component {
       }
       luku += Math.floor(Math.random() * size);
 
-      let teksti = document.createTextNode("1d" + size + ": " + luku);
-      let p = document.createElement('p');
-      p.appendChild(teksti);
-      dResult.appendChild(p);
+      console.log(luku);
     }
 
   render() {
@@ -86,7 +84,7 @@ class Dice extends React.Component {
       <div>
         <p className="centerDice" onClick={this.changeStatus}><i class="fas fa-dice-d6 fa-2x" id="toggleDice"></i></p>
         <div id="dices" className={luokka}>
-          <p>4</p>
+          <p onClick={this.rollDice(4)}>4</p>
           <p>6</p>
           <p>8</p>
           <p>10</p>
