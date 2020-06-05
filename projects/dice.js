@@ -95,13 +95,11 @@ class Dice extends React.Component {
       luokka = 'hidden';
      }
 
-     const dice4 = require('projects/img/d4.png');
-
      return (
       <div>
         <p className="centerDice" onClick={this.changeStatus}><i class="fas fa-dice-d6 fa-2x" id="toggleDice"></i></p>
         <div id="dices" className={luokka}>
-          <img src='projects/img/d4.png' alt='4' />
+          <img src={require('projects/img/d4.png')} alt='4' />
           <button onClick={this.rollDice} value="4">4</button>
           <button onClick={this.rollDice} value="6">6</button>
           <button onClick={this.rollDice} value="8">8</button>
