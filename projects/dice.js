@@ -82,8 +82,6 @@ class Dice extends React.Component {
        percentages.push(tulokset[i]/summa);
      }
 
-     console.log(tulokset);
-
      this.setState({
        result: tulos,
        results: tulokset,
