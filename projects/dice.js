@@ -91,7 +91,12 @@ class Dice extends React.Component {
   render() {
 
     return (
-      <div>
+      let luokka = '';
+      if (this.state.status == 'hidden') {
+        luokka = 'hidden':
+      }
+
+      <div id="mainDice" className={luokka}>
         <a href="projects/#" onClick={this.changeStatus}>4</a>
         <p>6</p>
         <p>8</p>
@@ -145,7 +150,7 @@ ReactDOM.render(
     <div>
     <App />
     </div>,
-  document.getElementById('dices')
+  document.getElementById('mainDice')
 );
 
 const domContainer1 = document.querySelector('#pieGraph');
