@@ -154,6 +154,3 @@ ReactDOM.render(
     </div>,
   document.getElementById('mainDice')
 );
-
-const domContainer1 = document.querySelector('#pieGraph');
-ReactDOM.render(React.createElement(Pie), domContainer1);
