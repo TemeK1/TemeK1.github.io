@@ -5,10 +5,6 @@ class App extends React.Component {
       super(props);
     }
 
-    this.state = {
-
-    }
-
     render() {
       return (
         <div>joo11</div>
@@ -19,10 +15,6 @@ class App extends React.Component {
 class Dice extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-
-    }
 
     this.rollDice = this.rollDice.bind(this);
   }
