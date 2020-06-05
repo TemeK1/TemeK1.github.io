@@ -1,5 +1,7 @@
 "use strict";
 
+const dice4 = require('projects/img/d4.png');
+
 class Dice extends React.Component {
   constructor(props) {
     super(props);
