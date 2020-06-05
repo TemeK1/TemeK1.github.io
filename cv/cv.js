@@ -34,10 +34,6 @@ class DonutChart extends React.Component {
   }
 }
 
-const domContainer1 = document.querySelector('#app');
-ReactDOM.render(React.createElement(DonutChart), domContainer1);
-
-
 class BarChart extends React.Component {
 
   constructor(props) {
@@ -77,9 +73,6 @@ render() {
   );
 }
 }
-
-const domContainer2 = document.querySelector('#app2');
-ReactDOM.render(React.createElement(BarChart), domContainer2);
 
 class BarChartSecond extends React.Component {
 
@@ -121,5 +114,9 @@ render() {
 }
 }
 
+const domContainer1 = document.querySelector('#app');
+ReactDOM.render(React.createElement(DonutChart), domContainer1);
+const domContainer2 = document.querySelector('#app2');
+ReactDOM.render(React.createElement(BarChart), domContainer2);
 const domContainer3 = document.querySelector('#app3');
-ReactDOM.render(React.createElement(BarChart), domContainer3);
+ReactDOM.render(React.createElement(BarChartSecond), domContainer3);
