@@ -63,9 +63,9 @@ class Dice extends React.Component {
 
      for (let i = 1; i <= this.state.results.length; i++) {
        if (i == size) {
-         tulokset[i] = parseInt(JSON.parse(JSON.stringify(this.state.results[i]))) + 1;
+         tulokset[i] = parseInt(this.state.results[i]) + 1;
        } else {
-         tulokset[i] = parseInt(JSON.parse(JSON.stringify(this.state.results[i])));
+         tulokset[i] = parseInt(this.state.results[i]);
        }
 
      }
