@@ -95,8 +95,9 @@ class Dice extends React.Component {
     }
 
     return (
-      <div id="mainDice" className={luokka}>
-        <a href="projects/#" onClick={this.changeStatus}>4</a>
+      <p class="centerDice" onClick={this.changeStatus}><i class="fas fa-dice-d6 fa-2x" id="toggleDice" /></i></p>
+      <div id="dices" className={luokka}>
+        <p>4</p>
         <p>6</p>
         <p>8</p>
         <p>10</p>

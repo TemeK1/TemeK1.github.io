@@ -17,14 +17,14 @@ a.hyperosoite:link { text-decoration: none; color: blue; background-color: #c2c2
 a.hyperosoite:visited { text-decoration: none; color: blue;  background-color: #c2c2d6; }
 a.hyperosoite:hover, a.hyperosoite:active { text-decoration: none; background-color: #24E28A; }
 
-#mainDice {
+#dices {
   border-style: solid;
   padding: 0.5em;
   border-color: blue;
   border-size: 0.5em;
 }
 
-#mainDice img {
+#dices img {
   margin-right: 1em;
   width: 10%;
   height: 10%;
