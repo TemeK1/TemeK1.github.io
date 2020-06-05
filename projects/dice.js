@@ -17,8 +17,23 @@ class Dice extends React.Component {
     super(props);
 
     this.state = {
-      "size": 0,
-      "status": "hidden"
+      options: {
+        labels: ["d4", "d6", "d8", "d10", "d12", "d20"],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+          chart: {
+            width: 300
+          },
+          legend: {
+            position: 'bottom'
+          }
+        }
+        }]
+      },
+      series: [0, 0, 0, 0, 0, 1],
+      size: 0,
+      status: "hidden"
     }
 
     this.rollDice = this.rollDice.bind(this);
@@ -77,48 +92,12 @@ class Dice extends React.Component {
           <p>10</p>
           <p>12</p>
           <p>20</p>
-          <Pie />
+          <div id="chart1">
+            <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
+          </div>
         </div>
       </div>
     );
-  }
-}
-
-class Pie extends React.Component {
-
-  constructor(props) {
-  super(props);
-
-  this.state = {
-    options: {
-  labels: ["d4", "d6", "d8", "d10", "d12", "d20"],
-    responsive: [{
-      breakpoint: 480,
-      options: {
-      chart: {
-        width: 300
-      },
-      legend: {
-        position: 'bottom'
-      }
-    }
-    }]
-    },
-    series: [0, 0, 0, 0, 0, 1]
-  }
-
-  }
-
-
-  render() {
-  return (
-    <div>
-      <div id="chart1">
-        <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
-      </div>
-      <div id="html-dist1"></div>
-    </div>
-  );
   }
 }
 
