@@ -70,11 +70,22 @@ class Dice extends React.Component {
       }
      }
 
+     let percentages = [];
+     let summa = 0;
+     for (let i = 0; i < tulokset.length; i++) {
+       summa += tulokset[i];
+     }
+
+     for (let i = 0; i < tulokset.length; i++) {
+       percentages.push(tulokset[i]/summa);
+     }
+
      console.log(tulokset);
 
      this.setState({
        result: tulos,
-       results: tulokset
+       results: tulokset,
+       series: percentages
      }, function() {
        this.updateItem(this.state);
      }.bind(this));
