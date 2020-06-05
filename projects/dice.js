@@ -104,7 +104,7 @@ class Pie extends React.Component {
     }
     }]
     },
-    series: [1, 1, 1, 1, 1, 1]
+    series: [0, 0, 0, 0, 0, 1]
   }
 
   }
