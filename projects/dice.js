@@ -68,12 +68,12 @@ class Dice extends React.Component {
       <div>
         <p className="centerDice" onClick={this.changeStatus}><i class="fas fa-dice-d6 fa-2x" id="toggleDice"></i></p>
         <div id="dices" className={luokka}>
-          <p onClick={this.rollDice(4)}>4</p>
-          <p>6</p>
-          <p>8</p>
-          <p>10</p>
-          <p>12</p>
-          <p>20</p>
+          <button onClick={this.rollDice(4)}>4</button>
+          <button onClick={this.rollDice(6)}>6</button>
+          <button onClick={this.rollDice(8)}>8</button>
+          <button onClick={this.rollDice(10)}>10</button>
+          <button onClick={this.rollDice(12)}>12</button>
+          <button onClick={this.rollDice(20)}>20</button>
           <div id="chart1">
             <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
           </div>
