@@ -26,7 +26,6 @@ class Dice extends React.Component {
   }
 
   changeStatus() {
-    console.log("asd");
     if (this.state.status == 'hidden') {
       this.setState({
         "status": ''
@@ -41,7 +40,6 @@ class Dice extends React.Component {
       }.bind(this));
     }
   }
-
 
    //varmuuden vuoksi tämä, halutaan varmistua siitä, etteivät
    //tilamuutokset laahaa yhtä askelta perässä.
@@ -62,31 +60,6 @@ class Dice extends React.Component {
       p.appendChild(teksti);
       dResult.appendChild(p);
     }
-
-//  diceListeners() {
-//    let divDice = document.getElementById('dices');
-//    let toggle = document.getElementById('toggleDice');
-
-//    let dices = divDice.getElementsByTagName('img');
-
-//    for (let i = 0; i < dices.length; i++) {
-//      dices[i].addEventListener("click", function(e) {
-//        e.preventDefault();
-//        let sides = parseInt(dices[i].alt);
-//        rollDice(sides);
-//      });
-//    }
-
-//  toggle.addEventListener("click", function(e) {
-//    e.preventDefault();
-//    if (document.getElementsByClassName('hidden').length > 0) {
-//      divDice.classList.remove('hidden');
-//      return;
-//    }
-//    divDice.setAttribute('class', 'hidden');
-//  });
-
-//}
 
   render() {
     let luokka = '';
@@ -154,3 +127,6 @@ ReactDOM.render(
     </div>,
   document.getElementById('mainDice')
 );
+
+const domContainer1 = document.querySelector('#pieGraph');
+ReactDOM.render(React.createElement(Pie), domContainer1);
