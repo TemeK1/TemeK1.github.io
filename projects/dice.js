@@ -1,7 +1,5 @@
 "use strict";
 
-const dice4 = require('projects/img/d4.png');
-
 class Dice extends React.Component {
   constructor(props) {
     super(props);
@@ -97,7 +95,9 @@ class Dice extends React.Component {
       luokka = 'hidden';
      }
 
-    return (
+     const dice4 = require('projects/img/d4.png');
+
+     return (
       <div>
         <p className="centerDice" onClick={this.changeStatus}><i class="fas fa-dice-d6 fa-2x" id="toggleDice"></i></p>
         <div id="dices" className={luokka}>
