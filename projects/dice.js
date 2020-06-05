@@ -59,8 +59,22 @@ class Dice extends React.Component {
      luku += Math.floor(Math.random() * size);
      let tulos = '1d' + e.target.value + ': ' + luku;
 
+     let tulokset = [];
+
+     for (let i = 1; i <= this.state.results.length; i++) {
+       if (i == size) {
+         tulokset[i] = parseInt(JSON.parse(JSON.stringify(this.state.results[i]))) + 1;
+       } else {
+         tulokset[i] = parseInt(JSON.parse(JSON.stringify(this.state.results[i])));
+       }
+
+     }
+
+     console.log(tulokset);
+
      this.setState({
-       result: tulos
+       result: tulos,
+       results: tulokset
      }, function() {
        this.updateItem(this.state);
      }.bind(this));
