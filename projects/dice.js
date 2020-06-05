@@ -91,9 +91,9 @@ class Dice extends React.Component {
   render() {
     let luokka = '';
     if (this.state.status == 'hidden') {
-      luokka = 'hidden':
+      luokka = 'hidden';
     }
-    
+
     return (
       <div id="mainDice" className={luokka}>
         <a href="projects/#" onClick={this.changeStatus}>4</a>
