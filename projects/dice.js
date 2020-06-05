@@ -31,7 +31,7 @@ class Dice extends React.Component {
         }
         }]
       },
-      series: [0, 0, 0, 0, 0, 1],
+      series: [0, 0, 0, 0, 0, 0],
       size: 0,
       status: "hidden"
     }
