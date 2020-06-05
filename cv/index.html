@@ -33,15 +33,58 @@
 	<div id="thirdRow" class="clear">
 		<div id="secondColumn">
 		<p>Here is an overview of my skill set. Including personal skills, programming languages and various tools of my choice and liking that I've been using during the studies. Relative and very subjective rating is also included for each language and tool. <a href="CV.pdf" target="_blank" class="hyperosoite">From here</a> you can download the more traditional CV.</p>
+		<h3 align="center">Programming languages</h3>
+		<div id="app"></div>
 		<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
 		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 		<script src="https://unpkg.com/prop-types@15.6.2/prop-types.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
 		<script src="https://unpkg.com/react-apexcharts@1.1.0/dist/react-apexcharts.iife.min.js"></script>
-		<h3 align="center">Programming languages</h3>
-		<div id="app"></div>
-  	<h3 align="center">Tools</h3>
+
+		<script type="text/babel">
+
+		class DonutChart extends React.Component {
+
+			constructor(props) {
+			super(props);
+
+			this.state = {
+				options: {
+			labels: ["React/JS", "Java", "C#", "SQL", "HTML5", "CSS"],
+				responsive: [{
+					breakpoint: 480,
+					options: {
+					chart: {
+						width: 300
+					},
+					legend: {
+						position: 'bottom'
+					}
+					}
+				}]
+				},
+				series: [35, 20, 15, 10, 10, 5]
+			}
+			}
+
+			render() {
+			return (
+				<div>
+				<div id="chart1">
+					<ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
+				</div>
+				<div id="html-dist1">
+				</div>
+				</div>
+			);
+			}
+		}
+
+		const domContainer = document.querySelector('#app');
+		ReactDOM.render(React.createElement(DonutChart), domContainer);
+		</script>
+		<h3 align="center">Tools</h3>
 		<div id="app2"></div>
         <div id="html">
           &lt;div id=&quot;chart&quot;&gt;&#10;            &lt;ReactApexChart options={this.state.options} series={this.state.series} type=&quot;bar&quot; height=&quot;350&quot; /&gt;&#10;          &lt;/div&gt;
