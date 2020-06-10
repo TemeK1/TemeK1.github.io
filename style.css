@@ -7,7 +7,7 @@ ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-
 li { float: left; border-right:1px solid #bbb; }
 li:last-child { border-right: none; }
 li a { display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; }
-li a:hover:not(.active) { background-color: #111; }
+li a:hover:not(.active) { background-color: green; }
 .active { background-color: #4CAF50; }
 
 a.content:link, a.content:visited { background-color: #E5EBE8; border: 1px solid green; border-style: dotted; color: green; padding: 0.5em 0.5em; text-align: center; text-decoration: none; display: inline-block; }
@@ -51,6 +51,12 @@ p.center { text-align: center; }
   100%   { Color: black; }
 }
 
+#galleria ul li {
+  position: relative;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
 #galleria img {
   display: block;
   height: auto;
@@ -73,7 +79,7 @@ p.center { text-align: center; }
 
 #galleria ul li .overlay p {
   color: #22A7F0;
-  font-size: 150%;
+  font-size: 100%;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -117,11 +123,6 @@ img.profilePic { border-radius: 10%; height: auto; max-width: 100%; }
   width: 80%;
 }
 
-#galleria ul li {
-  position: relative;
-  width: 80%;
-}
-
 table { border-collapse: collapse; margin-left: auto; margin-right: auto; width: 100%; }
 th { color: blue; }
 th, td { text-align: left; padding: 8px; }
@@ -154,11 +155,6 @@ figcaption.projects { font-size: smaller; text-align: left; text-indent: 0; }
 p.status { color: #8B0000; font-weight: bold; font-style: italic; }
 
 #galleria ul li .overlay {
-  width: 100%;
-}
-
-#galleria ul li {
-  position: relative;
   width: 100%;
 }
 
