@@ -56,13 +56,13 @@ p.center { text-align: center; }
   width: 100%;
 }
 
-img.projectPics {
+#galleria img {
   display: block;
   width: 50%;
   height: auto;
 }
 
-#galleria ul li {
+#galleria ul li .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -74,11 +74,11 @@ img.projectPics {
   background-color: #008CBA;
 }
 
-#galleria ul li:hover {
+#galleria ul li:hover .overlay {
   opacity: 1;
 }
 
-#galleria ul li {
+#galleria ul li .overlay {
   color: white;
   font-size: 100%;
   position: absolute;
