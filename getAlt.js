@@ -6,7 +6,7 @@
 
 window.onload = function() {
 
-  pictures = gallery.getElementsByTagName('img');
+  let pictures = document.getElementsByTagName('img');
 
   for (let picture of pictures) {
 
@@ -20,5 +20,5 @@ window.onload = function() {
     paragraph.appendChild(textNode);
     picture.parentNode.appendChild(section);
   }
-  
+
 }
