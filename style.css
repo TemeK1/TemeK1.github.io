@@ -78,7 +78,7 @@ img.projectPics {
   opacity: 1;
 }
 
-#galleria ul li p {
+#galleria ul li {
   color: white;
   font-size: 100%;
   position: absolute;
