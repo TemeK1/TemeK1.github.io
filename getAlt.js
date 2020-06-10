@@ -6,7 +6,13 @@
 
 window.onload = function() {
 
-  let pictures = document.getElementsByTagName('img');
+  let gallery = document.getElementById('galleria'),
+      pictures = [];
+
+  //Just to make sure an element with id 'gallery02' exists...
+  if (gallery) {
+    pictures = gallery.getElementsByTagName('img');
+  }
 
   for (let picture of pictures) {
 
