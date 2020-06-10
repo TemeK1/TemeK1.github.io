@@ -73,6 +73,10 @@ p.center { text-align: center; }
   background-color: white;
 }
 
+#galleria ul {
+  background-color: #E5EBE8;
+}
+
 #galleria ul li:hover .overlay {
   opacity: 0.8;
 }
