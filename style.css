@@ -51,11 +51,6 @@ p.center { text-align: center; }
   100%   { Color: black; }
 }
 
-#galleria ul li {
-  position: relative;
-  width: 100%;
-}
-
 #galleria img {
   display: block;
   height: auto;
@@ -78,7 +73,7 @@ p.center { text-align: center; }
 
 #galleria ul li .overlay p {
   color: #22A7F0;
-  font-size: 100%;
+  font-size: 150%;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -122,6 +117,11 @@ img.profilePic { border-radius: 10%; height: auto; max-width: 100%; }
   width: 80%;
 }
 
+#galleria ul li {
+  position: relative;
+  width: 80%;
+}
+
 table { border-collapse: collapse; margin-left: auto; margin-right: auto; width: 100%; }
 th { color: blue; }
 th, td { text-align: left; padding: 8px; }
@@ -154,6 +154,11 @@ figcaption.projects { font-size: smaller; text-align: left; text-indent: 0; }
 p.status { color: #8B0000; font-weight: bold; font-style: italic; }
 
 #galleria ul li .overlay {
+  width: 100%;
+}
+
+#galleria ul li {
+  position: relative;
   width: 100%;
 }
 
