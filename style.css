@@ -67,7 +67,6 @@ p.center { text-align: center; }
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: white;
@@ -111,13 +110,17 @@ h2.extraspace { margin-top: 1.0em; line-height: 0.5; }
 
 #footer { font-size: 120%; padding-bottom: 0.2em; padding-top: 0.8em; text-align: center; }
 
-img.projectPics { height: auto; max-width: 100%; }
+img.projectPics { height: auto; max-width: 80%; }
 figcaption.projects { font-size: smaller; text-align: left; text-indent: 0; }
 p.status { color: #8B0000; font-weight: bold; font-style: italic; }
 
 figcaption.profile { font-size: smaller; font-style: italic; text-align: left; text-indent: 0; }
 img.profilePic { border-radius: 10%; height: auto; max-width: 100%; }
 .center_contact { text-align: center; }
+
+#galleria ul li .overlay {
+  width: 80%;
+}
 
 table { border-collapse: collapse; margin-left: auto; margin-right: auto; width: 100%; }
 th { color: blue; }
@@ -149,6 +152,10 @@ html[xmlns] .clear { display: block; }
 img.projectPics { height: auto; width: 100%; }
 figcaption.projects { font-size: smaller; text-align: left; text-indent: 0; }
 p.status { color: #8B0000; font-weight: bold; font-style: italic; }
+
+#galleria ul li .overlay {
+  width: 100%;
+}
 
 figcaption.profile { font-size: smaller; font-style: italic; text-align: center; text-indent: 0; }
 img.profilePic { border-radius: 10%; height: auto; width: 100%; }
