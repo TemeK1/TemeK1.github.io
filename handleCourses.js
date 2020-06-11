@@ -61,6 +61,7 @@ function sortTable(n) {
 */
 function searchCourses() {
   let table = document.getElementById('courses');
+  let tbody = table.getElementsByTagName('tbody')[0];
   let points = 0,
       credits = 0,
       creditsTotal = 0;
@@ -84,7 +85,7 @@ function searchCourses() {
       td2.appendChild(txt2);
       td3.appendChild(txt3);
       td4.appendChild(txt4);
-      table.appendChild(tr1);
+      tbody.appendChild(tr1);
 
       if (parseInt(courses[i].grade)) {
         credits += parseInt(courses[i].credits);
