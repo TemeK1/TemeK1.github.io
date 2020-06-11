@@ -179,7 +179,7 @@ table { border-collapse: collapse; margin-left: auto; margin-right: auto; table-
 th { color: blue; }
 th, td { text-align: left; padding: 8px; }
 tr:nth-child(even) { background-color: #f2f2f2; }
-td:nth-child(2) { text-align: center; }
+td:nth-child(2) { text-align: left; }
 
 #courses, #courses thead, #courses tbody, #courses thead tr th, #courses tbody tr td, #courses tbody tr {
   display: block;
@@ -192,7 +192,7 @@ td:nth-child(2) { text-align: center; }
 }
 
 #courses tbody tr {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1em 0;
 }
 
 #courses tbody tr:nth-child(odd) {
@@ -218,8 +218,8 @@ td:nth-child(2) { text-align: center; }
   white-space: nowrap;
 }
 
-#courses .details td:nth-of-type(1):before { content: "Course"; }
-#courses .details td:nth-of-type(2):before { content: "Credits"; }
-#courses .details td:nth-of-type(3):before { content: "Grade"; }
-#courses .details td:nth-of-type(4):before { content: "Tools"; }
+#courses  td:nth-of-type(1):before { content: "Course"; }
+#courses  td:nth-of-type(2):before { content: "Credits"; }
+#courses  td:nth-of-type(3):before { content: "Grade"; }
+#courses  td:nth-of-type(4):before { content: "Tools"; }
 }
