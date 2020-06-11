@@ -144,6 +144,8 @@ html[xmlns] .clear { display: block; }
 @media only screen and (max-width: 720px) {
 #secondRow { background-color: #2AA6EE; color: #FFFFFF; font-size: 1.5em; text-align: center; position: -webkit-sticky; position: sticky; top: 0; z-index: 1; }
 
+h4 { margin-bottom: 0; margin-top: 0; padding-top: 5%; padding-bottom: 5%; }
+
 #thirdRow { background-color: #E5EBE8; }
 #firstColumn { display: none; margin-left: 0.5em; width: 100%; }
 #secondColumn { display: block; padding: 0.1em 1em 1em 2.0em; text-align: left; width: 80%; }
@@ -166,7 +168,7 @@ p.status { color: #8B0000; font-weight: bold; font-style: italic; }
 }
 
 #galleria ul li .overlay p {
-  font-size: 150%;
+  font-size: 120%;
 }
 
 figcaption.profile { font-size: smaller; font-style: italic; text-align: center; text-indent: 0; }
