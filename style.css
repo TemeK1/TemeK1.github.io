@@ -181,25 +181,25 @@ th, td { text-align: left; padding: 8px; }
 tr:nth-child(even) { background-color: #f2f2f2; }
 td:nth-child(2) { text-align: center; }
 
-#tcv, #tcv thead, #tcv tbody, #tcv thead tr th, #tcv tbody tr td, #tcv tbody tr {
+#courses, #courses thead, #courses tbody, #courses thead tr th, #courses tbody tr td, #courses tbody tr {
   display: block;
 }
   /* Hide table headers (but not display: none;, for accessibility) */
-#tcv thead tr {
+#courses thead tr {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-#tcv tbody tr {
+#courses tbody tr {
   margin: 0 0 1rem 0;
 }
 
-#tcv tbody tr:nth-child(odd) {
+#courses tbody tr:nth-child(odd) {
   background: #ccc;
 }
 
-#tcv tbody tr td {
+#courses tbody tr td {
   /* Behave  like a "row" */
   border: none;
   border-bottom: 1px solid #eee;
@@ -207,7 +207,7 @@ td:nth-child(2) { text-align: center; }
   padding-left: 50%;
 }
 
-#tcv tbody tr td:before {
+#courses tbody tr td:before {
   /* Now like a table header */
   position: absolute;
   /* Top/left values mimic padding */
@@ -218,8 +218,8 @@ td:nth-child(2) { text-align: center; }
   white-space: nowrap;
 }
 
-#tcv .details td:nth-of-type(1):before { content: "Course"; }
-#tcv .details td:nth-of-type(2):before { content: "Credits"; }
-#tcv .details td:nth-of-type(3):before { content: "Grade"; }
-#tcv .details td:nth-of-type(4):before { content: "Tools"; }
+#courses .details td:nth-of-type(1):before { content: "Course"; }
+#courses .details td:nth-of-type(2):before { content: "Credits"; }
+#courses .details td:nth-of-type(3):before { content: "Grade"; }
+#courses .details td:nth-of-type(4):before { content: "Tools"; }
 }
