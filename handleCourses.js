@@ -66,30 +66,32 @@ function searchCourses() {
       creditsTotal = 0;
 
   for (let i = 0; i < courses.length; i++) {
-    let tr1 = document.createElement('tr'),
-        td1 = document.createElement('td'),
-        td2 = document.createElement('td'),
-        td3 = document.createElement('td'),
-        td4 = document.createElement('td'),
-        txt1 = document.createTextNode(courses[i].name),
-        txt2 = document.createTextNode(courses[i].credits),
-        txt3 = document.createTextNode(courses[i].grade),
-        txt4 = document.createTextNode(courses[i].note);
-    tr1.appendChild(td1);
-    tr1.appendChild(td2);
-    tr1.appendChild(td3);
-    tr1.appendChild(td4);
-    td1.appendChild(txt1);
-    td2.appendChild(txt2);
-    td3.appendChild(txt3);
-    td4.appendChild(txt4);
-    table.appendChild(tr1);
+    if (courses[i].finished === true) {
+      let tr1 = document.createElement('tr'),
+          td1 = document.createElement('td'),
+          td2 = document.createElement('td'),
+          td3 = document.createElement('td'),
+          td4 = document.createElement('td'),
+          txt1 = document.createTextNode(courses[i].name),
+          txt2 = document.createTextNode(courses[i].credits),
+          txt3 = document.createTextNode(courses[i].grade),
+          txt4 = document.createTextNode(courses[i].note);
+      tr1.appendChild(td1);
+      tr1.appendChild(td2);
+      tr1.appendChild(td3);
+      tr1.appendChild(td4);
+      td1.appendChild(txt1);
+      td2.appendChild(txt2);
+      td3.appendChild(txt3);
+      td4.appendChild(txt4);
+      table.appendChild(tr1);
 
-    if (parseInt(courses[i].grade)) {
-      credits += parseInt(courses[i].credits);
-      points += parseInt(courses[i].credits) * parseInt(courses[i].grade);
+      if (parseInt(courses[i].grade)) {
+        credits += parseInt(courses[i].credits);
+        points += parseInt(courses[i].credits) * parseInt(courses[i].grade);
+      }
+      creditsTotal += parseInt(courses[i].credits);
     }
-    creditsTotal += parseInt(courses[i].credits);
 
   }
   let div = document.getElementById('average');
