@@ -5,7 +5,7 @@ var courses = [
   "credits": 30,
   "grade": "?",
   "note": "-",
-  "finished": false
+  "finished": true
 },
 {
   "name": "Special Programming Work",
