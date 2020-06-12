@@ -141,7 +141,7 @@ class DonutChartSecond extends React.Component {
   return (
     <div>
       <div id="chart4">
-        <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
+        <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="500" />
       </div>
       <div id="html-dist4"></div>
     </div>
