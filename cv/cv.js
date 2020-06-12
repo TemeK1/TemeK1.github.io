@@ -113,29 +113,39 @@ render() {
 }
 }
 
-class BarChartThird extends React.Component {
+class DonutChartSecond extends React.Component {
 
   constructor(props) {
   super(props);
 
   this.state = {
     options: {
-    plotOptions: {
-    bar: {
-      horizontal: true,
-    }
+  labels: ['Finished Courses', 'Master thesis', 'Special Programming Work', 'IoT/Embedded Security', 'Embedded Internet', 'Wireless Technologies', 'Internet of Things'],
+    responsive: [{
+      breakpoint: 480,
+      options: {
+      chart: {
+        width: 300
+      },
+      legend: {
+        position: 'bottom'
+      }
+      }
+    }]
     },
-    colors: ['#15d199'],
-    dataLabels: {
-    enabled: false
-    },
-    xaxis: {
-    categories: ['Finished Courses', 'Master thesis', 'Special Programming Work', 'IoT/Embedded Security', 'Embedded Internet', 'Wireless Technologies', 'Internet of Things'],
-    }
-  },
-  series: [{
-    data: [91, 33, 10, 5, 3, 5, 3]
-  }],
+    series: [91, 33, 10, 5, 3, 5, 3]
+  }
+  }
+
+  render() {
+  return (
+    <div>
+      <div id="chart1">
+        <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
+      </div>
+      <div id="html-dist1"></div>
+    </div>
+  );
   }
 }
 
@@ -143,7 +153,7 @@ render() {
   return (
   <div>
     <div id="chart4">
-    <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height="350" />
+    <ReactApexChart options={this.state.options} series={this.state.series} type="donut" height="350" />
     </div>
     <div id="html-dist4">
     </div>
@@ -159,4 +169,4 @@ ReactDOM.render(React.createElement(BarChart), domContainer2);
 const domContainer3 = document.querySelector('#app3');
 ReactDOM.render(React.createElement(BarChartSecond), domContainer3);
 const domContainer4 = document.querySelector('#app4');
-ReactDOM.render(React.createElement(BarChartThird), domContainer4);
+ReactDOM.render(React.createElement(DonutChartSecond), domContainer4);
