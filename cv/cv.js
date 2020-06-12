@@ -91,8 +91,7 @@ class BarChartSecond extends React.Component {
     enabled: false
     },
     xaxis: {
-    categories: ['Finnish', 'English', 'Swedish'
-    ],
+    categories: ['Finnish', 'English', 'Swedish'],
     }
   },
   series: [{
@@ -114,9 +113,50 @@ render() {
 }
 }
 
+class BarChartThird extends React.Component {
+
+  constructor(props) {
+  super(props);
+
+  this.state = {
+    options: {
+    plotOptions: {
+    bar: {
+      horizontal: true,
+    }
+    },
+    colors: ['#15d199'],
+    dataLabels: {
+    enabled: false
+    },
+    xaxis: {
+    categories: ['Finished Courses', 'Master thesis', 'Special Programming Work', 'IoT/Embedded Security', 'Embedded Internet', 'Wireless Technologies', 'Internet of Things'],
+    }
+  },
+  series: [{
+    data: [91, 33, 10, 5, 3, 5, 3]
+  }],
+  }
+}
+
+render() {
+  return (
+  <div>
+    <div id="chart4">
+    <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height="350" />
+    </div>
+    <div id="html-dist4">
+    </div>
+  </div>
+  );
+}
+}
+
 const domContainer1 = document.querySelector('#app');
 ReactDOM.render(React.createElement(DonutChart), domContainer1);
 const domContainer2 = document.querySelector('#app2');
 ReactDOM.render(React.createElement(BarChart), domContainer2);
 const domContainer3 = document.querySelector('#app3');
 ReactDOM.render(React.createElement(BarChartSecond), domContainer3);
+const domContainer4 = document.querySelector('#app4');
+ReactDOM.render(React.createElement(BarChartThird), domContainer4);

@@ -8,6 +8,13 @@ var courses = [
   "finished": false
 },
 {
+  "name": "Master thesis seminar",
+  "credits": 3,
+  "grade": "?",
+  "note": "-",
+  "finished": false
+},
+{
   "name": "Special Programming Work",
   "credits": 5,
   "grade": "?",
@@ -43,7 +50,7 @@ var courses = [
   "finished": false
 },
 {
-  "name": "Internef of Things",
+  "name": "Internet of Things",
   "credits": 3,
   "grade": "?",
   "note": "-",
