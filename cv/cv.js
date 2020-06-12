@@ -118,9 +118,25 @@ class DonutChartSecond extends React.Component {
   constructor(props) {
   super(props);
 
+  let kurssit = [];
+  let credits = 0;
+  let nonCredits = 0;
+
+  for (let i = 0; i < courses.length; i++) {
+     kurssit.push(JSON.parse(JSON.stringify(courses[i])));
+  }
+
+  for (let i = 0; i < kurssit.length; i++) {
+    if (kurssit[i].finished === true) {
+      credits += parseInt(kurssit[i].credits);
+    } else {
+      nonCredits += parseInt(kurssit[i].credits);
+    }
+  }
+
   this.state = {
     options: {
-  labels: ['Acc. credits so far', 'MSc thesis', 'Courses waiting to be done'],
+  labels: ['Acc. credits so far', 'Courses waiting to be done (including MSc thesis of 33 credits)'],
     responsive: [{
       breakpoint: 480,
       options: {
@@ -133,7 +149,7 @@ class DonutChartSecond extends React.Component {
       }
     }]
     },
-    series: [91, 33, 26]
+    series: [credits, nonCredits]
   }
   }
 
