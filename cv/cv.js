@@ -125,7 +125,7 @@ class DonutChartSecond extends React.Component {
       breakpoint: 480,
       options: {
       chart: {
-        width: 300
+        width: 500
       },
       legend: {
         position: 'bottom'
