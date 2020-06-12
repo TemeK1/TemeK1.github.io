@@ -149,19 +149,6 @@ class DonutChartSecond extends React.Component {
   }
 }
 
-render() {
-  return (
-  <div>
-    <div id="chart4">
-    <ReactApexChart options={this.state.options} series={this.state.series} type="donut" height="350" />
-    </div>
-    <div id="html-dist4">
-    </div>
-  </div>
-  );
-}
-}
-
 const domContainer1 = document.querySelector('#app');
 ReactDOM.render(React.createElement(DonutChart), domContainer1);
 const domContainer2 = document.querySelector('#app2');
