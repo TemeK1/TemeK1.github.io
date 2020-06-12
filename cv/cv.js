@@ -120,7 +120,7 @@ class DonutChartSecond extends React.Component {
 
   this.state = {
     options: {
-  labels: ['Acc. Credits', 'MSc thesis', 'Other courses'],
+  labels: ['Acc. Credits so far', 'MSc thesis', 'Other courses'],
     responsive: [{
       breakpoint: 480,
       options: {
