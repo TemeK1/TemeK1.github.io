@@ -84,7 +84,7 @@ p.center { text-align: center; }
 }
 
 #galleria ul li:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 #galleria ul li .overlay p {
