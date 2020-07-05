@@ -16,7 +16,7 @@ class Quiz extends React.Component {
   render() {
     return (
       <div>
-          <Start />
+      <Start quiz={this.state.kysymykset} />
       </div>
     );
   }
@@ -32,7 +32,7 @@ class Start extends React.Component {
   render() {
     return (
     <div>
-      adsda
+    {this.props.kysymykset[0].question}
     </div>
     );
   }
