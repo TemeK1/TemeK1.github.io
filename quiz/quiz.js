@@ -138,16 +138,14 @@ class Question extends React.Component {
       if (this.props.lopussa == true) {
 
       } else {
-        let nappula = 0;
+        let nappula = [];
         if (this.state.tarkista == true) {
-          nappula = <button className="query">Query for new Database updates</button>;
+          nappula.push(<button className="query">Query for new Database updates</button>);
         }
         for (let i = 0; i < this.props.kysymys.options.length; i++) {
            vaihtoehdot.push(<p onClick={this.tarkista} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
         }
       }
-
-
 
     }
 
