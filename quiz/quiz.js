@@ -70,7 +70,7 @@ class Execute extends React.Component {
   render() {
     let tekstit = [];
     if (this.state.finished == true) {
-      tekstit.push(<p>The quiz is finished!</p>);
+      tekstit.push(<p><strong>The quiz is finished!</strong></p>);
     } else {
       tekstit.push(<p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>);
     }
@@ -136,7 +136,7 @@ class Question extends React.Component {
         }
       }
       if (this.props.lopussa == true) {
-        if (this.state.tarkista == true) {
+        if (this.state.tarkista == false) {
           nappula.push(<button className="quizButton" onClick={this.soita}>Finish quiz</button>);
         }
       } else {
