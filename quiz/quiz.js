@@ -89,9 +89,14 @@ class Question extends React.Component {
       }
     }
 
+    let vaihtoehdot = [];
+    for (let i = 0; i < this.props.kysymys.options.length; i++) {
+      vaihtoehdot.push(<p classname={luokka}><strong>{abc[this.props.numero]})</strong> {this.props.kysymys.options[i]}</p>);
+    }
+
     return (
       <React.Fragment>
-      <p classname={luokka}><strong>{abc[this.props.numero]})</strong> {this.props.quiz[this.state.current].options[i]}</p>
+      {vaihtoehdot}
       </React.Fragment>
     );
   }
