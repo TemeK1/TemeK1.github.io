@@ -32,7 +32,7 @@ var questions = [
 },
 {
   "question": "Entäpä Teemun englanninkielen taidot?",
-  "options": ["Lähes olemattomat", "Hyvä luetunymmärtäminen", "Hyvä puhetaito" "Hyvä kirjoitustaito", "Hyvä luetunymmärtäminen sekä puhe- ja kirjoitustaidot"],
+  "options": ["Lähes olemattomat", "Hyvä luetunymmärtäminen", "Hyvä puhetaito", "Hyvä kirjoitustaito", "Hyvä luetunymmärtäminen sekä puhe- ja kirjoitustaidot"],
   "correctAnswer": [4]
 },
 {
