@@ -66,10 +66,15 @@ class Execute extends React.Component {
   }
 
   render() {
-
+    let tekstit = [];
+    if (this.state.finished === true) {
+      tekstit.push(<h2>The quiz is finished!</h2>);
+    } else {
+      tekstit.push(<p onClick={this.seuraava}><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>);
+    }
     return (
     <div>
-    <p onClick={this.seuraava}><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>
+    {tekstit}
     <Question lopussa={this.state.finished} kysymys={this.props.quiz[this.state.current]}/>
     <p>{this.state.correctAnswers}</p>
     </div>
@@ -89,7 +94,7 @@ class Question extends React.Component {
     let vaihtoehdot = [];
 
     if (this.props.lopussa === true) {
-      vaihtoehdot.push(<p>Kysely lopussa!</p>);
+      vaihtoehdot.push(<p>Congratulations!</p>);
     } else {
       let mappi = new Map();
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
