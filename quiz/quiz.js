@@ -116,7 +116,7 @@ class Question extends React.Component {
     let abc = ["a","b","c","d","e","f"];
     let luokka = "";
     let vaihtoehdot = [];
-    console.log("asd");
+    let nappula = [];
     let mappi = new Map();
     if (this.props.lopussa == true) {
       vaihtoehdot.push(<li>Congratulations!</li>);
@@ -138,7 +138,6 @@ class Question extends React.Component {
       if (this.props.lopussa == true) {
 
       } else {
-        let nappula = [];
         if (this.state.tarkista == true) {
           nappula.push(<button className="query">Query for new Database updates</button>);
         }
