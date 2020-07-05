@@ -52,7 +52,7 @@ class Execute extends React.Component {
         break;
       }
     }
-    
+
     if (oikein === true) {
       oikeat = this.state.correctAnswers + 1;
       oikein = false;
