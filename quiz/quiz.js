@@ -86,12 +86,12 @@ class Question extends React.Component {
          } else {
            luokka = "wrongAnswer";
          }
+         mappi.set(i, luokka);
       }
-      mappi.set(i, luokka);
     }
 
     for (let i = 0; i < this.props.kysymys.options.length; i++) {
-       vaihtoehdot.push(<p className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);  
+       vaihtoehdot.push(<p className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
     }
 
     return (
