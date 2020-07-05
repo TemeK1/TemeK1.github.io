@@ -44,8 +44,6 @@ class Execute extends React.Component {
       lopussa = true;
     }
 
-    soita();
-
     let oikein = false;
     let oikeat = 0;
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
@@ -89,16 +87,24 @@ class Question extends React.Component {
      super(props);
 
      this.state = {
-       "showAnswers": false
+       "showAnswers": false,
+       "tarkista": false
      }
 
      this.nayta = this.nayta.bind(this);
      this.soita = this.soita.bind(this);
+     this.tarkista = this.tarkista.bind(this);
   }
 
   nayta() {
     this.setState({
       "showAnswers": true
+    })
+  }
+
+  tarkista() {
+    this.setState({
+      "tarkista": true
     })
   }
 
@@ -117,12 +123,12 @@ class Question extends React.Component {
     } else {
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
         luokka = ""
-        if (this.state.showAnswers == true) {
+        if (this.state.tarkista == true) {
           luokka = "wrongAnswer";
         }
         for (let j = 0; j < this.props.kysymys.correctAnswer.length; j++) {
            if (i == this.props.kysymys.correctAnswer[j]) {
-             if (this.state.showAnswers === true) {
+             if (this.state.tarkista === true) {
                luokka = "correctAnswer";
              }
            }
@@ -132,16 +138,23 @@ class Question extends React.Component {
       if (this.props.lopussa == true) {
 
       } else {
+        let nappula = 0;
+        if (this.state.tarkista == true) {
+          nappula = <button className="query">Query for new Database updates</button>;
+        }
         for (let i = 0; i < this.props.kysymys.options.length; i++) {
-           vaihtoehdot.push(<p onClick={this.soita} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+           vaihtoehdot.push(<p onClick={this.tarkista} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
         }
       }
+
+
 
     }
 
     return (
       <React.Fragment>
       {vaihtoehdot}
+      {nappula}
       </React.Fragment>
     );
   }
