@@ -131,7 +131,7 @@ class Question extends React.Component {
 
       } else {
         for (let i = 0; i < this.props.kysymys.options.length; i++) {
-           vaihtoehdot.push(<li onClick={this.props.soita(this.nayta)} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</li>>);
+           vaihtoehdot.push(<li onClick={this.props.soita(this.nayta)} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</li>);
         }
       }
 
