@@ -87,7 +87,7 @@ class Question extends React.Component {
 
     let vaihtoehdot = [];
     for (let i = 0; i < this.props.kysymys.options.length; i++) {
-      vaihtoehdot.push(<p class={luokka}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+      vaihtoehdot.push(<p className={luokka}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
     }
 
     return (
