@@ -7,7 +7,7 @@ var questions = [
 },
 {
   "question": "Haluaisiko Teemu työskennellä valtiolle vai yksityiselle?",
-  "options": ["Valtio", "Yksityinen sektori", "Ei mitään väliä. Työn mielekkyys ratkaisee."],
+  "options": ["Valtio", "Yksityinen sektori", "Ei mitään väliä. Työ ja sen mielekkyys ratkaisee."],
   "correctAnswer": [2]
 },
 {
@@ -42,6 +42,6 @@ var questions = [
 },
 {
   "question": "Onko Teemu vapaana työmarkkinoille?",
-  "options": ["Ei vielä", "On vaikka heti!", "Keväällä 2020"],
-  "correctAnswer": [1]
+  "options": ["On vaikka heti!", "Keväällä 2057"],
+  "correctAnswer": [0]
 }]

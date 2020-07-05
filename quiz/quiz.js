@@ -35,8 +35,24 @@ class Execute extends React.Component {
     this.seuraava = this.seuraava.bind(this);
   }
 
-  seuraava() {
+  seuraava(vaihtoehto) {
     let seuraava = this.state.current + 1;
+    let oikein = false;
+    for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
+      if (vaihtoehto = options[i]) {
+        oikein = true;
+        break;
+      }
+    }
+
+    if (oikein === true) {
+      let oikein = this.state.correctAnswers + 1;
+      this.setState({
+        "correctAnswers": oikein
+      })
+    }
+
+    if (this.props.quiz[this.state.current].corret)
     this.setState({
       "current": seuraava
     })
@@ -46,12 +62,14 @@ class Execute extends React.Component {
     let vaihtoehdot = [];
     let abc = ["a","b","c","d","e","f"];
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
-      vaihtoehdot.push(<p onClick={this.seuraava}><strong>{abc[i]})</strong> {this.props.quiz[this.state.current].options[i]}</p>);
+      vaihtoehdot.push(<p onClick={this.seuraava(i)}><strong>{abc[i]})</strong> {this.props.quiz[this.state.current].options[i]}</p>);
     }
     return (
     <div>
     <p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>
     {vaihtoehdot}
+
+    <p>{this.state.correctAnswers}</p>
     </div>
     );
   }
