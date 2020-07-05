@@ -36,13 +36,13 @@ class Execute extends React.Component {
 
   render() {
     let vaihtoehdot = [];
-
+    let abc = ["a","b","c","d","e","f"];
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
-      vaihtoehdot.push(<p>{this.props.quiz[this.state.current].options[i]}</p>);
+      vaihtoehdot.push(<p><strong>{abc[i]}.</strong> {this.props.quiz[this.state.current].options[i]}</p>);
     }
     return (
     <div>
-    <p>{this.props.quiz[this.state.current].question}</p>
+    <p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>
     {vaihtoehdot}
     </div>
     );
