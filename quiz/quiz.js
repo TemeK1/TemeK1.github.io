@@ -33,7 +33,7 @@ class Execute extends React.Component {
     }
 
     this.seuraava = this.seuraava.bind(this);
-    this.soita = this.seuraava.soita(this);
+    this.soita = this.soita.bind(this);
   }
 
   seuraava(soita) {
