@@ -32,7 +32,7 @@ class Start extends React.Component {
   render() {
     return (
     <div>
-      {this.props.quiz[0]};
+      adsda
     </div>
     );
   }
