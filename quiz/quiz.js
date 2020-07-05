@@ -40,7 +40,7 @@ class Execute extends React.Component {
     let oikein = false;
     let oikeat = 0;
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
-      if (vaihtoehto = this.props.quiz[this.state.current].options[i]) {
+      if (vaihtoehto == this.props.quiz[this.state.current].options[i]) {
         oikein = true;
         break;
       }
