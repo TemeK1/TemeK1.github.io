@@ -16,9 +16,7 @@ asdasd
   render() {
     return (
       <div>
-        <div id="chart1">
-          <Start quiz={this.state.kysymykset}/>
-        </div>
+          <Start quiz={this.state.kysymykset} />
       </div>
     );
   }
@@ -34,7 +32,7 @@ class Start extends React.Component {
   render() {
     return
     (<div>
-      {this.props.kysymykset[0]};
+      {this.props.quiz[0]};
     </div>);
   }
 }
