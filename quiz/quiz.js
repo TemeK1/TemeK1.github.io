@@ -12,7 +12,7 @@ class Quiz extends React.Component {
     };
 
  }
-asdasd
+ 
   render() {
     return (
       <div>
