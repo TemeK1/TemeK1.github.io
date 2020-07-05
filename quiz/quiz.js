@@ -58,14 +58,10 @@ class Execute extends React.Component {
 
   render() {
 
-    let vaihtoehdot = [];
-    for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
-      vaihtoehdot.push(<Question numero={i} kysymys={this.props.quiz[this.state.current]}/>);
-    }
     return (
     <div>
     <p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>
-    {vaihtoehdot}
+    <Question onClick={this.seuraava} numero={i} kysymys={this.props.quiz[this.state.current]}/>
     <p>{this.state.correctAnswers}</p>
     </div>
     );
