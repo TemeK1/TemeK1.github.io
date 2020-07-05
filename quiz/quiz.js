@@ -39,7 +39,7 @@ class Execute extends React.Component {
     let seuraava = this.state.current + 1;
     let oikein = false;
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
-      if (vaihtoehto = options[i]) {
+      if (vaihtoehto = this.props.quiz[this.state.current].options[i]) {
         oikein = true;
         break;
       }
