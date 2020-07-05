@@ -2,7 +2,7 @@
 var questions = [
 {
   "question": "Where does Teemu want to work?",
-  "options": ["Jyväskylä", "Tampere", "Either way, also open for ideas/suggestions."],
+  "options": ["In Jyväskylä", "In Tampere", "Either way, also open for ideas/suggestions."],
   "correctAnswer": [2]
 },
 {
