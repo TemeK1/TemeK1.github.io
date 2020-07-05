@@ -87,19 +87,11 @@ class Question extends React.Component {
      super(props);
 
      this.state = {
-       "showAnswers": false,
        "tarkista": false
      }
 
-     this.nayta = this.nayta.bind(this);
      this.soita = this.soita.bind(this);
      this.tarkista = this.tarkista.bind(this);
-  }
-
-  nayta() {
-    this.setState({
-      "showAnswers": true
-    })
   }
 
   tarkista() {
@@ -109,7 +101,7 @@ class Question extends React.Component {
   }
 
   soita() {
-    this.props.soita(this.nayta);
+    this.props.soita();
   }
 
   render() {
