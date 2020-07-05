@@ -107,10 +107,10 @@ class Question extends React.Component {
     let luokka = "";
     let vaihtoehdot = [];
     console.log("asd");
+    let mappi = new Map();
     if (this.props.lopussa == true) {
       vaihtoehdot.push(<p>Congratulations!</p>);
     } else {
-      let mappi = new Map();
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
         luokka = ""
         if (this.state.showAnswers == true) {
