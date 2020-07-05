@@ -34,6 +34,7 @@ class Execute extends React.Component {
     }
 
     this.seuraava = this.seuraava.bind(this);
+    this.soita = this.seuraava.soita(this);
   }
 
   seuraava(soita) {
@@ -66,7 +67,7 @@ class Execute extends React.Component {
       "soita": soita
     })
     if (lopussa == true) {
-      this.state.soita();
+      soita();
     }
   }
 
@@ -98,12 +99,17 @@ class Question extends React.Component {
      }
 
      this.nayta = this.nayta.bind(this);
+     this.soita = this.soita.bind(this);
   }
 
   nayta() {
     this.setState({
       "showAnswers": true
     })
+  }
+
+  soita() {
+    this.props.soita(this.nayta);
   }
 
   render() {
@@ -133,7 +139,7 @@ class Question extends React.Component {
 
       } else {
         for (let i = 0; i < this.props.kysymys.options.length; i++) {
-           vaihtoehdot.push(<li onClick={this.props.soita(this.nayta)} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</li>);
+           vaihtoehdot.push(<li onClick={this.soita} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</li>);
         }
       }
 
