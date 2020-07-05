@@ -63,8 +63,7 @@ class Execute extends React.Component {
       "correctAnswers": oikeat,
       "finished": lopussa
     })
-    
-    soitaTakaisin();
+    soitatakaisin();
   }
 
   render() {
@@ -126,7 +125,7 @@ class Question extends React.Component {
       }
 
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
-         vaihtoehdot.push(<p onClick={this.props.soita(this.state.callForAnswers)} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+         vaihtoehdot.push(<p onClick={this.props.soita(this.nayta)} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
       }
     }
 
