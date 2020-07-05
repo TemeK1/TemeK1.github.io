@@ -38,6 +38,7 @@ class Execute extends React.Component {
   seuraava(vaihtoehto) {
     let seuraava = this.state.current + 1;
     let oikein = false;
+    let oikeat = 0;
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
       if (vaihtoehto = this.props.quiz[this.state.current].options[i]) {
         oikein = true;
@@ -46,16 +47,13 @@ class Execute extends React.Component {
     }
 
     if (oikein === true) {
-      let oikeat = this.state.correctAnswers + 1;
-      this.setState({
-        "correctAnswers": oikeat
-      })
+      oikeat = this.state.correctAnswers + 1
       oikein = false;
     }
 
-    if (this.props.quiz[this.state.current].corret)
     this.setState({
-      "current": seuraava
+      "current": seuraava,
+      "correctAnswers": oikeat
     })
   }
 
