@@ -35,7 +35,11 @@ class Execute extends React.Component {
   }
 
   seuraava() {
-    let seuraava = this.state.current + 1;
+    let seuraava = this.state.current;
+    if (this.props.quiz.length > this.state.current) {
+      seuraava = this.state.current + 1;
+    }
+
     let oikein = false;
     let oikeat = 0;
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
