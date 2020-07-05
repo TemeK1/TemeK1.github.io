@@ -80,7 +80,7 @@ class Execute extends React.Component {
     <div>
     {tekstit}
     <Question soita={this.seuraava} lopussa={this.state.finished} kysymys={this.props.quiz[this.state.current]}/>
-    <p><label for="disk_c">Quiz percentage:</label>
+    <p>
     <meter id="quiz_progress" value={percentage}>Quiz%</meter>
     </p>
     </div>
