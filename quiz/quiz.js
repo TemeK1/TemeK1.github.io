@@ -63,9 +63,7 @@ class Execute extends React.Component {
       "correctAnswers": oikeat,
       "finished": lopussa
     })
-    if (lopussa === true) {
-      soitaTakaisin();
-    }
+
   }
 
   render() {
