@@ -90,7 +90,8 @@ class Question extends React.Component {
      super(props);
 
      this.state = {
-       "showAnswers": false
+       "showAnswers": false,
+       "soitaTahan": this.soita
      }
 
      this.nayta = this.nayta.bind(this);
@@ -129,7 +130,7 @@ class Question extends React.Component {
 
       } else {
         for (let i = 0; i < this.props.kysymys.options.length; i++) {
-           vaihtoehdot.push(<p><label onClick={this.props.soita(this.nayta)} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</label></p>);
+           vaihtoehdot.push(<p><label onClick={this.props.soita(this.state.soitaTahan)} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</label></p>);
         }
       }
 
