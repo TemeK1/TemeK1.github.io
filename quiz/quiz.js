@@ -61,6 +61,7 @@ class Execute extends React.Component {
       "current": seuraava,
       "correctAnswers": oikeat,
       "finished": lopussa
+      "sSeuraava": this.seuraava
     })
     if (lopussa == true) {
       soitaTakaisin();
@@ -77,7 +78,7 @@ class Execute extends React.Component {
     return (
     <div>
     {tekstit}
-    <Question soita={this.seuraava} lopussa={this.state.finished} kysymys={this.props.quiz[this.state.current]}/>
+    <Question soita={this.state.sSeuraava} lopussa={this.state.finished} kysymys={this.props.quiz[this.state.current]}/>
     <p>{this.state.correctAnswers}</p>
     </div>
     );
