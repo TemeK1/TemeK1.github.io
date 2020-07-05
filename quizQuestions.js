@@ -2,13 +2,13 @@
 var questions = [
 {
   "question": "Where does Teemu want to work?",
-  "options": ["In Jyväskylä", "In Tampere", "Either way, he is also open for ideas/suggestions."],
-  "correctAnswer": [2]
+  "options": ["In Jyväskylä", "Either way, he is also open for ideas/suggestions.", "In Tampere"],
+  "correctAnswer": [1]
 },
 {
   "question": "Would Teemu want to work for a governmental organization or in the private sector?",
-  "options": ["A governmental organization", "Private sector", "Doesn't matter, as long as the job is right and meaningful for him."],
-  "correctAnswer": [2]
+  "options": ["Doesn't matter, as long as the job is right and meaningful for him.", "A governmental organization", "Private sector"],
+  "correctAnswer": [0]
 },
 {
   "question": "What would Teemu want to become?",
