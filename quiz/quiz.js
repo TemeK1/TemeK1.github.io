@@ -78,9 +78,9 @@ class Question extends React.Component {
     let abc = ["a","b","c","d","e","f"];
     let luokka = "wrongAnswer";
     let vaihtoehdot = [];
-    for (let i = 0; i < this.props.kysymys.options.length; i++) {
-      for (let j = 0; j < this.props.kysymys.correctAnswer.length; j++) {
-         if (i == this.props.kysymys.correctAnswer[j]) {
+    for (let i = 0; i < this.props.kysymys.correctAnswer.length; i++) {
+      for (let j = 0; j < this.props.kysymys.options.length; j++) {
+         if (j == this.props.kysymys.correctAnswer[i]) {
            luokka = "correctAnswer";
          } else {
            luokka = "wrongAnswer";
