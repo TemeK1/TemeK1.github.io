@@ -44,4 +44,4 @@ var questions = [
   "question": "Onko Teemu vapaana työmarkkinoille?",
   "options": ["Ei vielä", "On vaikka heti!", "Keväällä 2020"],
   "correctAnswer": [1]
-},
+}]
