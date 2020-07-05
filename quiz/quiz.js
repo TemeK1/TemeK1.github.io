@@ -79,7 +79,7 @@ class Question extends React.Component {
     let luokka = "wrongAnswer";
     for (let i = 0; i < this.props.kysymys.options.length; i++) {
       for (let j = 0; i < this.props.kysymys.correctAnswer[j]; j++) {
-         if (this.props.kysymys.options[i] == this.props.kysymys.correctAnswer[j]) {
+         if (i == this.props.kysymys.correctAnswer[j]) {
            luokka = "correctAnswer";
          }
       }
