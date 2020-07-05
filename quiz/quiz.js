@@ -78,7 +78,7 @@ class Execute extends React.Component {
     <div>
     {tekstit}
     <Question soita={this.seuraava} lopussa={this.state.finished} kysymys={this.props.quiz[this.state.current]}/>
-    <p><strong>{this.props.current}/{this.props.quiz.length}</strong></p>>
+    <p><strong>{this.state.current}/{this.props.quiz.length}</strong></p>
     </div>
     );
   }
