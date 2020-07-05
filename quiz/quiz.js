@@ -23,16 +23,27 @@ class Quiz extends React.Component {
 }
 
 
-class Start extends React.Component {
+class Execute extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      "current": 0,
+      "correctAnswers": 0
+    }
 
   }
 
   render() {
+    let vaihtoehdot = [];
+
+    for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
+      vaihtoehdot.push(<p>this.props.quiz(this.state.current].options[i])</p>);
+    }
     return (
     <div>
-    {this.props.quiz[0].question}
+    <p>{this.props.quiz[this.state.current].question}</p>
+    {vaihtoehdot}
     </div>
     );
   }
