@@ -12,7 +12,7 @@ var questions = [
 },
 {
   "question": "What would Teemu want to become?",
-  "options": ["Fullstack Developer", "Software Tester", "Java/C#/Python Nerd", "All of Above Options"],
+  "options": ["Fullstack Developer", "Software Tester", "Java/C#/Python Nerd", "Any of the above options work"],
   "correctAnswer": [0,1,2,3]
 },
 {
