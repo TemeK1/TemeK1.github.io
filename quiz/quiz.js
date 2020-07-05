@@ -63,7 +63,9 @@ class Execute extends React.Component {
       "correctAnswers": oikeat,
       "finished": lopussa
     })
-
+    if (lopussa === true) {
+      soitaTakaisin();
+    }
   }
 
   render() {
@@ -96,9 +98,7 @@ class Question extends React.Component {
   }
 
   nayta() {
-    this.setState({
-      "showAnswers": true
-    })
+
   }
 
   render() {
