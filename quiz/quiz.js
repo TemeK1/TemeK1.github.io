@@ -60,8 +60,8 @@ class Execute extends React.Component {
 
     return (
     <div>
-    <p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>
-    <Question onClick={this.seuraava} kysymys={this.props.quiz[this.state.current]}/>
+    <p onClick={this.seuraava}><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>
+    <Question kysymys={this.props.quiz[this.state.current]}/>
     <p>{this.state.correctAnswers}</p>
     </div>
     );
