@@ -46,7 +46,7 @@ class Execute extends React.Component {
     let vaihtoehdot = [];
     let abc = ["a","b","c","d","e","f"];
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
-      vaihtoehdot.push(<p onClick={this.seuraava}>><strong>{abc[i]}) </strong> {this.props.quiz[this.state.current].options[i]}</p>);
+      vaihtoehdot.push(<p onClick={this.seuraava}><strong>{abc[i]})</strong> {this.props.quiz[this.state.current].options[i]}</p>);
     }
     return (
     <div>
