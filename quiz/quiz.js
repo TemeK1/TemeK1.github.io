@@ -78,6 +78,7 @@ class Question extends React.Component {
     let abc = ["a","b","c","d","e","f"];
     let luokka = "wrongAnswer";
     let vaihtoehdot = [];
+    let mappi = new Map();
     for (let i = 0; i < this.props.kysymys.options.length; i++) {
       for (let j = 0; j < this.props.kysymys.correctAnswer.length; j++) {
          if (i == this.props.kysymys.correctAnswer[j]) {
@@ -86,7 +87,11 @@ class Question extends React.Component {
            luokka = "wrongAnswer";
          }
       }
-      vaihtoehdot.push(<p className={luokka}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+      mappi.set(i, luokka);
+    }
+
+    for (let i = 0; i < this.props.kysymys.options.length; i++) {
+       vaihtoehdot.push(<p className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);  
     }
 
     return (
