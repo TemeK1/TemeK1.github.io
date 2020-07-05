@@ -78,9 +78,7 @@ class Execute extends React.Component {
     return (
     <div>
     {tekstit}
-    <ul>
     <Question soita={this.seuraava} lopussa={this.state.finished} kysymys={this.props.quiz[this.state.current]}/>
-    </ul>
     <p>{this.state.correctAnswers}</p>
     </div>
     );
@@ -119,7 +117,7 @@ class Question extends React.Component {
       vaihtoehdot.push(<li>Congratulations!</li>);
     } else {
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
-        luokka = "wrongAnswer"
+        luokka = ""
         if (this.state.showAnswers == true) {
           luokka = "wrongAnswer";
         }
@@ -136,7 +134,7 @@ class Question extends React.Component {
 
       } else {
         for (let i = 0; i < this.props.kysymys.options.length; i++) {
-           vaihtoehdot.push(<li onClick={this.soita} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</li>);
+           vaihtoehdot.push(<p onClick={this.soita} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
         }
       }
 
