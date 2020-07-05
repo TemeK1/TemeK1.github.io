@@ -46,10 +46,11 @@ class Execute extends React.Component {
     }
 
     if (oikein === true) {
-      let oikein = this.state.correctAnswers + 1;
+      let oikeat = this.state.correctAnswers + 1;
       this.setState({
-        "correctAnswers": oikein
+        "correctAnswers": oikeat
       })
+      oikein = false;
     }
 
     if (this.props.quiz[this.state.current].corret)
