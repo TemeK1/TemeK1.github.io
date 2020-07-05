@@ -78,6 +78,7 @@ class Execute extends React.Component {
     <div>
     {tekstit}
     <Question soita={this.seuraava} lopussa={this.state.finished} kysymys={this.props.quiz[this.state.current]}/>
+    <p><strong>{this.props.current}/{this.props.quiz.length}</strong></p>>
     </div>
     );
   }
@@ -136,9 +137,6 @@ class Question extends React.Component {
         }
       }
       if (this.props.lopussa == true) {
-        if (this.state.tarkista == false) {
-          nappula.push(<button className="quizButton" onClick={this.soita}>Finish quiz</button>);
-        }
       } else {
         if (this.state.tarkista == true) {
           nappula.push(<button className="quizButton" onClick={this.soita}>Next question</button>);
