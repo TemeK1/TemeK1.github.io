@@ -28,7 +28,7 @@ var questions = [
 {
   "question": "What of these following topics Teemu has theoretical (and also some practical) knowledge?",
   "options": ["Software Architecture", "Software Requirements Engineering", "Software Testing Project", "SQL", "System- and information security", "All of the above and more."],
-  "correctAnswer": [0,1,2,3, 4, 5]
+  "correctAnswer": [0,1,2,3,4,5]
 },
 {
   "question": "Is Teemu enthusiastic and motivated entry-level developer?",
