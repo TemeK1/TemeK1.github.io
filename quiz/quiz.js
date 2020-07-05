@@ -80,10 +80,11 @@ class Question extends React.Component {
     let vaihtoehdot = [];
     let mappi = new Map();
     for (let i = 0; i < this.props.kysymys.options.length; i++) {
+      luokka = "wrongAnswer";
       for (let j = 0; j < this.props.kysymys.correctAnswer.length; j++) {
          if (i == this.props.kysymys.correctAnswer[j]) {
            luokka = "correctAnswer";
-         } 
+         }
          mappi.set(i, luokka);
       }
     }
