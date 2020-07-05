@@ -113,6 +113,7 @@ class Question extends React.Component {
     } else {
       let mappi = new Map();
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
+        luokka = "";
         if (this.state.showAnswers === true) {
           luokka = "wrongAnswer";
         }
