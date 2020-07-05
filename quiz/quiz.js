@@ -4,7 +4,7 @@ class Quiz extends React.Component {
     let allQuestions = [];
 
     for (let i = 0; i < questions.length; i++) {
-      allQuestions.push(JSON.parse(JSON.stringify(data[i])));
+      allQuestions.push(JSON.parse(JSON.stringify(questions[i])));
     }
 
     this.state = {
@@ -12,7 +12,7 @@ class Quiz extends React.Component {
     };
 
  }
- 
+
   render() {
     return (
       <div>
