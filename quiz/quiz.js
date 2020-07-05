@@ -44,23 +44,24 @@ class Execute extends React.Component {
       lopussa = true;
     }
 
-//  let oikein = false;
-//  let oikeat = 0;
-//  for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
-//    if (1 == this.props.quiz[this.state.current].options[i]) {
-//      oikein = true;
-//      break;
-//    }
-//  }//
-//  if (oikein === true) {
-//    oikeat = this.state.correctAnswers + 1;
-//    oikein = false;
-//  }
+    let oikein = false;
+    let oikeat = 0;
+    for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
+      if (1 == this.props.quiz[this.state.current].options[i]) {
+        oikein = true;
+        break;
+      }
+    }
+    
+    if (oikein === true) {
+      oikeat = this.state.correctAnswers + 1;
+      oikein = false;
+    }
 
     this.setState({
       "current": seuraava,
       "correctAnswers": oikeat,
-      "finished": lopussa
+      "finished": lopussa,
       "sSeuraava": this.seuraava
     })
     if (lopussa == true) {
