@@ -83,9 +83,11 @@ class Question extends React.Component {
          if (i == this.props.kysymys.correctAnswer[j]) {
            luokka = "correctAnswer";
            vaihtoehdot.push(<p className={luokka}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+           break;
          } else {
            luokka = "wrongAnswer";
            vaihtoehdot.push(<p className={luokka}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+           break;
          }
       }
     }
