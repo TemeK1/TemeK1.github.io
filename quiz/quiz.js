@@ -29,8 +29,7 @@ class Execute extends React.Component {
     this.state = {
       "current": 0,
       "correctAnswers": 0,
-      "finished": false,
-      "soita": 0
+      "finished": false
     }
 
     this.seuraava = this.seuraava.bind(this);
@@ -63,8 +62,7 @@ class Execute extends React.Component {
     this.setState({
       "current": seuraava,
       "correctAnswers": oikeat,
-      "finished": lopussa,
-      "soita": soita
+      "finished": lopussa
     })
     if (lopussa == true) {
       soita();
