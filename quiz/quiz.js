@@ -38,7 +38,7 @@ class Execute extends React.Component {
     let vaihtoehdot = [];
 
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
-      vaihtoehdot.push(<p>{this.props.quiz[this.state.current].options[i]})</p>);
+      vaihtoehdot.push(<p>{this.props.quiz[this.state.current].options[i]}</p>);
     }
     return (
     <div>
