@@ -70,12 +70,12 @@ class Execute extends React.Component {
     if (this.state.finished === true) {
       tekstit.push(<h2>The quiz is finished!</h2>);
     } else {
-      tekstit.push(<p onClick={this.seuraava}><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>);
+      tekstit.push(<p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>);
     }
     return (
     <div>
     {tekstit}
-    <Question lopussa={this.state.finished} kysymys={this.props.quiz[this.state.current]}/>
+    <Question soita={this.seuraava} lopussa={this.state.finished} kysymys={this.props.quiz[this.state.current]}/>
     <p>{this.state.correctAnswers}</p>
     </div>
     );
@@ -108,7 +108,7 @@ class Question extends React.Component {
       }
 
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
-         vaihtoehdot.push(<p className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+         vaihtoehdot.push(<p onClick={this.props.soita} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
       }
     }
 
