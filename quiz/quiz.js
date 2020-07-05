@@ -64,7 +64,7 @@ class Execute extends React.Component {
       "finished": lopussa
     })
     if (lopussa === true) {
-      soitaTakaisin();
+      //soitaTakaisin();
     }
   }
 
