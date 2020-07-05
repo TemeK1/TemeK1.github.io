@@ -22,7 +22,6 @@ class Quiz extends React.Component {
   }
 }
 
-
 class Execute extends React.Component {
   constructor(props) {
     super(props);
@@ -61,13 +60,12 @@ class Execute extends React.Component {
     let vaihtoehdot = [];
     let abc = ["a","b","c","d","e","f"];
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
-      vaihtoehdot.push(<p onClick={this.seuraava(i)}><strong>{abc[i]})</strong> {this.props.quiz[this.state.current].options[i]}</p>);
+      vaihtoehdot.push(<p onClick={this.seuraava(0)}><strong>{abc[i]})</strong> {this.props.quiz[this.state.current].options[i]}</p>);
     }
     return (
     <div>
     <p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>
     {vaihtoehdot}
-
     <p>{this.state.correctAnswers}</p>
     </div>
     );

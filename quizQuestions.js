@@ -42,6 +42,6 @@ var questions = [
 },
 {
   "question": "Onko Teemu vapaana työmarkkinoille?",
-  "options": ["On vaikka heti!", "Keväällä 2057"],
-  "correctAnswer": [0]
+  "options": ["Keväällä 2057", "On vaikka heti!"],
+  "correctAnswer": [1]
 }]
