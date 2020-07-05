@@ -16,7 +16,7 @@ class Quiz extends React.Component {
   render() {
     return (
       <div>
-      <Start quiz={this.state.kysymykset} />
+      <Execute quiz={this.state.kysymykset} />
       </div>
     );
   }
