@@ -90,8 +90,7 @@ class Question extends React.Component {
      super(props);
 
      this.state = {
-       "showAnswers": false,
-       "callForAnswers": this.nayta
+       "showAnswers": false
      }
 
      this.nayta = this.nayta.bind(this);
