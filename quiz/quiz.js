@@ -44,6 +44,8 @@ class Execute extends React.Component {
       lopussa = true;
     }
 
+    soita();
+
     let oikein = false;
     let oikeat = 0;
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
@@ -63,9 +65,6 @@ class Execute extends React.Component {
       "correctAnswers": oikeat,
       "finished": lopussa
     })
-    if (lopussa == true) {
-      soita();
-    }
   }
 
   render() {
