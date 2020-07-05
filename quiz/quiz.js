@@ -44,6 +44,8 @@ class Execute extends React.Component {
       lopussa = true;
     }
 
+    soita();
+    
     let oikein = false;
     let oikeat = 0;
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
@@ -92,6 +94,7 @@ class Question extends React.Component {
 
      this.soita = this.soita.bind(this);
      this.tarkista = this.tarkista.bind(this);
+     this.piilota = this.piilota.bind(this);
   }
 
   tarkista() {
@@ -101,7 +104,13 @@ class Question extends React.Component {
   }
 
   soita() {
-    this.props.soita();
+    this.props.soita(this.piilota);
+  }
+
+  piilota() {
+    this.setState({
+      "tarkista": false
+    })
   }
 
   render() {
