@@ -35,7 +35,7 @@ class Execute extends React.Component {
     this.seuraava = this.seuraava.bind(this);
   }
 
-  seuraava(soitaTakaisin) {
+  seuraava() {
     let seuraava = this.state.current;
     let lopussa = false;
     if (this.props.quiz.length > this.state.current + 1) {
@@ -64,7 +64,7 @@ class Execute extends React.Component {
       "finished": lopussa
     })
     if (lopussa == true) {
-      soitaTakaisin();
+      //soitaTakaisin();
     }
   }
 
@@ -130,7 +130,7 @@ class Question extends React.Component {
 
       } else {
         for (let i = 0; i < this.props.kysymys.options.length; i++) {
-           vaihtoehdot.push(<p><label onClick={this.props.soita(this.state.soitaTahan)} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</label></p>);
+           vaihtoehdot.push(<p><label onClick={this.props.soita} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</label></p>);
         }
       }
 
