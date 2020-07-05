@@ -75,7 +75,7 @@ class Execute extends React.Component {
       tekstit.push(<p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>);
     }
 
-    let percentage = (this.state.current) / this.props.quiz.length - 1;
+    let percentage = (this.state.current + 1) / this.props.quiz.length;
     return (
     <div>
     {tekstit}
