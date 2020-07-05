@@ -12,7 +12,7 @@ var questions = [
 },
 {
   "question": "Mikä Teemu haluaisi olla työelämässä?",
-  "options": ["Fullstack devaaja", "Sovellustestaaja", "Java/C#/Python nörtti" "Kaikki käy!"],
+  "options": ["Fullstack devaaja", "Sovellustestaaja", "Java/C#/Python nörtti", "Kaikki käy!"],
   "correctAnswer": [0,1,2,3]
 },
 {
