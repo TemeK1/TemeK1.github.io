@@ -83,9 +83,7 @@ class Question extends React.Component {
       for (let j = 0; j < this.props.kysymys.correctAnswer.length; j++) {
          if (i == this.props.kysymys.correctAnswer[j]) {
            luokka = "correctAnswer";
-         } else {
-           luokka = "wrongAnswer";
-         }
+         } 
          mappi.set(i, luokka);
       }
     }
