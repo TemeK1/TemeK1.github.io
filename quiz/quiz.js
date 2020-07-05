@@ -60,7 +60,7 @@ class Execute extends React.Component {
 
     this.setState({
       "current": seuraava,
-      "correctAnswers": oikeat
+      "correctAnswers": oikeat,
       "finished": lopussa
     })
   }
