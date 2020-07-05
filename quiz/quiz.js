@@ -87,6 +87,7 @@ class Question extends React.Component {
            luokka = "wrongAnswer";
          }
          mappi.set(i, luokka);
+         break;
       }
     }
 
