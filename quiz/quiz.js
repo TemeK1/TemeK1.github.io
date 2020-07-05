@@ -138,6 +138,7 @@ class Question extends React.Component {
       if (this.props.lopussa == true) {
         if (this.state.tarkista == true) {
           nappula.push(<button className="quizButton" onClick={this.soita}>Finish quiz</button>);
+        }
       } else {
         if (this.state.tarkista == true) {
           nappula.push(<button className="quizButton" onClick={this.soita}>Next question</button>);
