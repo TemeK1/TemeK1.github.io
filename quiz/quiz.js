@@ -35,7 +35,7 @@ class Execute extends React.Component {
     this.seuraava = this.seuraava.bind(this);
   }
 
-  seuraava() {
+  seuraava(soitaTakaisin) {
     let seuraava = this.state.current;
     let lopussa = false;
     if (this.props.quiz.length > this.state.current + 1) {
@@ -63,6 +63,8 @@ class Execute extends React.Component {
       "correctAnswers": oikeat,
       "finished": lopussa
     })
+    
+    soitaTakaisin();
   }
 
   render() {
@@ -86,11 +88,23 @@ class Question extends React.Component {
    constructor(props) {
      super(props);
 
+     this.state = {
+       "showAnswers": false,
+       "callForAnswers": this.nayta
+     }
+
+     this.nayta = this.nayta.bind(this);
+  }
+
+  nayta() {
+    this.setState({
+      "showAnswers": true
+    })
   }
 
   render() {
     let abc = ["a","b","c","d","e","f"];
-    let luokka = "wrongAnswer";
+    let luokka = "";
     let vaihtoehdot = [];
 
     if (this.props.lopussa === true) {
@@ -98,17 +112,21 @@ class Question extends React.Component {
     } else {
       let mappi = new Map();
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
-        luokka = "wrongAnswer";
+        if (this.state.showAnswers === true) {
+          luokka = "wrongAnswer";
+        }
         for (let j = 0; j < this.props.kysymys.correctAnswer.length; j++) {
            if (i == this.props.kysymys.correctAnswer[j]) {
-             luokka = "correctAnswer";
+             if (this.state.showAnswers === true) {
+               luokka = "correctAnswer";
+             }
            }
            mappi.set(i, luokka);
         }
       }
 
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
-         vaihtoehdot.push(<p onClick={this.props.soita} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+         vaihtoehdot.push(<p onClick={this.props.soita(this.state.callForAnswers)} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
       }
     }
 
