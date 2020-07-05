@@ -125,10 +125,14 @@ class Question extends React.Component {
            mappi.set(i, luokka);
         }
       }
+      if (this.props.lopussa == true) {
 
-      for (let i = 0; i < this.props.kysymys.options.length; i++) {
-         vaihtoehdot.push(<p><label onClick={this.props.soita(this.nayta)} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</label></p>);
+      } else {
+        for (let i = 0; i < this.props.kysymys.options.length; i++) {
+           vaihtoehdot.push(<p><label onClick={this.props.soita(this.nayta)} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</label></p>);
+        }
       }
+
     }
 
     return (
