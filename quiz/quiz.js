@@ -35,7 +35,7 @@ class Execute extends React.Component {
     this.seuraava = this.seuraava.bind(this);
   }
 
-  seuraava() {
+  seuraava(soitaTakaisin) {
     let seuraava = this.state.current;
     let lopussa = false;
     if (this.props.quiz.length > this.state.current + 1) {
@@ -63,14 +63,14 @@ class Execute extends React.Component {
       "correctAnswers": oikeat,
       "finished": lopussa
     })
-    if (lopussa === true) {
-      //soitaTakaisin();
+    if (lopussa == true) {
+      soitaTakaisin();
     }
   }
 
   render() {
     let tekstit = [];
-    if (this.state.finished === true) {
+    if (this.state.finished == true) {
       tekstit.push(<h2>The quiz is finished!</h2>);
     } else {
       tekstit.push(<p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>);
@@ -107,14 +107,14 @@ class Question extends React.Component {
     let abc = ["a","b","c","d","e","f"];
     let luokka = "";
     let vaihtoehdot = [];
-
-    if (this.props.lopussa === true) {
+    console.log("asd");
+    if (this.props.lopussa == true) {
       vaihtoehdot.push(<p>Congratulations!</p>);
     } else {
       let mappi = new Map();
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
-        luokka = "";
-        if (this.state.showAnswers === true) {
+        luokka = ""
+        if (this.state.showAnswers == true) {
           luokka = "wrongAnswer";
         }
         for (let j = 0; j < this.props.kysymys.correctAnswer.length; j++) {
@@ -128,7 +128,7 @@ class Question extends React.Component {
       }
 
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
-         vaihtoehdot.push(<p onClick={this.props.soita()} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+         vaihtoehdot.push(<p onClick={this.props.soita(this.nayta)} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
       }
     }
 
