@@ -74,12 +74,14 @@ class Execute extends React.Component {
     } else {
       tekstit.push(<p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>);
     }
+
+    let percentage = (this.state.current + 1) / this.props.quiz.length;
     return (
     <div>
     {tekstit}
     <Question soita={this.seuraava} lopussa={this.state.finished} kysymys={this.props.quiz[this.state.current]}/>
     <p><label for="disk_c">Quiz percentage:</label>
-    <meter id="quiz_progress" value={this.state.current + 1} min="1" max={this.props.quiz.length + 1}>Quiz%</meter>
+    <meter id="quiz_progress" value={percentage}>Quiz%</meter>
     </p>
     </div>
     );
