@@ -1,47 +1,42 @@
 "use strict";
 var questions = [
 {
-  "question": "Missä Teemu haluaa mieluiten työskennellä?",
-  "options": ["Jyväskylässä", "Tampereella", "Kumpikin käy ja muitakin ehdotuksia otetaan vastaan!"],
+  "question": "Where does Teemu want to work?",
+  "options": ["Jyväskylä", "Tampere", "Either way, also open for ideas/suggestions."],
   "correctAnswer": [2]
 },
 {
-  "question": "Haluaisiko Teemu työskennellä valtiolle vai yksityiselle?",
-  "options": ["Valtio", "Yksityinen sektori", "Ei mitään väliä. Työ ja sen mielekkyys ratkaisee."],
+  "question": "Would Teemu want to work for governmental organization or private sector?",
+  "options": ["Governmental organization", "Private sector", "Doesn't matter, as long as it is the right and meaningful job."],
   "correctAnswer": [2]
 },
 {
-  "question": "Mikä Teemu haluaisi olla työelämässä?",
-  "options": ["Fullstack devaaja", "Sovellustestaaja", "Java/C#/Python nörtti", "Kaikki käy!"],
+  "question": "What would Teemu want to become?",
+  "options": ["Fullstack Developer", "Software Tester", "Java/C#/Python Nerd", "All of Above Options"],
   "correctAnswer": [0,1,2,3]
 },
 {
-  "question": "Milloin Teemu saa ohjelmistotekniikan opintonsa pakettiin Jyväskylän yliopistossa?",
-  "options": ["Ei koskaan!", "Syksyllä 2020", "Todennäköisesti keväällä 2021"],
+  "question": "When will Teemu finish his studies at the University of Jyväskylä?",
+  "options": ["Never!", "Autumn 2020", "It's likely to be in Spring 2020"],
   "correctAnswer": [2]
 },
 {
-  "question": "Onko Teemu ahkera oppimaan uusia asioita?",
-  "options": ["Nääh... kuulostaa tylsältä.", "Todellakin, joka päivä!"],
+  "question": "Is Teemu motivated to learn new things?",
+  "options": ["No, that sounds silly.", "Absolutely, every day!"],
   "correctAnswer": [1]
 },
 {
-  "question": "Mistä näistä seuraavista asioista Teemulla on paljon teoreettista tietämystä (ja jonkin verran myös käytännön)?",
-  "options": ["Ohjelmistoarkkitehtuuri", "Vaatimusmäärittely", "Testausprojektin läpivienti", "SQL", "Järjestelmä- ja tietoturvallisuus", "Kaikki nämä ja paljon muuta."],
+  "question": "What of these following topics Teemu has theoretical (and also some practical) knowledge?",
+  "options": ["Software Architecture", "Software Requirements Engineering", "Software Testing Project", "SQL", "System- and information security", "All of the above and more."],
   "correctAnswer": [0,1,2,3, 4, 5]
 },
 {
-  "question": "Entäpä Teemun englanninkielen taidot?",
-  "options": ["Lähes olemattomat", "Hyvä luetunymmärtäminen", "Hyvä puhetaito", "Hyvä kirjoitustaito", "Hyvä luetunymmärtäminen sekä puhe- ja kirjoitustaidot"],
-  "correctAnswer": [4]
-},
-{
-  "question": "Onko Teemu innokas ja motivoitunut entry-tason devaaja?",
-  "options": ["No aivan ehdottomasti!"],
+  "question": "Is Teemu enthusiastic and motivated entry-level developer?",
+  "options": ["100% correct. Absolutely."],
   "correctAnswer": [0]
 },
 {
-  "question": "Onko Teemu vapaana työmarkkinoille?",
-  "options": ["Keväällä 2057", "On vaikka heti!"],
+  "question": "Is Teemu free to hire at the moment??",
+  "options": ["In the Spring 2057", "As we speak!"],
   "correctAnswer": [1]
 }]
