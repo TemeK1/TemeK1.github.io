@@ -114,7 +114,7 @@ class Question extends React.Component {
       vaihtoehdot.push(<li>Congratulations!</li>);
     } else {
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
-        luokka = ""
+        luokka = "wrongAnswer"
         if (this.state.showAnswers == true) {
           luokka = "wrongAnswer";
         }
