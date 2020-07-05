@@ -33,7 +33,8 @@ class Start extends React.Component {
     return (
     <div>
       {this.props.quiz[0]};
-    </div>);
+    </div>
+    );
   }
 }
 
