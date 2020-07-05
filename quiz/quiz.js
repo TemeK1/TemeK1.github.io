@@ -36,7 +36,7 @@ class Execute extends React.Component {
 
   seuraava() {
     let seuraava = this.state.current;
-    if (this.props.quiz.length > this.state.current) {
+    if (this.props.quiz.length > this.state.current + 1) {
       seuraava = this.state.current + 1;
     }
 
