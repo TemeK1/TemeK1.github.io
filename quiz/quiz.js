@@ -57,10 +57,10 @@ class Execute extends React.Component {
   }
 
   render() {
+
     let vaihtoehdot = [];
-    let abc = ["a","b","c","d","e","f"];
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
-      vaihtoehdot.push(<p onClick={this.seuraava}><strong>{abc[i]})</strong> {this.props.quiz[this.state.current].options[i]}</p>);
+      vaihtoehdot.push(<Question numero={i} kysymys={this.props.quiz[this.state.current]}/>);
     }
     return (
     <div>
@@ -68,6 +68,31 @@ class Execute extends React.Component {
     {vaihtoehdot}
     <p>{this.state.correctAnswers}</p>
     </div>
+    );
+  }
+}
+
+class Question extends React.Component {
+   constructor(props) {
+     super(props);
+
+  }
+
+  render() {
+    let abc = ["a","b","c","d","e","f"];
+    let luokka = "wrongAnswer";
+    for (let i = 0; i < this.props.kysymys.options.length; i++) {
+      for (let j = 0; i < this.props.kysymys.correctAnswer[j]; j++) {
+         if (this.props.kysymys.options[i] == this.props.kysymys.correctAnswer[j]) {
+           luokka = "correctAnswer";
+         }
+      }
+    }
+
+    return (
+      <React.Fragment>
+      <p classname={luokka}><strong>{abc[this.props.numero]})</strong> {this.props.quiz[this.state.current].options[i]}</p>
+      </React.Fragment>
     );
   }
 }

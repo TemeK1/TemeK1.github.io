@@ -44,6 +44,14 @@ a.hyperosoite:hover, a.hyperosoite:active { text-decoration: none; background-co
   width: 20%;
 }
 
+.wrongAnswer {
+  background-color: red;
+}
+
+.correctAnswer {
+  background-color: #c2c2d6;
+}
+
 .hidden { display: none; }
 
 p.centerDice { animation: dice 1.66s infinite; animation-timing-function: cubic-bezier(0.50,0,0.50,1); color: white; text-align: center; }
