@@ -41,6 +41,16 @@ var questions = [
   "correctAnswer": [5]
 },
 {
+  "question": "What about Programming 1 (6 cr. #C-course)? How did Teemu score?",
+  "options": ["Fail", "1", "2", "3", "4", "5"],
+  "correctAnswer": [5]
+},
+{
+  "question": "What about Programming 2 (8 cr. Java-course)? How did Teemu score?",
+  "options": ["Fail", "1", "2", "3", "4", "5"],
+  "correctAnswer": [5]
+},
+{
   "question": "Is Teemu available for hiring at the moment?",
   "options": ["In Spring 2057", "As we speak!"],
   "correctAnswer": [1]
