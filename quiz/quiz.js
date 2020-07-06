@@ -100,7 +100,6 @@ class Question extends React.Component {
      this.soita = this.soita.bind(this);
      this.tarkista = this.tarkista.bind(this);
      this.piilota = this.piilota.bind(this);
-     this.pisteet = this.pisteet.bind(this);
   }
 
   tarkista(e) {
