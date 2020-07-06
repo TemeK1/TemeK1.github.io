@@ -69,11 +69,11 @@ class Execute extends React.Component {
       tekstit.push(<p><strong>The quiz is finished!</strong></p>);
       tekstit.push(<p><strong>You scored {this.state.correctAnswers}/{this.props.quiz.length}.</strong> Feel free to <a href="" class="hyperosoite">contact me</a> via mail, LinkedIn or Skype.</p>);
     } else {
+      let percentage = this.state.current / (this.props.quiz.length - 1);
       tekstit.push(<p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>);
       meter.push(<p><meter id="quiz_progress" value={percentage}>Quiz%</meter></p>);
     }
 
-    let percentage = this.state.current / (this.props.quiz.length - 1);
     return (
     <div>
     {tekstit}
