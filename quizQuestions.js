@@ -36,6 +36,11 @@ var questions = [
   "correctAnswer": [0]
 },
 {
+  "question": "80 people participated the web GUI programming (TIEA2120 Web-käyttöliittymien ohjelmointi) -course in the Spring 2020 at the University of Jyväskylä. Less than 5 of the participants got the highest grade; 5. How did Teemu score?",
+  "options": ["Fail", "1", "2", "3", "4", "5"],
+  "correctAnswer": [5]
+},
+{
   "question": "Is Teemu available for hiring at the moment?",
   "options": ["In Spring 2057", "As we speak!"],
   "correctAnswer": [1]
