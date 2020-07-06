@@ -36,7 +36,7 @@ var questions = [
   "correctAnswer": [0]
 },
 {
-  "question": "How did Teemu score in the web GUI (TIEA2120 Web-käyttöliittymien ohjelmointi) -course?",
+  "question": "How did Teemu score in the web GUI (TIEA2120 Web-käyttöliittymien ohjelmointi) -course? (5 is the highest grade)",
   "options": ["Fail", "1", "2", "3", "4", "5"],
   "correctAnswer": [5]
 },
