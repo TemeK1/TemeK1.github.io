@@ -104,11 +104,11 @@ class Question extends React.Component {
 
   tarkista(e) {
     let obj = e.target;
-    let koodi = obj.value;
+    let teksti = obj.innerText;
     let oikein = false;
     console.log(koodi);
     for (let i = 0; i < this.props.kysymys.correctAnswer.length; i++) {
-      if (koodi == this.props.kysymys.correctAnswer[i]) {
+      if (teksti.localeCompare(this.props.kysymys.correctAnswer[i]) == 0) {
         oikein = true;
         break;
       }
@@ -159,7 +159,7 @@ class Question extends React.Component {
           nappula.push(<button className="quizButton" onClick={this.soita}>Next question</button>);
         }
         for (let i = 0; i < this.props.kysymys.options.length; i++) {
-           vaihtoehdot.push(<p onClick={this.tarkista} salue="asd" className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+           vaihtoehdot.push(<p onClick={this.tarkista} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
         }
       }
 
