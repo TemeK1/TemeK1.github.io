@@ -36,7 +36,7 @@ class Execute extends React.Component {
     this.seuraava = this.seuraava.bind(this);
   }
 
-  seuraava(soita) {
+  seuraava(soita, lastOneCorrect) {
     let seuraava = this.state.current;
     let lopussa = false;
     if (this.props.quiz.length > this.state.current + 1) {
@@ -47,14 +47,8 @@ class Execute extends React.Component {
 
     let oikein = false;
     let oikeat = 0;
-    for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
-      if (1 == this.props.quiz[this.state.current].options[i]) {
-        oikein = true;
-        break;
-      }
-    }
 
-    if (oikein === true) {
+    if (lastOneCorrect == true) {
       oikeat = this.state.correctAnswers + 1;
     }
 
@@ -121,7 +115,7 @@ class Question extends React.Component {
   }
 
   soita() {
-    this.props.soita(this.piilota);
+    this.props.soita(this.piilota, this.state.lastOneCorrect);
   }
 
   piilota() {
