@@ -29,7 +29,8 @@ class Execute extends React.Component {
     this.state = {
       "current": 0,
       "correctAnswers": 0,
-      "finished": false
+      "finished": false,
+      "lastOneCorrect": false
     }
 
     this.seuraava = this.seuraava.bind(this);
@@ -44,8 +45,6 @@ class Execute extends React.Component {
       lopussa = true;
     }
 
-    soita();
-
     let oikein = false;
     let oikeat = 0;
     for (let i = 0; i < this.props.quiz[this.state.current].options.length; i++) {
@@ -57,13 +56,15 @@ class Execute extends React.Component {
 
     if (oikein === true) {
       oikeat = this.state.correctAnswers + 1;
-      oikein = false;
     }
+
+    soita();
 
     this.setState({
       "current": seuraava,
       "correctAnswers": oikeat,
-      "finished": lopussa
+      "finished": lopussa,
+      "lastOneCorrect": oikein
     })
   }
 
@@ -99,11 +100,24 @@ class Question extends React.Component {
      this.soita = this.soita.bind(this);
      this.tarkista = this.tarkista.bind(this);
      this.piilota = this.piilota.bind(this);
+     this.pisteet = this.pisteet.bind(this);
   }
 
-  tarkista() {
+  tarkista(e) {
+    let obj = e.target;
+    let koodi = obj.value;
+    let oikein = false;
+    console.log(koodi);
+    for (let i = 0; i < this.props.kysymys.correctAnswer.length; i++) {
+      if (koodi == this.props.kysymys.correctAnswer[i]) {
+        oikein = true;
+        break;
+      }
+    }
+
     this.setState({
-      "tarkista": true
+      "tarkista": true,
+      "lastOneCorrect": oikein
     })
   }
 
@@ -146,7 +160,7 @@ class Question extends React.Component {
           nappula.push(<button className="quizButton" onClick={this.soita}>Next question</button>);
         }
         for (let i = 0; i < this.props.kysymys.options.length; i++) {
-           vaihtoehdot.push(<p onClick={this.tarkista} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+           vaihtoehdot.push(<p onClick={this.tarkista} i={i} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
         }
       }
 
