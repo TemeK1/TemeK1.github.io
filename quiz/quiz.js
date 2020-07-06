@@ -155,6 +155,9 @@ class Question extends React.Component {
             nappula.push(<p>Incorrect!</p>);
           }
           nappula.push(<button className="quizButton" onClick={this.soita}>Next question</button>);
+          for (let i = 0; i < this.props.kysymys.options.length; i++) {
+             vaihtoehdot.push(<p className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+          }
         }
         for (let i = 0; i < this.props.kysymys.options.length; i++) {
            vaihtoehdot.push(<p onClick={this.tarkista} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
