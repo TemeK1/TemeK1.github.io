@@ -155,6 +155,9 @@ class Question extends React.Component {
       if (this.props.lopussa == true) {
       } else {
         if (this.state.tarkista == true) {
+          if (this.state.lastOneCorrect == true) {
+            <p>You got that correct!</p>
+          }
           nappula.push(<button className="quizButton" onClick={this.soita}>Next question</button>);
         }
         for (let i = 0; i < this.props.kysymys.options.length; i++) {
