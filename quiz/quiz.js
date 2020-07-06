@@ -106,7 +106,6 @@ class Question extends React.Component {
     let obj = e.target;
     let teksti = obj.innerText;
     let oikein = false;
-    console.log(koodi);
     for (let i = 0; i < this.props.kysymys.correctAnswer.length; i++) {
       if (teksti.localeCompare(this.props.kysymys.correctAnswer[i]) == 0) {
         oikein = true;
