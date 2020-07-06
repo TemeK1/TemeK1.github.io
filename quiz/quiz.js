@@ -70,10 +70,13 @@ class Execute extends React.Component {
 
   render() {
     let tekstit = [];
+    let meter = [];
     if (this.state.finished == true) {
       tekstit.push(<p><strong>The quiz is finished!</strong></p>);
+      tekstit.push(<p><strong>You scored x/y.</strong></p>);
     } else {
       tekstit.push(<p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>);
+      meter.push(<p><meter id="quiz_progress" value={percentage}>Quiz%</meter></p>);
     }
 
     let percentage = this.state.current / (this.props.quiz.length - 1);
@@ -81,9 +84,7 @@ class Execute extends React.Component {
     <div>
     {tekstit}
     <Question soita={this.seuraava} lopussa={this.state.finished} kysymys={this.props.quiz[this.state.current]}/>
-    <p>
-    <meter id="quiz_progress" value={percentage}>Quiz%</meter>
-    </p>
+    {meter}
     </div>
     );
   }
