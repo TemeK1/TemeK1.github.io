@@ -73,7 +73,7 @@ class Execute extends React.Component {
     let meter = [];
     if (this.state.finished == true) {
       tekstit.push(<p><strong>The quiz is finished!</strong></p>);
-      tekstit.push(<p><strong>You scored x/y.</strong></p>);
+      tekstit.push(<p><strong>You scored {this.state.correctAnswers}/{this.props.quiz.length}.</strong></p>);
     } else {
       tekstit.push(<p><strong>{this.state.current + 1}.</strong> {this.props.quiz[this.state.current].question}</p>);
       meter.push(<p><meter id="quiz_progress" value={percentage}>Quiz%</meter></p>);
@@ -137,7 +137,6 @@ class Question extends React.Component {
     let nappula = [];
     let mappi = new Map();
     if (this.props.lopussa == true) {
-      vaihtoehdot.push(<li>Congratulations!</li>);
     } else {
       for (let i = 0; i < this.props.kysymys.options.length; i++) {
         luokka = ""
