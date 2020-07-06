@@ -104,7 +104,8 @@ class Question extends React.Component {
 
   tarkista(e) {
     let obj = e.target;
-    let teksti = obj.innerText;
+    str.substring(str.indexOf(":") + 1);
+    let teksti = obj.innerText.split(": ").pop;
     let oikein = false;
     for (let i = 0; i < this.props.kysymys.correctAnswer.length; i++) {
       if (teksti.localeCompare(this.props.kysymys.options[this.props.kysymys.correctAnswer[i]]) == 0) {
