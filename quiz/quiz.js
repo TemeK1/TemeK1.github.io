@@ -98,10 +98,7 @@ class Question extends React.Component {
   }
 
   tarkista(e) {
-
-    if (this.state.tarkista == true) {
-      return;
-    }
+    return (this.state.tarkista ? true);
 
     let obj = e.target;
     let teksti = obj.innerText.split(") ")[1];
