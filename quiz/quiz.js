@@ -98,7 +98,7 @@ class Question extends React.Component {
   }
 
   tarkista(e) {
-    
+
     if (this.state.tarkista == true) {
       return;
     }
