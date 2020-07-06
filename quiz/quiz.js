@@ -159,7 +159,7 @@ class Question extends React.Component {
           nappula.push(<button className="quizButton" onClick={this.soita}>Next question</button>);
         }
         for (let i = 0; i < this.props.kysymys.options.length; i++) {
-           vaihtoehdot.push(<p onClick={this.tarkista} i={i} className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
+           vaihtoehdot.push(<p onClick={this.tarkista} i={i} value="asd" className={mappi.get(i)}><strong>{abc[i]})</strong> {this.props.kysymys.options[i]}</p>);
         }
       }
 
