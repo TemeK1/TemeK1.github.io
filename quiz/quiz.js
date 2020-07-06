@@ -156,7 +156,9 @@ class Question extends React.Component {
       } else {
         if (this.state.tarkista == true) {
           if (this.state.lastOneCorrect == true) {
-            nappula.push(<p>You got that correct!</p>);
+            nappula.push(<p>Correct!</p>);
+          } else {
+            nappula.push(<p>Incorrect!</p>);
           }
           nappula.push(<button className="quizButton" onClick={this.soita}>Next question</button>);
         }
