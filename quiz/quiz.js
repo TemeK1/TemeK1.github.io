@@ -46,7 +46,7 @@ class Execute extends React.Component {
     }
 
     let oikein = false;
-    let oikeat = 0;
+    let oikeat = this.state.correctAnswers;
 
     if (lastOneCorrect == true) {
       oikeat = this.state.correctAnswers + 1;
