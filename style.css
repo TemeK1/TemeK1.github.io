@@ -52,6 +52,10 @@ a.hyperosoite:hover, a.hyperosoite:active { text-decoration: none; background-co
   background-color: #24E28A;
 }
 
+#quiz_progress {
+  width: 100%;
+}
+
 .hidden { display: none; }
 
 p.centerDice { animation: dice 1.66s infinite; animation-timing-function: cubic-bezier(0.50,0,0.50,1); color: white; text-align: center; }
