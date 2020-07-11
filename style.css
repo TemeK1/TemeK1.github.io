@@ -8,6 +8,8 @@ html, body { color: #000000; font-size: 100%; min-height: 100%;  margin: 0; padd
 #myTopnav a:hover { background-color: green; }
 #myTopnav a.active { background-color: #4CAF50; }
 
+ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
+
 a.content:link, a.content:visited { background-color: #E5EBE8; border: 1px solid green; border-style: dotted; color: green; padding: 0.5em 0.5em; text-align: center; text-decoration: none; display: inline-block; }
 a.content:hover, a.content:active { background-color: #24E28A; }
 
