@@ -251,7 +251,7 @@ td:nth-child(2) { text-align: left; }
   }
 
   #myTopnav.responsive {position: relative;}
-  #toggleNav {
+  #myTopnav.responsive #toggleNav {
     position: absolute;
     right: 0;
     top: 0;
