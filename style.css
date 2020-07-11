@@ -111,7 +111,7 @@ p.center { text-align: center; }
 #myTopnav a.active { background-color: #4CAF50; }
 
 #toggleNav {
-  display: none;
+  display: none !important;
 }
 
 h3 { margin-top: 3.0em; line-height: 0.5; }
