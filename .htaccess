@@ -3,7 +3,3 @@ DirectoryIndex index.html
 
 //404
 ErrorDocument 404 404.html
-
-RewriteEngine On
-RewriteCond %{HTTP_HOST} www.teemukapyla.fi
-RewriteRule (.*) https://teemukapyla.fi/$1 [R=301,L]
