@@ -52,9 +52,9 @@ var courses = [
 {
   "name": "Internet of Things",
   "credits": 3,
-  "grade": "?",
+  "grade": "5",
   "note": "-",
-  "finished": false
+  "finished": true
 },
 {
   "name": "Data Mining",
