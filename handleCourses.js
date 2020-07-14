@@ -95,8 +95,9 @@ function searchCourses() {
     }
 
   }
+  let ka = (points/credits).toFixed(2);
   let div = document.getElementById('average');
-  let teksti = document.createTextNode("Weighted Average: " + points/credits + " | Credits: " + creditsTotal);
+  let teksti = document.createTextNode("Weighted Average: " + ka + " | Credits: " + creditsTotal);
   div.appendChild(teksti);
 }
 
