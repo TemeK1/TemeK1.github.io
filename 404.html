@@ -1,52 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> Teemu Käpylä | Portfolio </title>
-<meta name="keywords" content="portfolio, web-cv">
-<meta name="robots" content="index, follow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="language" content="English">
-<base href="https://www.teemukapyla.fi/"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://kit.fontawesome.com/2b8e941db7.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css" type="text/css" media="all">
-<link rel="stylesheet" href="assets/styles.css" type="text/css" media="all">
-<link rel="shortcut icon" href="favicon.ico">
-<script src="dynamic_content.js"></script>
+  <title>Teemu Käpylä | Portfolio</title>
+  <meta name="description" content="Teemu Käpylä. Henkilökohtainen web-portfolio ja CV. Tie sovelluskehittäjäksi.">
+  <meta name="keywords" content="portfolio, web-cv">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Teemu Käpylä | Maisteriopiskelija, Jyväskylän yliopisto, Ohjelmistotekniikka">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.teemukapyla.fi/pictures/profile.jpg">
+  <meta property="og:description" content="Teemu Käpylä. Henkilökohtainen web-portfolio ja CV. Tie sovelluskehittäjäksi.">
+  <meta property="og:url" content="https://www.teemukapyla.fi">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="Finnish">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="courses.js"></script>
+  <script type="text/babel" src="cv.js"></script>
+  <script src="quizQuestions.js"></script>
+  <script type="text/babel" src="quiz.js"></script>
+  <script src="getAlt.js"></script>
+  <script src="https://kit.fontawesome.com/2b8e941db7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="content">
-	<div id="myTopnav" class="responsive">
-           <a href="">Home</a>
-	   <a href="about">About</a>
-	   <a href="cv">CV</a>
-           <a href="projects">Projects</a>
-	   <a href="quiz">Quiz</a>
-	   <a href="javascript:void(0);" id="toggleNav" onclick="toggle()">
-             <i class="fa fa-bars"></i>
-           </a>
-	</div>
-	<div id="secondRow">
-	<h4><i class="fa fa-home fa-2x"></i> 404</h4>
-	</div>
-	<div id="thirdRow" class="clear">
-		<div id="secondColumn">
-		<p align="center">404 - Käpylä was not found. Maybe you should try <a href="" class="hyperosoite">the front-page?</a></p>
-		</div>
-		<div id="thirdColumn">
-		  <div class="profileBox">
-            <div data-include="profile.html"></div>
-		  </div>
-		</div>
-	</div>
-	<div id="fourthRow">
-		<footer id="footer" class="clear">
-		&copy; Teemu Käpylä
-		</footer>
-	</div>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+	<script src="https://unpkg.com/prop-types@15.6.2/prop-types.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
+	<script src="https://unpkg.com/react-apexcharts@1.1.0/dist/react-apexcharts.iife.min.js"></script>
+  <nav class="navbar navbar-expand-md fixed-top">
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Alkuun</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#fullstack">Fullstack</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projektit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Galleria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#me">Tietoa minusta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#quiz">Kysely</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Ota yhteyttä</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="page-header header container-fluid">
+    <div class="overlay"></div>
+    <div class="description">
+      <h1>Tervetuloa Teemu Käpylän henkilökohtaiselle portfolio-sivustolle.</h1>
+      <p>Viimeistelen <b>Ohjelmistotekniikan</b> opintoja <b>Jyväskylän yliopistossa</b> ja etsin parasta aikaa toimeksiantoja ohjelmistoalalta niin perinteisen sovellussuunnittelun kuin webbisovellustenkin ja applikaatioiden saralta.</p>
+      <a href="#pages"><button class="btn btn-outline-secondary btn-lg">Kiinnostuin!</button></a>
+    </div>
+  </header>
+  <div id="pages"></div>
+  <div class="container marketing">
+  <div class="row featurette">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <h2 class="featurette-heading">Sivua ei löytynyt, ehkä haluaisit siirtyä <a href="#" class="alert-link">pääsivulle</a></h2>
+      </div>
+  </div>
 </div>
-<script>
-IncludeHTML();
-</script>
+ <footer class="page-footer">
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-8 col-md-8 col-sm-12">
+         <p><a href="https://www.linkedin.com/in/teemu-k%C3%A4pyl%C3%A4-2918901b1/" target="_blank" class="content"><img class="img-fluid logo" src="images/LinkedIn.png" alt="LinkedIn"></a></p>
+         <p><a href="https://www.researchgate.net/profile/Teemu_Kaepylae" target="_blank" class="content"><img class="img-fluid logo" src="images/ResearchGate_logo.png" alt="ResearchGate"></a></p>
+       </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+         <h6 class="text-uppercase font-weight-bold">Yhteystiedot</h6>
+         <p>Teemu Käpylä
+         <br /> Jyväskylä, Finland
+         <br />contact@teemukapyla.fi
+         <br />0505510339</p>
+      </div>
+    </div>
+    <div class="footer-copyright text-center">©2020 Teemu Käpylä</div>
+  </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="handleCourses.js"></script>
 </body>
 </html>
