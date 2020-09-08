@@ -67,13 +67,14 @@
       <a href="#pages"><button class="btn btn-outline-secondary btn-lg">Kiinnostuin!</button></a>
     </div>
   </header>
+  <div class="mainWrapper">
   <div id="pages"></div>
   <div class="container marketing">
   <div class="row featurette">
       <div class="col-lg-7 col-md-7 col-sm-12">
         <h2 class="featurette-heading">Kiinnostaisiko <span class="text-muted">Drupal</span> tai  <span class="text-muted">WordPress</span> alustana kotisivuille?</h2>
             <p class="lead">Tarvitsetko sinä tai yrityksesi nykyaikaiset ja helposti hallittavat webbisivut, joihin on saatavilla laajennososia ja modifikaatioita jokaiseen tarpeeseen?
-              Drupal soveltuu esimerkiksi hyvin pohjaksi yrityksesi webbisivuille (jopa verkkokaupalle) ja WordPress on mainio yksityishenkilön blogille. Moneen muuhunkin nämä alustat venyvät. Vilkaise muutamaa WordPress-pohjaista <a href="#projects" class="alert-link">esimerkkiprojektiani.</a></p>
+              Drupal soveltuu esimerkiksi hyvin pohjaksi yrityksesi webbisivuille (jopa verkkokaupalle) ja WordPress on mainio yksityishenkilön blogille. Moneen muuhunkin nämä alustat venyvät. Halutessasi voit vilkaista WordPress-pohjaisia <a href="#projects" class="alert-link">esimerkkiprojektejani.</a></p>
       </div>
       <div class="col-lg-5 col-md-5 col-sm-12">
         <img class="featurette-image img-fluid mx-auto" src="images/Drupal_logo.png" alt="Drupal">
@@ -291,16 +292,25 @@
       <div class="col-lg-4 col-md-4 col-sm-12">
          <h6 class="text-uppercase font-weight-bold">Yhteystiedot</h6>
          <p>Teemu Käpylä
-         <br /> Jyväskylä, Finland
+         <br /> Jyväskylä, Suomi
          <br />contact@teemukapyla.fi
          <br />0505510339</p>
       </div>
     </div>
+  </div>
     <div class="footer-copyright text-center">©2020 Teemu Käpylä</div>
-  </footer>
+ </footer>
+</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="main.js"></script>
 <script src="handleCourses.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="momentum.js"></script>
+<script src="main.js"></script>
+<script>
+  $(function() {
+    $('.mainWrapper').momentum();
+  });
+</script>
 </body>
 </html>

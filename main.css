@@ -46,6 +46,11 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.progress-bar {
+  left: 0 !important;
+  bottom: 0;
+}
+
 .description {
   left: 50%;
   position: absolute;

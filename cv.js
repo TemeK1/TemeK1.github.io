@@ -5,7 +5,7 @@ class DonutChart extends React.Component {
 
   this.state = {
     options: {
-  labels: ["ReactJS/Node.js/Express/MongoDB", "React Native", "Java", "MySQL", "Bootstrap/CSS3/HTML5"],
+  labels: ["ReactJS/Node.js/Express", "React Native", "Java", "MySQL/MongoDB", "Bootstrap/CSS3"],
     responsive: [{
       breakpoint: 480,
       options: {
