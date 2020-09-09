@@ -332,6 +332,7 @@ padding-right: 1.1rem;
 .coloredContainer {
   background-color: #62BD9C; 
   color: #fff;
+  border-radius: 0 0 5% 5%;
 }
 
 .coloredContainer .center {
