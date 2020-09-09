@@ -339,16 +339,20 @@ padding-right: 1.1rem;
   padding: 2% 5% 2% 5%;
 }
 
-a.anchor {
+a.anchor, a.anchor2, a.anchor3 {
   display: block;
   position: relative;
-  top: -0.5%;
   visibility: hidden;
 }
 
+a.anchor {
+  top: -0.5% !important;
+}
+
 a.anchor2 {
-  display: block;
-  position: relative;
-  top: -5em !important;
-  visibility: hidden;
+  top: -2em !important;
+}
+
+a.anchor3 {
+  top: -3.0em !important;
 }
