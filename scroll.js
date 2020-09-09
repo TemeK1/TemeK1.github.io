@@ -20,6 +20,11 @@
       }
     });
   
+    // Closes responsive menu when a scroll trigger link is clicked
+    $('.js-scroll-trigger').click(function() {
+        $('.navbar-collapse').collapse('hide');
+      });
+      
     // Scroll to top button appear
     $(document).scroll(function() {
       var scrollDistance = $(this).scrollTop();
@@ -41,7 +46,7 @@
     // Collapse now if page is not at top
     navbarCollapse();
     // Collapse the navbar when page is scrolled
-    //$(window).scroll(navbarCollapse);
+    $(window).scroll(navbarCollapse);
   
     // Floating label headings for the contact form
     $(function() {
