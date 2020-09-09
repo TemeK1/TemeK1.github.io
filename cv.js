@@ -13,7 +13,7 @@ class DonutChart extends React.Component {
       breakpoint: 580,
       options: {
       chart: {
-        width: 400
+        width: 350
       },
       legend: {
         position: 'top'
