@@ -86,7 +86,6 @@ h1, h2, h3, h4, h5, h6,
   top: 45%;
   transform: translate(-50%, -55%);
   text-align: center;
-  width: 50%;
 }
 .description h1 {
   color: #6ab446;
@@ -221,18 +220,15 @@ iframe {
   color: black;
 }
 
-#pages {
-  margin-bottom: 5.3rem;
-}
-
 @media (max-width: 575.98px) {
   .description {
     left: 0;
-    padding: 0 15px;
+    padding: 25px 15px;
     position: absolute;
     top: 15%;
     transform: none;
     text-align: center;
+    margin: auto;
   }
 
   .description h1 {
