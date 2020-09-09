@@ -6,14 +6,17 @@ class DonutChart extends React.Component {
   this.state = {
     options: {
   labels: ["ReactJS/Node.js/Express", "React Native", "Java", "MySQL/MongoDB", "Bootstrap/CSS3"],
+  legend: {
+    position: 'top'
+  },
     responsive: [{
-      breakpoint: 480,
+      breakpoint: 580,
       options: {
       chart: {
         width: 400
       },
       legend: {
-        position: 'bottom'
+        position: 'top'
       }
       }
     }]
@@ -26,7 +29,7 @@ class DonutChart extends React.Component {
   return (
     <div>
       <div id="chart1">
-        <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="380" />
+        <ReactApexChart options={this.state.options} series={this.state.series} type="donut" width="400" />
       </div>
       <div id="html-dist1"></div>
     </div>
