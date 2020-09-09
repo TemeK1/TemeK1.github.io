@@ -8,7 +8,10 @@ body {
   background: #f2f6e9;
   color: #212529;
   text-align: left;
-  overflow-x: hidden !important;
+}
+
+* {
+  overflow-y: hidden !important;
 }
 
 h1, h2, h3, h4, h5, h6,
