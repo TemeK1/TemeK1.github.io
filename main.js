@@ -39,4 +39,5 @@ $(document).ready(function(){
       $('#mailSent').removeClass('hidden');
       $('#contact2').addClass('hidden');
     }
+    
 })
