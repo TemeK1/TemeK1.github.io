@@ -347,7 +347,7 @@ padding-right: 1.1rem;
   padding: 2% 5% 2% 5%;
 }
 
-a.anchor, a.anchor2, a.anchor3 {
+a.anchor, a.anchor2, a.anchor3, a.anchor4 {
   display: block;
   position: relative;
   visibility: hidden;
@@ -363,6 +363,10 @@ a.anchor2 {
 
 a.anchor3 {
   top: -0.99em !important;
+}
+
+a.anchor4 {
+  top: -6.5em !important;
 }
 
 .appCenter {

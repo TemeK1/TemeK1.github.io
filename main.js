@@ -36,7 +36,7 @@ $('.header').height($(window).height());
 
     if (href.length <= 1) return;
     if (((href[1]).localeCompare("mailSent")) == 0) {
-      $('#mailSent').removeClass('hidden');
+      $('#sentConfirmed').removeClass('hidden');
       $('#contact2').addClass('hidden');
     }
     
