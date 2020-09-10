@@ -1,0 +1,4 @@
+# 1 Month for most static assets
+<FilesMatch "\.(css|jpg|jpeg|png|gif|js|ico)$">
+ExpiresDefault "access plus 30 days"
+</FilesMatch>
