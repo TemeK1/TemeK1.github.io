@@ -1,100 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
   <title>Teemu Käpylä | Portfolio</title>
-  <meta name="description" content="Teemu Käpylä. Henkilökohtainen web-portfolio ja CV. Tie sovelluskehittäjäksi.">
+  <meta name="description" content="Teemu Käpylä. Web-suunnittelu, web-portfolio ja CV.">
   <meta name="keywords" content="portfolio, web-cv">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Teemu Käpylä | Maisteriopiskelija, Jyväskylän yliopisto, Ohjelmistotekniikka">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.teemukapyla.fi/pictures/profile.jpg">
-  <meta property="og:description" content="Teemu Käpylä. Henkilökohtainen web-portfolio ja CV. Tie sovelluskehittäjäksi.">
+  <meta property="og:image" content="https://www.teemukapyla.fi/images/profile.png">
+  <meta property="og:description" content="Teemu Käpylä. Web-suunnittelu, web-portfolio ja CV.">
   <meta property="og:url" content="https://www.teemukapyla.fi">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="Finnish">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <script src="courses.js"></script>
-  <script type="text/babel" src="cv.js"></script>
-  <script src="quizQuestions.js"></script>
-  <script type="text/babel" src="quiz.js"></script>
-  <script src="getAlt.js"></script>
-  <script src="https://kit.fontawesome.com/2b8e941db7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="static/main.css">
 </head>
 <body>
-  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@16.13.1/umd/react.production.min.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js"></script>
 	<script src="https://unpkg.com/prop-types@15.6.2/prop-types.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
-	<script src="https://unpkg.com/react-apexcharts@1.1.0/dist/react-apexcharts.iife.min.js"></script>
-  <nav class="navbar navbar-expand-md fixed-top">
-    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+  <script src="https://unpkg.com/react-apexcharts@1.1.0/dist/react-apexcharts.iife.min.js"></script>
+  <nav class="navbar navbar-expand-md fixed-top text-uppercase" id="mainNav">
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" name="toggle-nav" data-target="#main-navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="main-navigation">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Alkuun</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#fullstack">Fullstack</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projektit</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#gallery">Galleria</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#me">Tietoa minusta</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#quiz">Kysely</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Ota yhteyttä</a>
-        </li>
+        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#home">Alkuun</a></li>
+        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#pages">Kotisivut?</a></li>
+        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#fullstack">Fullstack</a></li>
+        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#gallery">Galleria</a></li>
+        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#me">Tietoa minusta</a></li>
+        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#quiz">Kysely</a></li>
+        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Ota yhteyttä</a></li>
       </ul>
     </div>
   </nav>
   <header class="page-header header container-fluid">
     <div class="overlay"></div>
+    <a class="anchor" id="home"></a>
     <div class="description">
       <h1>Tervetuloa Teemu Käpylän henkilökohtaiselle portfolio-sivustolle.</h1>
       <p>Viimeistelen <b>Ohjelmistotekniikan</b> opintoja <b>Jyväskylän yliopistossa</b> ja etsin parasta aikaa toimeksiantoja ohjelmistoalalta niin perinteisen sovellussuunnittelun kuin webbisovellustenkin ja applikaatioiden saralta.</p>
-      <a href="#pages"><button class="btn btn-outline-secondary btn-lg">Kiinnostuin!</button></a>
+      <a href="#pages" class="js-scroll-trigger"><button class="btn btn-outline-secondary btn-lg rounded" name="olenKiinnostunut">Kiinnostuin!</button></a>
     </div>
   </header>
-  <div id="pages"></div>
+  <a class="anchor3" id="pages"></a>
+  <div class="mainWrapper">
   <div class="container marketing">
   <div class="row featurette">
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        <h2 class="featurette-heading">Sivua ei löytynyt, ehkä haluaisit siirtyä <a href="https://www.teemukapyla.fi" class="alert-link">pääsivulle</a></h2>
+      <div class="col-lg-7 col-md-7 col-sm-12">
+        <h2 class="featurette-heading">Kiinnostaisiko <span class="text-muted">Drupal</span> tai  <span class="text-muted">WordPress</span> alustana kotisivuille?</h2>
+            <p class="lead">Tarvitsetko sinä tai yrityksesi nykyaikaiset ja helposti hallittavat webbisivut, joihin on saatavilla widgettejä ja plugineita jokaiseen tarpeeseen?
+              Drupal soveltuu esimerkiksi hyvin pohjaksi yrityksesi webbisivuille ja WordPress on mainio yksityishenkilön blogille tai jopa WooCommerce-verkkokaupallesi. Moneen muuhunkin nämä alustat venyvät. Halutessasi voit vilkaista WordPress-pohjaisia <a href="#portfolio" class="alert-link js-scroll-trigger">malliprojektejani.</a></p>
+            <p class="lead">Blogi, portfolio, verkkokauppa, kotisivu, design ja toteutus. Vaihtoehtoisesti maailman paras ja todella monipuolisesti kustomoitavissa oleva WordPress-alustan <span class="font-weight-bold">Divi</span>-templaatti elinikäisellä käyttöoikeudella kuuluu palveluvalikoimaani. Myös migraatio alustalta toiselle, ylläpitotoimet, kustomoinnit, päivitykset ja WordPressin haavoittuvuusskannaus ovat toteutettavissa.</p>
+            <p class="lead">Laskutusmenetelmäni on tuntipohjainen (+24% alv.). Pyydä hinnastoa esim. <a href="#contact" class="alert-link js-scroll-trigger">lomakkeen</a> kautta niin vastaan yhteydenottoosi mahdollisimman pian.</p>  
+          </div>
+      <div class="col-lg-5 col-md-5 col-sm-12">
+        <img class="featurette-image img-fluid mx-auto" src="static/images/Drupal_logo.png" alt="Drupal" width="445" height="187">
+        <img class="featurette-image img-fluid mx-auto lazy" data-src="static/images/WordPress_logo.png" alt="WordPress" width="445" height="151">
+     </div>
+  </div>
+  <div class="row featurette">
+    <div class="col-lg-5 col-md-5 col-sm-12">
+      <img class="featurette-image img-fluid mx-auto lazy" data-src="static/images/Bootstrap_logo.png" alt="Bootstrap" width="601" height="122">
+    </div>
+    <div class="col-lg-7 col-md-7 col-sm-12">
+      <h2 class="featurette-heading">Moderni ja <span class="text-muted">responsiivinen</span> ulkoasu</h2>
+          <p class="lead">Toteutan responsiivisen ulkoasun joka mukautuu jokaiseen näyttökokoon aina niin kotisivuille kuin web-sovelluksillekin.</p>
+    </div>
+  </div>
+  </div>
+  <a class="anchor" id="fullstack"></a>
+  <div class="coloredContainer">
+  <div class="row center">
+      <div class="col-lg-6 col-md-6 col-sm-12 center">
+        <h2 class="page-section-heading text-center text-uppercase text-white">Fullstack-ohjelmointia</h2>
+            <p class="lead">Sovellus- ja applikaatio-ohjelmointia nykyaikaisilla teknologioilla. Mielelläni lähtisin mukaan työstämään jotain isompaakin projektia! Olehan yhteyksissä, jos sinulla on jotain tiedossa.</p>
       </div>
   </div>
+  <div class="row center">
+    <div class="col-lg-6 col-md-6 col-sm-12 center">
+      <div id="app"></div>
+    </div>
+  </div>
+ </div>
+  <a class="anchor" id="portfolio"></a>
+  <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <h2 class="page-section-heading text-center text-uppercase text-black">Portfolio</h2>
+          <br />
+          <div class="alert alert-primary alert-git">
+            <a href="https://github.com/TemeK1/Projects" target="_blank" class="alert-link">Git-repositorio</a>
+          </div>
+          <p class="lead">WordPress-toteutuksia</p>
+          <p>Huomioi, että nämä ovat esimerkkejä, joten sisällöllisesti ne ovat hyvin pelkistettyjä. Asiakkaan kanssa yhteistyössä sisältö ja toiminnallisuus saadaan aivan miksi halutaan.</p>
+          <div class="alert alert-primary">
+            <a href="https://www.teemukapyla.dev/wp2" class="alert-link" target="_blank">Web-sivusto koneyritykselle</a><br />
+            <a href="https://www.teemukapyla.dev/wp1" class="alert-link" target="_blank">Web-sivusto pienyritykselle</a><br />
+            <a href="https://www.teemukapyla.dev/wp3" class="alert-link" target="_blank">Kevyt verkkokauppa</a><br />
+            <a href="https://www.teemukapyla.dev/kauppa" class="alert-link" target="_blank">WooCommerce-verkkokaupan ja WordPress-alustan yhdistelmä API-maksurajapinnoilla varustettuna.</a>
+          </div>
+          <p class="lead">Web-käyttöliittymien ohjelmointikurssin tehtävät.</p>
+          <div class="alert alert-primary">
+            <a href="#iframe" class="alert-link clickToFrame" id="projects/web-gui/vt2">Natiivi JavaScript näyte</a><br />
+            <a href="#iframe" class="alert-link clickToFrame" id="projects/web-gui/vt3">Natiivi JavaScript näyte</a><br />
+            <a href="#iframe" class="alert-link clickToFrame" id="projects/web-gui/vt4">Natiivi JavaScript näyte</a><br />
+            <a href="#iframe" class="alert-link clickToFrame" id="projects/web-gui/vt5">JS, jQuery ja Leaflet näyte</a><br />
+            <a href="#iframe" class="alert-link clickToFrame" id="projects/web-gui/vt6">ReactJS näyte</a><br />
+            Responsive <a href="#iframe" class="alert-link clickToFrame" id="notes">Notes</a> ReactJS prototyyppi-sovellus. Vain selaimen paikallista tietovarastoa (localStorage) käytetään tietojen tallentamiseen.
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <h3 class="feature-title hideFrameButton hideFrame">Piilota</h3>
+          <a class="anchor" id="iframe"></a>
+          <div class="iframe">
+          </div>
+        </div>
+      </div>
+  </div>
+  <a class="anchor" id="gallery"></a>
+  <div class="coloredContainer">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 center">
+          <h2 class="page-section-heading text-center text-uppercase text-white">Projektigalleria</h2>
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center mb-5">
+              <div class="gallery" id="galleria">
+                <div class="mb-12 pics animation all 1">
+                  <img class="img-fluid lazy" data-src="static/images/sarjakuvarekisteri.png" title="Sarjakuvarekisteri" alt="Sarjakuvarekisteri, Java" width="348" height="244">
+                </div>
+                <div class="mb-12 pics animation all 1">
+                  <img class="img-fluid lazy" data-src="static/mattimyyra.gif" title="Matti Metsämyyrä" alt="Matti Metsämyyrän seikkailut, C#" width="348" height="191">
+                </div>
+                <div class="mb-12 pics animation all 1">
+                  <img class="img-fluid lazy" data-src="static/vt2.gif" title="VT2" alt="Natiivi JavaScript" width="348" height="230">
+                </div>
+                <div class="mb-12 pics animation all 1">
+                  <img class="img-fluid lazy" data-src="static/vt5.gif" title="VT5" alt="Natiivi JavaScript, jQuery ja Leaflet" width="348" height="245">
+                </div>
+                <div class="mb-12 pics animation all 1">
+                  <img class="img-fluid lazy" data-src="static/images/species.png" title="Lajintuntemusharjoittelu ReactJS" alt="ReactJS, eläinten lajintuntemussovellus" width="348" height="196">
+                </div>
+                <div class="mb-12 pics animation all 1">
+                  <img class="img-fluid lazy" data-src="static/images/scribble2000-min.jpg" title="Scribble 2000" alt="Scribble 2000, React Native application for Android/iOS" width="400" height="840">
+                </div>
+                <div class="mb-12 pics animation all 1">
+                  <img class="img-fluid lazy" data-src="static/vt6.gif" title="VT6" alt="ReactJS" width="348" height="245">
+                </div>
+              </div>
+            </div>
+          </div>
+     </div>
+   </div>
 </div>
- <footer class="page-footer">
+<a class="anchor" id="me"></a>
+<div class="container marketing">
+<div class="row featurette">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h2 class="featurette-heading"><span class="text-muted">Minä</span></h2>
+          <p class="lead">Olen ammatinvaihtaja, entiseltä koulutukseltani ja työltäni saapasjalkabiologi ja luonnontutkija ekologi. Haaveilin pitkään ohjelmistoalan hommista ja viimeinkin vuonna 2019 uskalsin ottaa sen ratkaisevan askeleen ja aloittaa ohjelmistotekniikan opinnot.</p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <img class="featurette-image img-fluid mx-auto profile lazy" data-src="static/images/profile.png" alt="Teemu Käpylä">
+   </div>
+   <div class="col-lg-4 col-md-4 col-sm-12">
+     <h2 class="featurette-heading"><span class="text-muted">Harrastukset</span></h2>
+         <p class="lead">Harrastuksiani ovat Urban Exploring, DnD, eSports, lukeminen, kalastus, luonto ja yleinen nörttäily</p>
+  </div>
+</div>
+<div class="row featurette">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h2 class="featurette-heading"><span class="text-muted">Unelmatyö</span></h2>
+      <p class="lead">Olla osallisena sovelluskehitystiimissä, liittyi se sitten ohjelmistoartefaktin tuottamiseen tai testaamiseen, kunhan se on merkityksellistä ja tekee omalta osaltaan maailman käytettävyydeltään ja tietoturvaltaan paremmaksi paikaksi.</p>
+   </div>
+   <div class="col-lg-6 col-md-6 col-sm-12">
+     <h2 class="featurette-heading"><span class="text-muted">Kielet</span></h2>
+     <div id="app2"></div>
+  </div>
+</div>
+<div class="row featurette">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h3><span class="text-muted">Ohjelmistotekniikan opintosuoritukset</span></h3>
+      <div class="alert alert-primary alert-link hide">Klikkaa laajentaaksesi/pienentääksesi</div>
+      <div class="table-responsive courseDiv hidden">
+       <table class="table table-striped table-hover" id="courses">
+         <thead>
+           <tr>
+             <th onclick="sortTable(0)">Kurssi <i class="fa fa-sort"></i></th>
+             <th onclick="sortTable(1)">Opintopisteet <i class="fa fa-sort"></i></th>
+             <th onclick="sortTable(2)">Arvosana (1-5) <i class="fa fa-sort"></i></th>
+             <th onclick="sortTable(3)">Työkalut <i class="fa fa-sort"></i></th>
+           </tr>
+         </thead>
+         <tbody>
+         </tbody>
+       </table>
+       <div class="alert alert-primary alert-link score" id ="average"></div>
+     </div>
+   </div>
+ </div>
+<hr class="featurette-divider">
+<a class="anchor2" id="quiz"></a>
+<div class="row featurette">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h2 class="featurette-heading"><span class="text-muted">Kysely</span></h2>
+          <p class="lead">Tähän kyselyyn vastaaminen on tehokas ja nopea keino saada tietää lisää minusta. Vastauksiasi ei tallenneta mihinkään.</p>
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-12">
+      <div id="teemuQuiz"></div>
+   </div>
+</div>
+<hr class="featurette-divider">
+<a class="anchor2" id="contact"></a>
+<a class="anchor4" id="mailSent"></a>
+<div class="container">
+	<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h2 class="page-section-heading text-center text-uppercase text-black">Ota yhteyttä</h2>
+      <br />
+    </div>
+		<div class="col-lg-6 col-md-6 col-sm-12">
+      <div id="sentConfirmed" class="hidden"><h2 class="featurette-heading">Viesti <span class="text-muted">lähetetty</span> onnistuneesti! Kiitos yhteydenotostasi.</h2></div>
+      <form action="https://www.teemukapyla.dev/post.php" method="post" id="contact2">
+        <div class="card border-primary rounded-0">
+           <div class="card-header p-0">
+              <div class="bg-info text-white text-center py-2">
+                  <h3><i class="fa fa-envelope"></i> Yhteydenotto</h3>
+              </div>
+          </div>
+          <div class="card-body p-3">
+            <label>
+            <div class="form-group">
+              <div class="input-group mb-2">
+                 <div class="input-group-prepend">
+                     <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                 </div>
+                 <input type="text" class="form-control" id="name" name="name" placeholder="nimi" required>
+             </div>
+           </div>
+           </label>
+           <label>
+           <div class="form-group">
+              <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                  </div>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="sahkoposti@osoite.com" required>
+              </div>
+          </div>
+          </label>
+          <label>
+          <div class="form-group">
+              <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                  </div>
+                  <textarea class="form-control" rows="5" name="message" id="message" placeholder="viesti" required></textarea>
+              </div>
+          </div>
+          </label>
+          <div class="text-center">
+              <input type="submit" value="Lähetä" class="btn btn-info btn-block rounded-0 py-2">
+          </div>
+        </div>
+      </div>
+    </form>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12">
+  <h2 class="featurette-heading">Heräsikö <span class="text-muted">kiinnostus?</span></h2>
+  <p class="lead">Kiinnostaisiko palkata minut freelancerina johonkin projektiin? Tai kenties pysyvämminkin? Nakkaa viestiä niin jutustellaan asian tiimoilta!</p>
+</div>
+</div>
+</div>
+</div>
+ <footer class="footer text-center page-footer">
    <div class="container">
      <div class="row">
-       <div class="col-lg-8 col-md-8 col-sm-12">
-         <p><a href="https://www.linkedin.com/in/teemu-k%C3%A4pyl%C3%A4-2918901b1/" target="_blank" class="content"><img class="img-fluid logo" src="images/LinkedIn.png" alt="LinkedIn"></a></p>
-         <p><a href="https://www.researchgate.net/profile/Teemu_Kaepylae" target="_blank" class="content"><img class="img-fluid logo" src="images/ResearchGate_logo.png" alt="ResearchGate"></a></p>
+       <!-- Footer About Text-->
+       <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">Freelancer</h4>
+          <p class="lead mb-0">
+            Webbisivut, blogit, portfoliot, verkkokaupat. Design ja toteutus. Myös migraatio, päivitykset ja tietoturva.
+           </p>
+        </div>
+       <!-- Footer Social Icons-->
+       <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Media</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/teemu-k%C3%A4pyl%C3%A4-2918901b1/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.researchgate.net/profile/Teemu_Kaepylae"><i class="fab fa-fw fa-researchgate"></i></a>
        </div>
-      <div class="col-lg-4 col-md-4 col-sm-12">
-         <h6 class="text-uppercase font-weight-bold">Yhteystiedot</h6>
-         <p>Teemu Käpylä
-         <br /> Jyväskylä, Finland
-         <br />contact@teemukapyla.fi
-         <br />0505510339</p>
+       <div class="col-lg-4 mb-5 mb-lg-0">
+        <h4 class="text-uppercase mb-4">Yhteystiedot</h4>
+        <p class="lead mb-0">
+          Teemu Käpylä
+          <br /> Jyväskylä, Suomi
+          <br />contact@teemukapyla.fi
+          <br />0505510339
+        </p>
       </div>
     </div>
-    <div class="footer-copyright text-center">©2020 Teemu Käpylä</div>
-  </footer>
+</div>
+ </footer>
+ <div class="copyright py-4 text-center text-white">
+  <div class="footer-copyright">© 2020 Teemu Käpylä</div>
+</div>
+</div>
+<script src="static/courses.js"></script>
+<script type="text/babel" src="static/cv.js"></script>
+<script src="static/quizQuestions.js"></script>
+<script type="text/babel" src="static/quiz.js"></script>
+<script src="static/getAlt_min.js"></script>
+<script src="https://kit.fontawesome.com/2b8e941db7.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="main.js"></script>
-<script src="handleCourses.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src="static/handleCourses_min.js"></script>
+<script src="static/momentum_min.js"></script>
+<script src="static/main_min.js"></script>
+<script src="static/scroll_min.js"></script>
+<script>$(function() {$('.mainWrapper').momentum();});</script>
 </body>
 </html>
