@@ -1,0 +1,2 @@
+window.onload=function(){let gallery=document.getElementById("galleria");pictures=[];if(gallery){pictures=gallery.getElementsByTagName('img');}
+for(let picture of pictures){let altText=picture.getAttribute('alt'),section=document.createElement('section'),paragraph=document.createElement('p'),textNode=document.createTextNode(altText);section.setAttribute('class','overlay');section.appendChild(paragraph);paragraph.appendChild(textNode);picture.parentNode.appendChild(section);}}
