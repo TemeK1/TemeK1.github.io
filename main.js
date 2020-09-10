@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
           window.removeEventListener("resize", lazyload);
           window.removeEventListener("orientationChange", lazyload);
         }
-    }, 50);
+    }, 99);
   }
   
   document.addEventListener("scroll", lazyload);
