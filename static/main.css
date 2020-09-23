@@ -100,9 +100,19 @@ label {
   left: 50%;
   position: absolute;
   margin: auto 0;
-  top: 55%;
   transform: translate(-50%, -55%);
   text-align: center;
+}
+
+@media (min-width: 575.98px)  {
+  .description {
+    top: 60%;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 850px) {
+  .description { top: 55%; overflow-x: hidden; }
 }
 
 .description h1 {
@@ -377,11 +387,24 @@ a.anchor2 {
 }
 
 a.anchor3 {
-  top: -0.99em !important;
+  top: 0 !important;
 }
 
 a.anchor4 {
   top: -6.5em !important;
+}
+
+a:hover {
+  color: black !important;
+  transform: scale(0.9);
+}
+
+li {
+  overflow-y: hidden;
+}
+
+li:hover {
+  border-radius: 5%;
 }
 
 .appCenter {
