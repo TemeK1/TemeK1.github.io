@@ -51,6 +51,8 @@ h1, h2, h3, h4, h5, h6,
 .nav-link.active {
   color: #fff;
   background-color: #1abc9c;
+  padding-left: 0.5em !important;
+  padding-right: 0.5em !important;
 }
 
 #mainNav {
@@ -387,7 +389,7 @@ a.anchor2 {
 }
 
 a.anchor3 {
-  top: 0 !important;
+  top: -0.001em !important;
 }
 
 a.anchor4 {
@@ -396,15 +398,16 @@ a.anchor4 {
 
 a:hover {
   color: black !important;
-  transform: scale(0.9);
+}
+
+@media (min-width: 768px) {
+  a:hover {
+    transform: scale(0.9);
+  }
 }
 
 li {
   overflow-y: hidden;
-}
-
-li:hover {
-  border-radius: 5%;
 }
 
 .appCenter {
