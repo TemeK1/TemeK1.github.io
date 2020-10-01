@@ -421,3 +421,12 @@ li {
   padding-bottom: 0;
   padding-top: 0;
 }
+
+.contactQuestion {
+  margin-left: 0.5vw;
+  font-weight: 600;
+}
+
+.inputField {
+  margin: 1vw 0 0 4vw;
+}
